@@ -9,9 +9,15 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import { IconButton } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
+import { useRouter } from "next/router";
 
 export default function SideBarComp() {
   const [state, setState] = React.useState(false);
+  const router = useRouter();
+
+  const goToPage = (key) => {
+    router.push(key.toLowerCase());
+  };
 
   const toggleDrawer = (open) => (event) => {
     if (
@@ -33,7 +39,7 @@ export default function SideBarComp() {
       <List>
         {["Home", "About", "Events", "Work Shops", "Sponsors", "Team"].map(
           (text, index) => (
-            <ListItem key={text} disablePadding>
+            <ListItem onClick={() => goToPage(text)} key={text} disablePadding>
               <ListItemButton>
                 <ListItemIcon></ListItemIcon>
                 <ListItemText primary={text} />

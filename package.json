@@ -24,6 +24,7 @@
     "prop-types": "^15.8.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-in-viewport": "^1.0.0-alpha.29",
     "react-lite-youtube-embed": "^2.3.52",
     "react-scroll-percentage": "^4.3.0",
     "react-scroll-percentage-hook": "^1.0.5",

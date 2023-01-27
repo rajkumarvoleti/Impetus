@@ -1,7 +1,7 @@
 import { Typography, useTheme } from "@mui/material";
 import { Box } from "@mui/system";
 
-export default function EventList() {
+export default function EventList({ setCurrIdx }) {
   const theme = useTheme();
 
   const styles = {
@@ -22,21 +22,32 @@ export default function EventList() {
       pl: "42px",
       fontSize: "16px",
       margin: "10px 0",
+      cursor: "pointer",
     },
   };
+
+  const events = [
+    "CADathon",
+    "Yantra",
+    "Heatovation",
+    "Scrapyard",
+    "Quizzical",
+    "Death",
+    "Valorant",
+    "Fun",
+  ];
 
   return (
     <Box sx={styles}>
       <Box>
         <Typography variant="h1">Events</Typography>
-        <Typography variant="h4">CADathon</Typography>
-        <Typography variant="h4">Yantra Search</Typography>
-        <Typography variant="h4">Heatovation</Typography>
-        <Typography variant="h4">Scrapyard</Typography>
-        <Typography variant="h4">Quizzical suspect</Typography>
-        <Typography variant="h4">Death race</Typography>
-        <Typography variant="h4">Valorant</Typography>
-        <Typography variant="h4">Fun Bunkers</Typography>
+        {events.map((eve, idx) => {
+          return (
+            <Typography onClick={() => setCurrIdx(idx)} key={eve} variant="h4">
+              {eve}
+            </Typography>
+          );
+        })}
       </Box>
     </Box>
   );

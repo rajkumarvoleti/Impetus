@@ -1,9 +1,19 @@
 import { Typography, useTheme } from "@mui/material";
 import { Box } from "@mui/system";
+import { useEffect, useRef } from "react";
 import LearnMore from "./LearnMore";
+import { useInViewport } from "react-in-viewport";
 
-export default function EventDescription() {
+export default function EventDescription({ index, setCurrIdx, currIdx }) {
   const theme = useTheme();
+  const ref = useRef(null);
+  const headingRef = useRef(null);
+  const { inViewport } = useInViewport(headingRef);
+
+  useEffect(() => {
+    console.log(inViewport);
+    if (inViewport) setCurrIdx(index);
+  }, [inViewport]);
 
   const styles = {
     "div h2": {
@@ -33,10 +43,20 @@ export default function EventDescription() {
     scrollSnapAlign: "center",
   };
 
+  const handleScroll = () => {
+    ref.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  useEffect(() => {
+    if (index === currIdx) handleScroll();
+  }, [currIdx, index]);
+
   return (
-    <Box sx={styles}>
+    <Box ref={ref} sx={styles}>
       <Box>
-        <Typography variant="h2">CADathon</Typography>
+        <Typography ref={headingRef} variant="h2">
+          CADathon
+        </Typography>
         <Typography variant="p">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae commodi
           accusamus dolor laborum, sed molestiae. Culpa debitis corrupti ipsam
