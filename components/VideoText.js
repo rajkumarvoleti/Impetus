@@ -17,6 +17,7 @@ const styles = {
   },
   h4: {
     m: "20px 0",
+    overflowY: "hidden",
   },
 };
 
