@@ -32,7 +32,7 @@ export default function AppbarComp() {
     <Box sx={styles} className="center2">
       <AppBar
         className="appbar"
-        style={{ background: "transparent", position: "fixed" }}
+        style={{ background: "transparent"}}
       >
         <Image
           onClick={goToHome}
