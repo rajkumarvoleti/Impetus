@@ -5,6 +5,11 @@
   overflow-x: hidden;
 }
 
+html,
+body {
+  background-color: black;
+}
+
 h1 {
   overflow-y: hidden;
 }
