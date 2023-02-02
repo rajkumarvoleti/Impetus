@@ -10,7 +10,7 @@ const styles = {
   width: "100vw",
   ".appbar": {
     position: "relative",
-    maxWidth: "1300px",
+    // maxWidth: "1300px",
     padding: "20px 50px",
     boxShadow: "none",
     display: "flex",
@@ -33,7 +33,7 @@ export default function AppbarComp() {
       <AppBar
         className="appbar"
         style={{
-          background: "transparent",
+          background: "rgba(0,0,0,0.5)",
           position: "fixed",
           left: "50%",
           transform: "translateX(-50%)",
@@ -42,6 +42,7 @@ export default function AppbarComp() {
         <Image
           onClick={goToHome}
           src="images/logo.svg"
+          //"./images/Impetus Logo white.png"
           alt="logo"
           width={50}
           height={50}
