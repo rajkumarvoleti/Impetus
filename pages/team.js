@@ -1,14 +1,15 @@
 import { Typography, useTheme } from "@mui/material";
 import { Box } from "@mui/system";
+import Contact from "../components/Contact";
 import ContactCard from "../components/ContactCard";
 
 export default function TeamPage() {
   const theme = useTheme();
 
   const styles = {
+    margin: "50px 0",
     h1: {
-      mt: "100px",
-      mb: "50px",
+      margin: "50px 0",
       fontSize: "36px",
     },
     div: {
@@ -21,16 +22,19 @@ export default function TeamPage() {
   };
 
   return (
-    <Box sx={styles} className="center1">
-      <Typography variant="h1">Contact Us</Typography>
-      <Box>
-        <ContactCard />
-        <ContactCard />
-        <ContactCard />
-        <ContactCard />
-        <ContactCard />
-        <ContactCard />
+    <>
+      <Box sx={styles} className="center1">
+        <Typography variant="h1">Contact Us</Typography>
+        <Box>
+          <ContactCard />
+          <ContactCard />
+          <ContactCard />
+          <ContactCard />
+          <ContactCard />
+          <ContactCard />
+        </Box>
       </Box>
-    </Box>
+      <Contact />
+    </>
   );
 }

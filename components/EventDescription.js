@@ -10,11 +10,6 @@ export default function EventDescription({ index, setCurrIdx, currIdx }) {
   const headingRef = useRef(null);
   const { inViewport } = useInViewport(headingRef);
 
-  useEffect(() => {
-    console.log(inViewport);
-    if (inViewport) setCurrIdx(index);
-  }, [inViewport]);
-
   const styles = {
     "div h2": {
       fontSize: "40px",
@@ -26,6 +21,7 @@ export default function EventDescription({ index, setCurrIdx, currIdx }) {
       lineHeight: "0.5",
     },
     maxWidth: "500px",
+    textAlign: "justify",
     height: "100vh",
     position: "relative",
     left: "50vw",
@@ -44,7 +40,7 @@ export default function EventDescription({ index, setCurrIdx, currIdx }) {
   };
 
   const handleScroll = () => {
-    ref.current?.scrollIntoView({ behavior: "smooth" });
+    ref.current.scrollIntoView({ behavior: "smooth" });
   };
 
   useEffect(() => {

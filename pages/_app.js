@@ -8,6 +8,7 @@ import lightTheme from "../styles/theme/lightTheme";
 import "../styles/globals.css";
 import darkTheme from "../styles/theme/darkTheme";
 import AppbarComp from "../components/AppbarComp";
+import Contact from "../components/Contact";
 
 const clientSideEmotionCache = createEmotionCache();
 

@@ -14,7 +14,7 @@ export default function CarouselComp() {
     console.log(index);
     if (index == 2) {
       setTimeout(() => {
-        carousel.current.goTo(0);
+        carousel.current?.goTo(0);
       }, 1000);
     }
   };
