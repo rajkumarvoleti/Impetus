@@ -14,6 +14,8 @@ export default function TeamPage() {
     },
     div: {
       display: "grid",
+      // gridGap:"10px",
+      mb:"50px",
       gridTemplateColumns: "1fr 1fr",
       [theme.breakpoints.down("lg")]: {
         gridTemplateColumns: "1fr",
