@@ -33,7 +33,7 @@ export default function AppbarComp() {
       <AppBar
         className="appbar"
         style={{
-          background: "rgba(0,0,0,0.5)",
+          background: "transparent",
           position: "fixed",
           left: "50%",
           transform: "translateX(-50%)",

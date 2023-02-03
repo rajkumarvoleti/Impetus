@@ -5,6 +5,7 @@ import IconButton from "@mui/material/IconButton";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import TwitterIcon from "@mui/icons-material/Twitter";
+import Link from "next/link";
 
 const styles = {
   width: "90vw",
@@ -57,12 +58,12 @@ export default function Contact() {
     <Box className="center1" sx={{ backgroundColor: "black" }}>
       <Box sx={styles} className="center1">
         <Box className="nav">
-          <a href="/home">Home</a>
-          <a href="/about">About</a>
-          <a href="/events">Events</a>
-          <a href="/work">Work Shops</a>
-          <a href="/sponsors">Sponsors</a>
-          <a href="/team">Team</a>
+          <Link href="/home">Home</Link>
+          <Link href="/about">About</Link>
+          <Link href="/events">Events</Link>
+          <Link href="/work">Work Shops</Link>
+          <Link href="/sponsors">Sponsors</Link>
+          <Link href="/team">Team</Link>
         </Box>
         <Box className="icons center2">
           <IconButton>

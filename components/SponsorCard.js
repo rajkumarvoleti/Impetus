@@ -4,17 +4,14 @@ import Image from "next/image";
 // import "../components/a.css"
 
 const styles = {
-    height: "250px",
-    width: "400px",
-    
-  };
+  height: "250px",
+  width: "400px",
+};
 
-
-export default function SponsorCard(){
-    return (
+export default function SponsorCard() {
+  return (
     <Box sx={styles} className="card">
-        <Image src="/images/cocacola.png" alt="card" width="300" height="210" />
-        
+      <Image src="/images/cocacola.png" alt="card" width="300" height="210" />
     </Box>
-    );
+  );
 }

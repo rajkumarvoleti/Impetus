@@ -19,7 +19,7 @@ const styles = {
     display: "flex !important",
     flexDirection: "column",
   },
-  
+
   display: "flex !important",
   flexDirection: "column",
   justifyContent: "center",
@@ -30,8 +30,14 @@ const styles = {
 export default function ContactCard() {
   return (
     <Box sx={styles} className="pcard">
-      <Image className="profile" src="/images/guy.png" alt="guy" height="200" width="200" />
-      
+      <Image
+        className="profile"
+        src="/images/guy.png"
+        alt="guy"
+        height="200"
+        width="200"
+      />
+
       <Box className="title">
         <Typography variant="h3" fontSize="25px">
           Priyanshu Choudary
@@ -48,14 +54,16 @@ export default function ContactCard() {
       </Box>
 
       <Box className="text">
-        
-        <a href="#"><FacebookIcon /></a>
-        <a href="#"><InstagramIcon /></a>
-        <a href="#"><LinkedInIcon /></a>
-        
-        
+        <a href="#">
+          <FacebookIcon />
+        </a>
+        <a href="#">
+          <InstagramIcon />
+        </a>
+        <a href="#">
+          <LinkedInIcon />
+        </a>
       </Box>
-
     </Box>
   );
 }

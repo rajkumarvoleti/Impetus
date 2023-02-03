@@ -2,13 +2,16 @@ import { useTheme } from "@emotion/react";
 import { Box } from "@mui/system";
 import EventDescription from "../../components/EventDescription";
 import EventList from "../../components/EventList";
-import useScrollSnap from "react-use-scroll-snap";
-import { useRef, useState } from "react";
+import disableScroll from "disable-scroll";
+import { useEffect, useRef, useState } from "react";
+import lodash from "lodash";
+import { SwipeEventListener } from "swipe-event-listener";
 
 export default function EventPage() {
   const theme = useTheme();
   const [currIdx, setCurrIdx] = useState(0);
   const images = ["laptop.png", "rocket.png"];
+  const descRef = useRef(null);
 
   const styles = {
     width: "100vw",
@@ -27,14 +30,75 @@ export default function EventPage() {
       height: "100vh",
       overflowY: "scroll",
       scrollSnapType: "y mandatory",
+      scrollSnapPointsY: "repeat(100vh)",
     },
   };
 
+  const moveUp = () => {
+    setCurrIdx((idx) => (idx === 7 ? idx : idx + 1));
+  };
+
+  const moveDown = () => {
+    setCurrIdx((idx) => (idx === 0 ? idx : idx - 1));
+  };
+
+  const handleDebounceScroll = lodash.debounce(
+    (val, swipe) => {
+      if (val < 0) moveUp();
+      else moveDown();
+      if (swipe) {
+        if (val < 0) {
+          setTimeout(() => {
+            descRef.current?.scrollBy({
+              top: window.innerHeight,
+              behavior: "smooth",
+            });
+          }, 100);
+        } else {
+          setTimeout(() => {
+            descRef.current?.scrollBy({
+              top: -window.innerHeight,
+              behavior: "smooth",
+            });
+          }, 100);
+        }
+      }
+    },
+    50,
+    { leading: true, trailing: false }
+  );
+
+  useEffect(() => {
+    disableScroll.on(descRef.current, {
+      disableKeys: "false",
+    });
+    descRef.current?.addEventListener("mousewheel", (e) => {
+      const val = e.wheelDeltaY;
+      handleDebounceScroll(val);
+    });
+
+    window.addEventListener("keydown", (e) => {
+      if (e.keyCode === 40) handleDebounceScroll(-1);
+      if (e.keyCode === 38) handleDebounceScroll(1);
+    });
+    const { swipeArea } = SwipeEventListener({
+      swipeArea: descRef.current,
+    });
+    swipeArea.addEventListener("swipeUp", () => handleDebounceScroll(-1, true));
+    swipeArea.addEventListener("swipeDown", () =>
+      handleDebounceScroll(1, true)
+    );
+    return () => {
+      disableScroll.off();
+    };
+  }, []);
+
   return (
     <Box className="center1">
+      {/* {currIdx} */}
       <Box sx={styles}>
         <EventList setCurrIdx={setCurrIdx} />
-        <Box className="descWrapper">
+        <Box ref={descRef} className="descWrapper">
           <EventDescription
             index={0}
             setCurrIdx={setCurrIdx}

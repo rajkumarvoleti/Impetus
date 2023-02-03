@@ -37,9 +37,11 @@ export default function EventDescription({ index, setCurrIdx, currIdx }) {
       },
     },
     scrollSnapAlign: "center",
+    // margin: "200px 0",
   };
 
   const handleScroll = () => {
+    // ref.current.scrollIntoView(true);
     ref.current.scrollIntoView({ behavior: "smooth" });
   };
 

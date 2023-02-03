@@ -19,10 +19,12 @@
     "@mui/lab": "^5.0.0-alpha.118",
     "@mui/material": "^5.11.7",
     "@next/font": "13.1.1",
+    "disable-scroll": "^0.6.0",
     "element-visible-percentage": "^1.0.3",
     "eslint": "8.31.0",
     "eslint-config-next": "13.1.1",
     "framer-motion": "^8.4.6",
+    "lodash": "^4.17.21",
     "next": "^13.1.1",
     "prop-types": "^15.8.1",
     "react": "18.2.0",
@@ -33,10 +35,12 @@
     "react-responsive-carousel": "^3.2.23",
     "react-scroll-percentage": "^4.3.0",
     "react-scroll-percentage-hook": "^1.0.5",
+    "react-scroll-wheel-handler": "^2.2.0",
     "react-use-scroll-snap": "^0.0.4",
     "react-vertical-timeline-component": "^3.6.0",
     "react-youtube": "^10.1.0",
     "react-youtube-iframe": "^0.1.2",
-    "styled-components": "^5.3.6"
+    "styled-components": "^5.3.6",
+    "swipe-event-listener": "^1.2.1"
   }
 }
