@@ -4,7 +4,7 @@ import EventDescription from "../../components/EventDescription";
 import EventList from "../../components/EventList";
 import disableScroll from "disable-scroll";
 import { useEffect, useRef, useState } from "react";
-import lodash from "lodash";
+import lodash, { debounce } from "lodash";
 import { SwipeEventListener } from "swipe-event-listener";
 
 export default function EventPage() {
@@ -42,31 +42,32 @@ export default function EventPage() {
     setCurrIdx((idx) => (idx === 0 ? idx : idx - 1));
   };
 
-  const handleDebounceScroll = lodash.debounce(
-    (val, swipe) => {
-      if (val < 0) moveUp();
-      else moveDown();
-      if (swipe) {
-        if (val < 0) {
-          setTimeout(() => {
-            descRef.current?.scrollBy({
-              top: window.innerHeight,
-              behavior: "smooth",
-            });
-          }, 100);
-        } else {
-          setTimeout(() => {
-            descRef.current?.scrollBy({
-              top: -window.innerHeight,
-              behavior: "smooth",
-            });
-          }, 100);
-        }
+  const handleScroll = (val, swipe) => {
+    if (val < 0) moveUp();
+    else moveDown();
+    if (swipe) {
+      if (val < 0) {
+        setTimeout(() => {
+          descRef.current?.scrollBy({
+            top: window.innerHeight,
+            behavior: "smooth",
+          });
+        }, 100);
+      } else {
+        setTimeout(() => {
+          descRef.current?.scrollBy({
+            top: -window.innerHeight,
+            behavior: "smooth",
+          });
+        }, 10);
       }
-    },
-    50,
-    { leading: true, trailing: false }
-  );
+    }
+  };
+
+  const handleDebounceScroll = lodash.debounce(handleScroll, 50, {
+    leading: true,
+    trailing: false,
+  });
 
   useEffect(() => {
     disableScroll.on(descRef.current, {
@@ -74,6 +75,7 @@ export default function EventPage() {
     });
     descRef.current?.addEventListener("mousewheel", (e) => {
       const val = e.wheelDeltaY;
+      lodash.debounce(handleDebounceScroll).cancel();
       handleDebounceScroll(val);
     });
 
