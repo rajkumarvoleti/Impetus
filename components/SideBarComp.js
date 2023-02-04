@@ -37,7 +37,7 @@ export default function SideBarComp() {
       onKeyDown={toggleDrawer(false)}
     >
       <List>
-        {["Home", "About", "Events", "Work Shops", "Sponsors", "Team"].map(
+        {["Home", "About", "Events","IndustryAcademiaMeet", "Work Shops", "Sponsors", "Team"].map(
           (text, index) => (
             <ListItem onClick={() => goToPage(text)} key={text} disablePadding>
               <ListItemButton>

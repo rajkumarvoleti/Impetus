@@ -64,7 +64,7 @@ export default function EventPage() {
         }
       }
     },
-    50,
+    100,
     { leading: true, trailing: false }
   );
 
