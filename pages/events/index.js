@@ -61,6 +61,7 @@ export default function EventPage() {
           });
         }, 10);
       }
+<<<<<<< HEAD
     }
   };
 
@@ -68,6 +69,12 @@ export default function EventPage() {
     leading: true,
     trailing: false,
   });
+=======
+    },
+    100,
+    { leading: true, trailing: false }
+  );
+>>>>>>> b1c788672c1f2541f9dc123f6bfa6f5335eeb319
 
   useEffect(() => {
     disableScroll.on(descRef.current, {
