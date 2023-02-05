@@ -15,12 +15,14 @@ export default function EventDescription({ index, setCurrIdx, currIdx }) {
       fontSize: "40px",
       fontWeight: "700",
       marginBottom: "30px",
+      letterSpacing: "2px",
     },
     "div span": {
       fontSize: "18px",
       lineHeight: "0.5",
     },
-    maxWidth: "500px",
+    width: "500px",
+    maxWidth: "90vw",
     textAlign: "justify",
     height: "100vh",
     position: "relative",
@@ -30,7 +32,7 @@ export default function EventDescription({ index, setCurrIdx, currIdx }) {
       top: "35vh",
     },
     [theme.breakpoints.down("lg")]: {
-      left: "10vw",
+      left: "5vw",
       div: {
         top: "50vh",
         marginBottom: "300px",
@@ -48,12 +50,21 @@ export default function EventDescription({ index, setCurrIdx, currIdx }) {
   useEffect(() => {
     if (index === currIdx) handleScroll();
   }, [currIdx, index]);
-  const heading=["CADathon","Yantra Search","Heatovation","Scrapyard","Quizzical","Death Race","Valorant","Fun"];
+  const heading = [
+    "CADathon",
+    "Yantra Search",
+    "Heatovation",
+    "Scrapyard",
+    "Quizzical",
+    "Death Race",
+    "Valorant",
+    "Fun",
+  ];
   return (
     <Box ref={ref} sx={styles}>
       <Box>
         <Typography ref={headingRef} variant="h2">
-          {heading[currIdx%8]}
+          {heading[currIdx % 8]}
         </Typography>
         <Typography variant="p">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae commodi
