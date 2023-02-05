@@ -10,7 +10,9 @@ import { SwipeEventListener } from "swipe-event-listener";
 export default function EventPage() {
   const theme = useTheme();
   const [currIdx, setCurrIdx] = useState(0);
-  const images = ["laptop.png", "rocket.png"];
+  const images = ["laptop.png", "Yantra.png","Heatovation.png","scrapyard.png","Quiz.png","DeathRace.png","Game_U.png","rocket.png"];
+  const size=["590px", "320px", "600px","580px", "510px", "450px","410px", "400px"];
+  const position=["30%","33%","27%","27%","30.5%","32%","31.5%","30%"];
   const descRef = useRef(null);
 
   const styles = {
@@ -18,8 +20,13 @@ export default function EventPage() {
     paddingLeft: "100px",
     minHeight: "100vh",
     backgroundColor: "black",
-    background: `url(/images/${images[currIdx % 2]}) no-repeat`,
-    backgroundPosition: "30%",
+
+    background: `url(/images/${images[currIdx%8]}) no-repeat , url(/images/grid-white.svg) no-repeat `,
+    
+    backgroundSize:`${size[currIdx%8]} auto,500px auto`,
+    
+    backgroundPosition: `${position[currIdx%8]} center,30% center `,
+
     [theme.breakpoints.down("lg")]: {
       backgroundPosition: "50% 10%",
       paddingLeft: "0",

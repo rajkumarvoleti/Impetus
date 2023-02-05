@@ -48,12 +48,12 @@ export default function EventDescription({ index, setCurrIdx, currIdx }) {
   useEffect(() => {
     if (index === currIdx) handleScroll();
   }, [currIdx, index]);
-
+  const heading=["CADathon","Yantra Search","Heatovation","Scrapyard","Quizzical","Death Race","Valorant","Fun"];
   return (
     <Box ref={ref} sx={styles}>
       <Box>
         <Typography ref={headingRef} variant="h2">
-          CADathon
+          {heading[currIdx%8]}
         </Typography>
         <Typography variant="p">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae commodi

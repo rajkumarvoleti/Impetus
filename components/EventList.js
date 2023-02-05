@@ -28,11 +28,11 @@ export default function EventList({ setCurrIdx }) {
 
   const events = [
     "CADathon",
-    "Yantra",
+    "Yantra Search",
     "Heatovation",
     "Scrapyard",
     "Quizzical",
-    "Death",
+    "Death Race",
     "Valorant",
     "Fun",
   ];
