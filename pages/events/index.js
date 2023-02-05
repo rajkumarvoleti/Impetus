@@ -4,15 +4,17 @@ import EventDescription from "../../components/EventDescription";
 import EventList from "../../components/EventList";
 import disableScroll from "disable-scroll";
 import { useEffect, useRef, useState } from "react";
-import lodash, { debounce } from "lodash";
+import lodash from "lodash";
 import { SwipeEventListener } from "swipe-event-listener";
 
 export default function EventPage() {
   const theme = useTheme();
   const [currIdx, setCurrIdx] = useState(0);
+
   const images = ["cadathon.jpg", "Yantra_.jpg","heatovation_.jpg","scrapyard_.jpg","quizzical.jpg","deathrace.jpg","Valorant.jpg","fun_.jpg"];
   const size=["750px", "480px", "520px","580px", "550px", "580px","500px", "530px"];
   const position=["25%","30%","29%","27%","29%","27%","29%","28%"];
+
   const descRef = useRef(null);
 
   const styles = {
@@ -20,6 +22,9 @@ export default function EventPage() {
     paddingLeft: "100px",
     minHeight: "100vh",
     backgroundColor: "black",
+    background: `url(/images/${
+      images[currIdx % 8]
+    }) no-repeat , url(/images/grid-white.svg) no-repeat `,
 
     background: `url(/images/${images[currIdx%8]}) no-repeat  `,
     
@@ -50,6 +55,7 @@ export default function EventPage() {
   };
 
   const handleScroll = (val, swipe) => {
+    console.log("hello");
     if (val < 0) moveUp();
     else moveDown();
     if (swipe) {
@@ -71,7 +77,7 @@ export default function EventPage() {
     }
   };
 
-  const handleDebounceScroll = lodash.debounce(handleScroll, 50, {
+  const handleDebounceScroll = lodash.debounce(handleScroll, 100, {
     leading: true,
     trailing: false,
   });
@@ -80,7 +86,13 @@ export default function EventPage() {
     disableScroll.on(descRef.current, {
       disableKeys: "false",
     });
+    console.log(descRef.current);
     descRef.current?.addEventListener("mousewheel", (e) => {
+      const val = e.wheelDeltaY;
+      lodash.debounce(handleDebounceScroll).cancel();
+      handleDebounceScroll(val);
+    });
+    descRef.current?.addEventListener("wheel", (e) => {
       const val = e.wheelDeltaY;
       lodash.debounce(handleDebounceScroll).cancel();
       handleDebounceScroll(val);

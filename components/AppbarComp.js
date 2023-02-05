@@ -48,8 +48,9 @@ export default function AppbarComp() {
       <AppBar
         className="appbar"
         style={{
-          background: `${top ? "transparent" : "rgb(0,0,0,0.3)"}`,
-          backdropFilter: "blur(2px)",
+          // background: `${top ? "transparent" : "rgb(0,0,0,0.3)"}`,
+          background: "transparent",
+          // backdropFilter: "blur(2px)",
           position: "fixed",
           left: "50%",
           transform: "translateX(-50%)",
