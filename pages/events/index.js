@@ -11,9 +11,27 @@ export default function EventPage() {
   const theme = useTheme();
   const [currIdx, setCurrIdx] = useState(0);
 
-  const images = ["cadathon.jpg", "Yantra_.jpg","heatovation_.jpg","scrapyard_.jpg","quizzical.jpg","deathrace.jpg","Valorant.jpg","fun_.jpg"];
-  const size=["750px", "480px", "520px","580px", "550px", "580px","500px", "530px"];
-  const position=["25%","30%","29%","27%","29%","27%","29%","28%"];
+  const images = [
+    "cadathon.jpg",
+    "Yantra_.jpg",
+    "heatovation_.jpg",
+    "scrapyard_.jpg",
+    "quizzical.jpg",
+    "deathrace.jpg",
+    "Valorant.jpg",
+    "fun_.jpg",
+  ];
+  const size = [
+    "750px",
+    "480px",
+    "520px",
+    "530px",
+    "530px",
+    "580px",
+    "500px",
+    "530px",
+  ];
+  const position = ["25%", "30%", "29%", "27%", "29%", "27%", "29%", "28%"];
 
   const descRef = useRef(null);
 
@@ -26,11 +44,14 @@ export default function EventPage() {
       images[currIdx % 8]
     }) no-repeat , url(/images/grid-white.svg) no-repeat `,
 
-    background: `url(/images/${images[currIdx%8]}) no-repeat  `,
-    
-    backgroundSize:`${size[currIdx%8]} auto`,
-    
-    backgroundPosition: `${position[currIdx%8]} center`,
+    background: `url(/images/${images[currIdx % 8]}) no-repeat  `,
+
+    backgroundSize: `${size[currIdx % 8]} auto`,
+    [theme.breakpoints.down("md")]: {
+      backgroundSize: `calc(${size[currIdx % 8]} - 100px) auto`,
+    },
+
+    backgroundPosition: `${position[currIdx % 8]} center`,
 
     [theme.breakpoints.down("lg")]: {
       backgroundPosition: "50% 10%",

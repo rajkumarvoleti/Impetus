@@ -9,12 +9,12 @@ import Link from "next/link";
 
 const styles = {
   width: "90vw",
-  maxWidth: "1100px",
+  maxWidth: "1200px",
   ".nav": {
     display: "grid",
     gridTemplateColumns: {
-      lg: "repeat(6,1fr)",
-      sm: "repeat(3,1fr)",
+      lg: "repeat(8,1fr)",
+      sm: "repeat(4,1fr)",
       xs: "repeat(2,1fr)",
     },
     flexDirection: "row",
@@ -61,9 +61,15 @@ export default function Contact() {
           <Link href="/home">Home</Link>
           <Link href="/about">About</Link>
           <Link href="/events">Events</Link>
-          <Link href="/work">Work Shops</Link>
+          <Link href="/expo">Expo</Link>
           <Link href="/sponsors">Sponsors</Link>
           <Link href="/team">Team</Link>
+          <Link
+            style={{ gridColumn: "span 2", textAlign: "center" }}
+            href="/industryacademiameet"
+          >
+            Industry Acadameia Meet
+          </Link>
         </Box>
         <Box className="icons center2">
           <IconButton>
