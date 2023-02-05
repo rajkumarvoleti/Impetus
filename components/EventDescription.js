@@ -49,6 +49,7 @@ export default function EventDescription({ index, setCurrIdx, currIdx }) {
     if (index === currIdx) handleScroll();
   }, [currIdx, index]);
   const heading=["CADathon","Yantra Search","Heatovation","Scrapyard","Quizzical","Death Race","Valorant","Fun"];
+  const link=["cadathon", "yantrasearch","heatovation","scrapyard","quizzical","deathrace","valorant","fun"];
   return (
     <Box ref={ref} sx={styles}>
       <Box>
@@ -61,7 +62,9 @@ export default function EventDescription({ index, setCurrIdx, currIdx }) {
           eligendi natus reiciendis iusto, nesciunt voluptatibus corporis nulla
           praesentium iste amet?
         </Typography>
-        <LearnMore link="/" />
+        <LearnMore link={`/events/${link[currIdx%8]}`} />
+
+        {/* `url(/images/${images[currIdx%8]}) */}
       </Box>
     </Box>
   );
