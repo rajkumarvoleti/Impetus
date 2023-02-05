@@ -7,7 +7,10 @@ import ContactCard from "../../components/ContactCard";
 const imageStyles = {
   width: "80vw",
   height: "80vh",
-  background: "url(/images/cadathon.svg)",
+
+  background: `url(/images/cadathon_pg.jpg)  no-repeat  `,
+   
+
   backgroundSize: "contain",
   backgroundRepeat: "no-repeat",
   backgroundPosition: "center",
