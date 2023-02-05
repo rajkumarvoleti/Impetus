@@ -10,27 +10,11 @@ import { SwipeEventListener } from "swipe-event-listener";
 export default function EventPage() {
   const theme = useTheme();
   const [currIdx, setCurrIdx] = useState(0);
-  const images = [
-    "laptop.png",
-    "Yantra.png",
-    "Heatovation.png",
-    "scrapyard.png",
-    "Quiz.png",
-    "DeathRace.png",
-    "Game_U.png",
-    "rocket.png",
-  ];
-  const size = [
-    "590px",
-    "320px",
-    "600px",
-    "580px",
-    "510px",
-    "450px",
-    "410px",
-    "400px",
-  ];
-  const position = ["30%", "33%", "27%", "27%", "30.5%", "32%", "31.5%", "30%"];
+
+  const images = ["cadathon.jpg", "Yantra_.jpg","heatovation_.jpg","scrapyard_.jpg","quizzical.jpg","deathrace.jpg","Valorant.jpg","fun_.jpg"];
+  const size=["750px", "480px", "520px","580px", "550px", "580px","500px", "530px"];
+  const position=["25%","30%","29%","27%","29%","27%","29%","28%"];
+
   const descRef = useRef(null);
 
   const styles = {
@@ -42,9 +26,11 @@ export default function EventPage() {
       images[currIdx % 8]
     }) no-repeat , url(/images/grid-white.svg) no-repeat `,
 
-    backgroundSize: `${size[currIdx % 8]} auto,500px auto`,
-
-    backgroundPosition: `${position[currIdx % 8]} center,30% center `,
+    background: `url(/images/${images[currIdx%8]}) no-repeat  `,
+    
+    backgroundSize:`${size[currIdx%8]} auto`,
+    
+    backgroundPosition: `${position[currIdx%8]} center`,
 
     [theme.breakpoints.down("lg")]: {
       backgroundPosition: "50% 10%",

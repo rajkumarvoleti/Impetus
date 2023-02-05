@@ -8,7 +8,7 @@ const imageStyles = {
   width: "80vw",
   height: "80vh",
 
-  background: `url(/images/cadathon_pg.jpg)  no-repeat  `,
+  background: `url(/images/deathrace_pg.jpg)  no-repeat  `,
    
 
   backgroundSize: "contain",
