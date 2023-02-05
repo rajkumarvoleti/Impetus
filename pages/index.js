@@ -1,155 +1,58 @@
-import { useTheme } from "@emotion/react";
-import { Box } from "@mui/system";
-import EventDescription from "../../components/EventDescription";
-import EventList from "../../components/EventList";
-import disableScroll from "disable-scroll";
-import { useEffect, useRef, useState } from "react";
-import lodash, { debounce } from "lodash";
-import { SwipeEventListener } from "swipe-event-listener";
+import { Box, duration, Typography } from "@mui/material";
+import React, { useEffect, useRef, useState } from "react";
+import HomePageAbout from "../components/HomePageAbout";
+import HomePageVideo from "../components/HomePageVideo";
+import VideoText from "../components/VideoText";
+import { motion, AnimatePresence } from "framer-motion";
+import Contact from "../components/Contact";
 
-export default function EventPage() {
-  const theme = useTheme();
-  const [currIdx, setCurrIdx] = useState(0);
-  const images = ["cadathon.jpg", "Yantra_.jpg","heatovation_.jpg","scrapyard_.jpg","quizzical.jpg","deathrace.jpg","Valorant.jpg","fun_.jpg"];
-  const size=["750px", "480px", "520px","580px", "550px", "580px","500px", "530px"];
-  const position=["25%","30%","29%","27%","29%","27%","29%","28%"];
-  const descRef = useRef(null);
+const styles = {
+  minHeight: "100vh",
+  minWidth: "100vw",
+};
 
-  const styles = {
-    width: "100vw",
-    paddingLeft: "100px",
-    minHeight: "100vh",
-    backgroundColor: "black",
+const containerStyles = {
+  background: "url(images/grid.svg) no-repeat center",
+  backgroundColor: "black",
+  height: "100vh",
+  height: {
+    xs: "90vh",
+  },
+  width: "100vw",
+};
 
-    background: `url(/images/${images[currIdx%8]}) no-repeat  `,
-    
-    backgroundSize:`${size[currIdx%8]} auto`,
-    
-    backgroundPosition: `${position[currIdx%8]} center`,
+export default function HomePage() {
+  const [opacity, setOpacity] = useState(1);
+  const [isVisible, setIsVisible] = useState(true);
 
-    [theme.breakpoints.down("lg")]: {
-      backgroundPosition: "50% 10%",
-      paddingLeft: "0",
-    },
-    backgroundAttachment: "fixed",
-    position: "relative",
-    ".descWrapper": {
-      height: "100vh",
-      overflowY: "scroll",
-      scrollSnapType: "y mandatory",
-      scrollSnapPointsY: "repeat(100vh)",
-    },
+  const hideIt = () => {
+    setOpacity(0);
+    setTimeout(() => {
+      setIsVisible(false);
+    }, 500);
   };
-
-  const moveUp = () => {
-    setCurrIdx((idx) => (idx === 7 ? idx : idx + 1));
-  };
-
-  const moveDown = () => {
-    setCurrIdx((idx) => (idx === 0 ? idx : idx - 1));
-  };
-
-  const handleScroll = (val, swipe) => {
-    if (val < 0) moveUp();
-    else moveDown();
-    if (swipe) {
-      if (val < 0) {
-        setTimeout(() => {
-          descRef.current?.scrollBy({
-            top: window.innerHeight,
-            behavior: "smooth",
-          });
-        }, 100);
-      } else {
-        setTimeout(() => {
-          descRef.current?.scrollBy({
-            top: -window.innerHeight,
-            behavior: "smooth",
-          });
-        }, 10);
-      }
-    }
-  };
-
-  const handleDebounceScroll = lodash.debounce(handleScroll, 50, {
-    leading: true,
-    trailing: false,
-  });
-
-  useEffect(() => {
-    disableScroll.on(descRef.current, {
-      disableKeys: "false",
-    });
-    descRef.current?.addEventListener("mousewheel", (e) => {
-      const val = e.wheelDeltaY;
-      lodash.debounce(handleDebounceScroll).cancel();
-      handleDebounceScroll(val);
-    });
-
-    window.addEventListener("keydown", (e) => {
-      if (e.keyCode === 40) handleDebounceScroll(-1);
-      if (e.keyCode === 38) handleDebounceScroll(1);
-    });
-    const { swipeArea } = SwipeEventListener({
-      swipeArea: descRef.current,
-    });
-    swipeArea.addEventListener("swipeUp", () => handleDebounceScroll(-1, true));
-    swipeArea.addEventListener("swipeDown", () =>
-      handleDebounceScroll(1, true)
-    );
-    return () => {
-      disableScroll.off();
-    };
-  }, []);
 
   return (
-    <Box className="center1">
-      {/* {currIdx} */}
-      <Box sx={styles}>
-        <EventList setCurrIdx={setCurrIdx} />
-        <Box ref={descRef} className="descWrapper">
-          <EventDescription
-            index={0}
-            setCurrIdx={setCurrIdx}
-            currIdx={currIdx}
-          />
-          <EventDescription
-            index={1}
-            setCurrIdx={setCurrIdx}
-            currIdx={currIdx}
-          />
-          <EventDescription
-            index={2}
-            setCurrIdx={setCurrIdx}
-            currIdx={currIdx}
-          />
-          <EventDescription
-            index={3}
-            setCurrIdx={setCurrIdx}
-            currIdx={currIdx}
-          />
-          <EventDescription
-            index={4}
-            setCurrIdx={setCurrIdx}
-            currIdx={currIdx}
-          />
-          <EventDescription
-            index={5}
-            setCurrIdx={setCurrIdx}
-            currIdx={currIdx}
-          />
-          <EventDescription
-            index={6}
-            setCurrIdx={setCurrIdx}
-            currIdx={currIdx}
-          />
-          <EventDescription
-            index={7}
-            setCurrIdx={setCurrIdx}
-            currIdx={currIdx}
-          />
-        </Box>
+    <Box>
+      <Box sx={containerStyles}>
+        <AnimatePresence>
+          <motion.div
+            initial={false}
+            animate={{ opacity: opacity }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1 }}
+          >
+            {isVisible && (
+              <Box sx={styles}>
+                <HomePageVideo />
+                <VideoText hideIt={hideIt} />
+              </Box>
+            )}
+          </motion.div>
+        </AnimatePresence>
+        <HomePageAbout />
       </Box>
+      <Contact />
     </Box>
   );
 }
