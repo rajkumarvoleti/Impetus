@@ -1,6 +1,7 @@
 import { Button, Typography, useTheme } from "@mui/material";
 import { Box } from "@mui/system";
 import { BackgroundParticles } from "../components/BgParticles";
+import Contact from "../components/Contact";
 
 export default function ExpoPage() {
   const theme = useTheme();
@@ -122,6 +123,7 @@ export default function ExpoPage() {
           </Button>
         </Box>
       </Box>
+      <Contact />
     </Box>
   );
 }
