@@ -55,7 +55,7 @@ const styles = {
 
 export default function Contact() {
   return (
-    <Box className="center1" sx={{ backgroundColor: "black" }}>
+    <Box className="center1" sx={{ backgroundColor: "transparent" }}>
       <Box sx={styles} className="center1">
         <Box className="nav">
           <Link href="/home">Home</Link>

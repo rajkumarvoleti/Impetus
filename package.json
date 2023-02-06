@@ -32,6 +32,7 @@
     "react-elastic-carousel": "^0.11.5",
     "react-in-viewport": "^1.0.0-alpha.29",
     "react-lite-youtube-embed": "^2.3.52",
+    "react-particles": "^2.8.0",
     "react-responsive-carousel": "^3.2.23",
     "react-scroll-percentage": "^4.3.0",
     "react-scroll-percentage-hook": "^1.0.5",
@@ -43,6 +44,7 @@
     "react-youtube-iframe": "^0.1.2",
     "styled-components": "^5.3.6",
     "swipe-event-listener": "^1.2.1",
-    "tsparticles": "^2.8.0"
+    "tsparticles": "^2.8.0",
+    "tsparticles-preset-fire": "^2.8.0"
   }
 }
