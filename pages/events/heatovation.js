@@ -19,6 +19,7 @@ const imageStyles = {
 
 const dataStyles = {
   margin: "50px",
+  textAlign:"justify",
   maxWidth: "800px",
   ".data": {
     margin: "50px 0",

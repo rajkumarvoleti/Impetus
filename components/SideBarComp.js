@@ -16,7 +16,13 @@ export default function SideBarComp() {
   const router = useRouter();
 
   const goToPage = (key) => {
-    router.push(key.toLowerCase());
+
+    console.log(key.toLowerCase());
+    const pg =key.toLowerCase();
+    router.push({
+      pathname:'/[a]',query:{a:pg}
+    });
+    // router.push(key.toLowerCase());
   };
 
   const toggleDrawer = (open) => (event) => {
