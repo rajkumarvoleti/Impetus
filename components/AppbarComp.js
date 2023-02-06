@@ -27,8 +27,9 @@ const styles = {
 export default function AppbarComp() {
   const router = useRouter();
   const [top, setTop] = useState(true);
+  
   const goToHome = () => {
-    router.push("/");
+    router.push("/home");
   };
 
   const handleTop = () => {
