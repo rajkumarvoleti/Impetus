@@ -155,18 +155,17 @@ p {
 }
 
 /*-------------------industryacademiameet--------------------------*/
-@media(max-width:680px){
-  .pattern{
-    flex-direction: column!IMPORTANT;
-    margin-bottom: 150px;
-    
-  }
-  .patternR{
-    flex-direction: column!IMPORTANT;
+@media (max-width: 680px) {
+  .pattern {
+    flex-direction: column !important;
     margin-bottom: 150px;
   }
-  .pattext{
-    padding:0 20px!IMPORTANT;
-    margin-top: 20px!IMPORTANT;
+  .patternR {
+    flex-direction: column !important;
+    margin-bottom: 150px;
+  }
+  .pattext {
+    padding: 0 20px !important;
+    margin-top: 20px !important;
   }
 }

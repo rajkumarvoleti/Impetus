@@ -1,19 +1,17 @@
 import { Button, Typography, useTheme } from "@mui/material";
 import { Box } from "@mui/system";
+import { BackgroundParticles } from "../components/BgParticles";
 
 export default function ExpoPage() {
   const theme = useTheme();
 
   const styles = {
-    ".VR": {
-      backgroundImage:
-        "linear-gradient(to right bottom, #4d69a4, #465580, #3b425e, #2f303e, #202021)",
+    backgroundImage:
+      "linear-gradient(to right bottom, #370535, #2e0625, #240618, #18030d, #000000)",
+    ".Robo .img img": {
+      width: "400px !important",
     },
-    ".EV": {
-      backgroundImage:
-        "linear-gradient(to right bottom, #19685e, #15555b, #23414e, #272f38, #202021)",
-    },
-    ".VR, .EV": {
+    ".VR, .EV, .Robo": {
       width: "100vw",
       minHeight: "100vh",
       overflowY: "hidden",
@@ -49,10 +47,21 @@ export default function ExpoPage() {
         },
       },
     },
+    [theme.breakpoints.up("md")]: {
+      ".EV .content": {
+        order: "-1",
+        marginLeft: "100px !Important",
+      },
+    },
+    ".Robo .img img": {
+      width: "300px !important",
+      height: "400px",
+    },
   };
 
   return (
     <Box sx={styles}>
+      <BackgroundParticles />
       <Box className="VR">
         <Box className="center1 img">
           <img src="/images/VR1.png" alt="VR" />
@@ -88,6 +97,29 @@ export default function ExpoPage() {
             iste harum, ad, molestias deleniti, maiores hic veritatis sit saepe
             illum. Veritatis, facilis. Sit.
           </Typography>
+          <Button sx={{ margin: "30px 0" }} variant="contained">
+            Register
+          </Button>
+        </Box>
+      </Box>
+      <Box sx={{ margin: "70px 0" }} className="Robo">
+        <Box className="center1 img">
+          <img src="/images/humanoidRobot.png" alt="Robo" />
+        </Box>
+        <Box className="content center1">
+          <Typography variant="h2">Humanoid Robo Expo</Typography>
+          <Typography variant="p">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum non
+            optio cupiditate ipsa iste id nisi impedit laudantium. Modi, ipsa.
+            Pariatur quas architecto hic expedita recusandae deleniti, enim
+            omnis. Explicabo. Atque debitis amet temporibus tenetur. Placeat
+            magnam ex officia nesciunt ipsam aut excepturi soluta ab impedit
+            iste harum, ad, molestias deleniti, maiores hic veritatis sit saepe
+            illum. Veritatis, facilis. Sit.
+          </Typography>
+          <Button sx={{ margin: "30px 0" }} variant="contained">
+            Register
+          </Button>
         </Box>
       </Box>
     </Box>
