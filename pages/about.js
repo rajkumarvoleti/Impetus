@@ -143,7 +143,7 @@ export default function AboutPage() {
         <ImageListComp />
       </Box>
       <Box className="aboutDept center1">
-        <Image src="/images/SME.png" height="300" width="300" alt="SME" />
+        <Image src="/images/SMEwhite.png" height="300" width="300" alt="SME" />
         <Box className="content">
           <Typography variant="p">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam
