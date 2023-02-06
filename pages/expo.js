@@ -42,6 +42,7 @@ export default function ExpoPage() {
         width: "550px",
         maxWidth: "90vw",
         margin: "50px 0",
+        textAlign:"justify",
         h2: {
           margin: "30px 0",
         },
@@ -55,7 +56,7 @@ export default function ExpoPage() {
     },
     ".Robo .img img": {
       width: "300px !important",
-      height: "400px",
+      // height: "400px",
     },
   };
 
@@ -84,7 +85,7 @@ export default function ExpoPage() {
       </Box>
       <Box className="EV">
         <Box className="center1 img">
-          <img src="/images/EV1.png" alt="VR" />
+          <img src="/images/EV_nobg.png" alt="VR" />
         </Box>
         <Box className="content center1">
           <Typography variant="h2">Electric Vehicle Expo</Typography>
