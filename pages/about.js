@@ -4,7 +4,7 @@ import ContactCard from "../components/ContactCard";
 import Contact from "../components/Contact";
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import ImageListComp from "../components/imageListComp";
+import ImageListComp from "../components/ImageListComp";
 
 export default function AboutPage() {
   const videoRef = useRef(null);
