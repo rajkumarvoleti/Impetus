@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 import { CacheProvider } from "@emotion/react";
 import { ThemeProvider, CssBaseline, Box } from "@mui/material";
@@ -14,6 +14,12 @@ const clientSideEmotionCache = createEmotionCache();
 
 const MyApp = (props) => {
   const { Component, emotionCache = clientSideEmotionCache, pageProps } = props;
+
+  useEffect(() => {
+    window.onbeforeunload = function () {
+      window.scrollTo(0, 0);
+    };
+  }, []);
 
   return (
     <CacheProvider value={emotionCache}>

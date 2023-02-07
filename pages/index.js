@@ -5,6 +5,8 @@ import HomePageVideo from "../components/HomePageVideo";
 import VideoText from "../components/VideoText";
 import { motion, AnimatePresence } from "framer-motion";
 import Contact from "../components/Contact";
+import { Router } from "next/router";
+import disableScroll from "disable-scroll";
 
 const styles = {
   minHeight: "100vh",
@@ -31,6 +33,26 @@ export default function HomePage() {
       setIsVisible(false);
     }, 500);
   };
+
+  const scrollToTop = () => {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
+
+  useEffect(() => {
+    Router.events.on("routeChangeComplete", scrollToTop);
+  }, []);
+
+  useEffect(() => {
+    if (isVisible) disableScroll.on(window);
+    else disableScroll.off(window);
+    return () => {
+      disableScroll.off(window);
+    };
+  }, [isVisible]);
 
   return (
     <Box>

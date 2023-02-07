@@ -24,13 +24,6 @@ const styles = {
 export default function VideoText({ hideIt }) {
   const scrollRef = useRef(null);
 
-  useEffect(() => {
-    window.addEventListener("scroll", hideIt);
-    return () => {
-      window.removeEventListener("scroll", hideIt);
-    };
-  }, []);
-
   return (
     <Box ref={scrollRef} sx={styles} className="center1">
       <Typography variant="h1">IMPETUS</Typography>
