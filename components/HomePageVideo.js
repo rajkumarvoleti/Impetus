@@ -23,7 +23,7 @@ export default function HomePageVideo() {
     <Box sx={styles}>
       <video
         onLoadStart={startLoading}
-        onLoadedData={stopLoading}
+        onCanPlay={stopLoading}
         autoPlay
         muted
         loop
