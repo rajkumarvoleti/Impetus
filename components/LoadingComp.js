@@ -23,12 +23,22 @@ export default function LoadingComp() {
 
   return (
     <Box sx={styles} className="center1">
-      <Image
+      {/* <Image
         src="/images/loading.gif"
         alt="loading..."
         height={300}
         width={500}
-      />
+      /> */}
+      <video
+        onLoadStart={() => console.log("loading")}
+        onLoad={() => console.log("loaded")}
+        autoPlay
+        muted
+        loop
+        id="loading"
+      >
+        <source src="images/loading1.mp4" type="video/mp4" />
+      </video>
       <Box className="loadingText">
         <Typography variant="p">Loading</Typography>
         <p>&nbsp;.</p>

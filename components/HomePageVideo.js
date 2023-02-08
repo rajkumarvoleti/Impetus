@@ -18,7 +18,14 @@ const styles = {
 export default function HomePageVideo() {
   return (
     <Box sx={styles}>
-      <video autoPlay muted loop id="bgVideo">
+      <video
+        onLoadStart={() => console.log("loading")}
+        onLoad={() => console.log("loaded")}
+        autoPlay
+        muted
+        loop
+        id="bgVideo"
+      >
         <source src="images/bgvideo1.mp4" type="video/mp4" />
       </video>
     </Box>
