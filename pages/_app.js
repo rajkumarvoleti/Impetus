@@ -41,7 +41,7 @@ const MyApp = (props) => {
     <CacheProvider value={emotionCache}>
       <ThemeProvider theme={darkTheme}>
         <CssBaseline />
-        {<LoadingComp />}
+        {loading && <LoadingComp />}
         {!loading && <AppbarComp />}
         {!loading && <Component {...pageProps} />}
       </ThemeProvider>
