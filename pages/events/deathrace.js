@@ -6,10 +6,11 @@ import ContactCard from "../../components/ContactCard";
 
 const imageStyles = {
   width: "80vw",
-  height: "80vh",
+  height: "40vh",
+  minWidth: "400px",
+  minHeight: "400px",
 
   background: `url(/images/deathrace_pg.jpg)  no-repeat  `,
-   
 
   backgroundSize: "contain",
   backgroundRepeat: "no-repeat",
@@ -19,7 +20,7 @@ const imageStyles = {
 
 const dataStyles = {
   margin: "50px",
-  textAlign:"justify",
+  textAlign: "justify",
   maxWidth: "800px",
   ".data": {
     margin: "50px 0",

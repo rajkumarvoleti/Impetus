@@ -16,11 +16,10 @@ export default function SideBarComp() {
   const router = useRouter();
 
   const goToPage = (key) => {
-
-    console.log(key.toLowerCase());
-    const pg =key.toLowerCase();
+    const pg = key.split(" ").join("").toLowerCase();
     router.push({
-      pathname:'/[a]',query:{a:pg}
+      pathname: "/[a]",
+      query: { a: pg },
     });
     // router.push(key.toLowerCase());
   };
@@ -43,16 +42,22 @@ export default function SideBarComp() {
       onKeyDown={toggleDrawer(false)}
     >
       <List>
-        {["Home", "About", "Events","IndustryAcademiaMeet", "Expo", "Sponsors", "Team"].map(
-          (text, index) => (
-            <ListItem onClick={() => goToPage(text)} key={text} disablePadding>
-              <ListItemButton>
-                <ListItemIcon></ListItemIcon>
-                <ListItemText primary={text} />
-              </ListItemButton>
-            </ListItem>
-          )
-        )}
+        {[
+          "Home",
+          "About",
+          "Events",
+          "Industry Academia Meet",
+          "Expo",
+          "Sponsors",
+          "Team",
+        ].map((text, index) => (
+          <ListItem onClick={() => goToPage(text)} key={text} disablePadding>
+            <ListItemButton>
+              <ListItemIcon></ListItemIcon>
+              <ListItemText primary={text} />
+            </ListItemButton>
+          </ListItem>
+        ))}
       </List>
     </Box>
   );
@@ -70,7 +75,7 @@ export default function SideBarComp() {
           <MenuIcon fontSize="large" />
         </IconButton>
         <Drawer
-          PaperProps={{ sx: { width: "500px", maxWidth: "70vw" } }}
+          PaperProps={{ sx: { width: "500px", maxWidth: "80vw" } }}
           anchor="right"
           open={state}
           onClose={toggleDrawer(false)}
