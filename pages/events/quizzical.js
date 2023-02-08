@@ -1,8 +1,11 @@
-import { Button, Typography } from "@mui/material";
+import { Button, IconButton, Typography, useTheme } from "@mui/material";
 import { Box } from "@mui/system";
 import Image from "next/image";
 import Contact from "../../components/Contact";
 import ContactCard from "../../components/ContactCard";
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import { useRouter } from "next/router";
 
 const imageStyles = {
   width: "80vw",
@@ -48,10 +51,48 @@ const dataStyles = {
 };
 
 export default function CadathonPage() {
+  const theme = useTheme();
+  const router = useRouter();
+
+  const goNext = () => {
+    router.push("/events/deathrace");
+  };
+  const goBack = () => {
+    router.push("/events/scrapyard");
+  };
+
+  const headerStyles = {
+    width: "800px",
+    maxWidth: "90vw",
+    position: "relative",
+    button: {
+      position: "absolute",
+      border: "1px solid white",
+      backdropFilter: "blur(10px)",
+    },
+    ".left": {
+      left: "0",
+      [theme.breakpoints.down("md")]: {
+        top: "100px",
+      },
+    },
+    ".right": {
+      right: "0",
+      [theme.breakpoints.down("md")]: {
+        bottom: "50px",
+      },
+    },
+  };
   return (
     <Box sx={{ width: "100vw" }} className="center1">
-      <Box className="center1">
+      <Box sx={headerStyles} className="center2">
+        <IconButton onClick={goBack} className="left">
+          <ArrowBackIcon fontSize="large" color="white" />
+        </IconButton>
         <Box sx={imageStyles}></Box>
+        <IconButton onClick={goNext} className="right">
+          <ArrowForwardIcon fontSize="large" color="white" />
+        </IconButton>
       </Box>
       <Box sx={dataStyles} className="data">
         <Box>

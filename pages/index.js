@@ -46,7 +46,14 @@ export default function HomePage() {
   };
 
   useEffect(() => {
+    window.onbeforeunload = function () {
+      window.scrollTo(0, 0);
+    };
     Router.events.on("routeChangeComplete", scrollToTop);
+    return () => {
+      window.onbeforeunload = function () {};
+      Router.events.off("routeChangeComplete", scrollToTop);
+    };
   }, []);
 
   useEffect(() => {

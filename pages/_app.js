@@ -21,9 +21,6 @@ const MyApp = (props) => {
   const stopLoading = () => setLoading(false);
 
   useEffect(() => {
-    window.onbeforeunload = function () {
-      window.scrollTo(0, 0);
-    };
     window.addEventListener("loadstart", startLoading);
     window.addEventListener("load", stopLoading);
     Router.events.on("routeChangeStart", startLoading);
