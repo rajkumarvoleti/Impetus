@@ -6,6 +6,7 @@ import disableScroll from "disable-scroll";
 import { useEffect, useRef, useState } from "react";
 import lodash from "lodash";
 import { SwipeEventListener } from "swipe-event-listener";
+import EventDots from "../../components/EventDots";
 
 export default function EventPage() {
   const theme = useTheme();
@@ -23,13 +24,13 @@ export default function EventPage() {
   ];
   const size = [
     "750px",
-    "480px",
-    "520px",
-    "530px",
+    "550px",
+    "570px",
     "530px",
     "580px",
-    "500px",
-    "530px",
+    "580px",
+    "550px",
+    "580px",
   ];
   const position = ["25%", "30%", "29%", "27%", "29%", "27%", "29%", "28%"];
 
@@ -48,7 +49,7 @@ export default function EventPage() {
 
     backgroundSize: `${size[currIdx % 8]} auto`,
     [theme.breakpoints.down("md")]: {
-      backgroundSize: `calc(${size[currIdx % 8]} - 100px) auto`,
+      backgroundSize: `calc(${size[currIdx % 8]} - 200px) auto`,
     },
 
     backgroundPosition: `${position[currIdx % 8]} center`,
@@ -140,6 +141,7 @@ export default function EventPage() {
       {/* {currIdx} */}
       <Box sx={styles}>
         <EventList setCurrIdx={setCurrIdx} />
+        <EventDots currIdx={currIdx} setCurrIdx={setCurrIdx} />
         <Box ref={descRef} className="descWrapper">
           <EventDescription
             index={0}
