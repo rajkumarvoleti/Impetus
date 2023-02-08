@@ -9,10 +9,16 @@ const styles = {
   position: "absolute",
   width: "100vw",
   ".appbar": {
+    backdropFilter: "blur(5px)",
     position: "relative",
     // maxWidth: "1300px",
-    padding: "0 50px",
-    paddingTop: "20px",
+    padding: {
+      lg: " 0 50px",
+      md: "0 50px",
+      sm: "0 30px",
+      xs: "0 25px",
+    },
+    paddingTop: "20px !important",
     boxShadow: "none",
     display: "flex",
     flexDirection: "row",
@@ -27,7 +33,7 @@ const styles = {
 export default function AppbarComp() {
   const router = useRouter();
   const [top, setTop] = useState(true);
-  
+
   const goToHome = () => {
     router.push("/home");
   };
@@ -59,7 +65,7 @@ export default function AppbarComp() {
       >
         <Image
           onClick={goToHome}
-          src="images/logo.svg"
+          src="/images/logo.svg"
           //"./images/Impetus Logo white.png"
           alt="logo"
           width={50}
