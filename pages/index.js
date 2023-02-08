@@ -57,10 +57,9 @@ export default function HomePage() {
     };
   }, [isVisible]);
 
-  if (loading) return <LoadingComp />;
-
   return (
     <Box>
+      {loading && <LoadingComp />}
       <Box sx={containerStyles}>
         <AnimatePresence>
           <motion.div
