@@ -1,4 +1,5 @@
 import { Box } from "@mui/system";
+import { useLoading } from "./LoadingContext";
 
 const styles = {
   width: "100vw",
@@ -16,11 +17,13 @@ const styles = {
 };
 
 export default function HomePageVideo() {
+  const { startLoading, stopLoading } = useLoading();
+
   return (
     <Box sx={styles}>
       <video
-        onLoadStart={() => console.log("loading")}
-        onLoad={() => console.log("loaded")}
+        onLoadStart={startLoading}
+        onLoad={stopLoading}
         autoPlay
         muted
         loop

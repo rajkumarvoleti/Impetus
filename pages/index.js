@@ -7,6 +7,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import Contact from "../components/Contact";
 import { Router } from "next/router";
 import disableScroll from "disable-scroll";
+import { useLoading } from "../components/LoadingContext";
+import LoadingComp from "../components/LoadingComp";
 
 const styles = {
   minHeight: "100vh",
@@ -26,6 +28,7 @@ const containerStyles = {
 export default function HomePage() {
   const [opacity, setOpacity] = useState(1);
   const [isVisible, setIsVisible] = useState(true);
+  const { loading } = useLoading();
 
   const hideIt = () => {
     setOpacity(0);
@@ -53,6 +56,8 @@ export default function HomePage() {
       disableScroll.off(window);
     };
   }, [isVisible]);
+
+  if (loading) return <LoadingComp />;
 
   return (
     <Box>

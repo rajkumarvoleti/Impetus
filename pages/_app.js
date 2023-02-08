@@ -4,15 +4,12 @@ import { CacheProvider } from "@emotion/react";
 import { ThemeProvider, CssBaseline, Box } from "@mui/material";
 
 import createEmotionCache from "../utility/createEmotionCache";
-import lightTheme from "../styles/theme/lightTheme";
 import "../styles/globals.css";
 import darkTheme from "../styles/theme/darkTheme";
 import AppbarComp from "../components/AppbarComp";
-import Contact from "../components/Contact";
 import LoadingComp from "../components/LoadingComp";
 import { Router } from "next/router";
-
-const LazyLoadingComp = React.lazy(() => LoadingComp);
+import { LoadingStateProvider } from "../components/LoadingContext";
 
 const clientSideEmotionCache = createEmotionCache();
 
@@ -43,9 +40,11 @@ const MyApp = (props) => {
     <CacheProvider value={emotionCache}>
       <ThemeProvider theme={darkTheme}>
         <CssBaseline />
-        {loading && <LoadingComp />}
-        {!loading && <AppbarComp />}
-        {!loading && <Component {...pageProps} />}
+        <LoadingStateProvider>
+          {loading && <LoadingComp />}
+          {!loading && <AppbarComp />}
+          {!loading && <Component {...pageProps} />}
+        </LoadingStateProvider>
       </ThemeProvider>
     </CacheProvider>
   );
