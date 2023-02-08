@@ -12,6 +12,8 @@ import Contact from "../components/Contact";
 import LoadingComp from "../components/LoadingComp";
 import { Router } from "next/router";
 
+const LazyLoadingComp = React.lazy(() => LoadingComp);
+
 const clientSideEmotionCache = createEmotionCache();
 
 const MyApp = (props) => {

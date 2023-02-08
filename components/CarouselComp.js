@@ -11,7 +11,6 @@ export default function CarouselComp() {
   const carousel = useRef(null);
 
   const handleEnd = ({ index }) => {
-    console.log(index);
     if (index == 2) {
       setTimeout(() => {
         carousel.current?.goTo(0);
