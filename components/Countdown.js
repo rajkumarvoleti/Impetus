@@ -30,36 +30,43 @@ export default function Countdown() {
     margin: "50px 0",
     maxWidth: "90vw",
     div: {
-      width: "170px",
-    },
-    [theme.breakpoints.down("md")]: {
-      div: {
-        width: "100px",
-        h2: {
-          fontSize: "18px",
-        },
-      },
+      width: "80px",
+      height: "80px",
+      margin: "10px",
+      display: "flex",
+      flexDirection: "column",
+      justifyContent: "center",
+      alignItems: "center",
+      backdropFilter: "blur(5px)",
     },
   };
 
   return (
+    <Box sx={{ margin: "60px 0" }} className="center1">
     <Box sx={styles}>
-      <Box sx={{textAlign:"center"}}>
-        <Typography variant="h2">{("0" + days).slice(-2)} : </Typography>
-        <Typography variant="h2">Days</Typography>
+      <Box>
+        <Typography variant="h2">{("0" + days).slice(-2)}</Typography>
+        <Typography variant="p">days</Typography>
       </Box>
-      <Box sx={{textAlign:"center"}}>
-        <Typography variant="h2">{("0" + hours).slice(-2)} : </Typography>
-        <Typography variant="h2">Hours</Typography>
+      <Box>
+        <Typography variant="h2">{("0" + hours).slice(-2)} </Typography>
+        <Typography variant="p">hours</Typography>
       </Box>
-      <Box sx={{textAlign:"center"}}>
-        <Typography variant="h2">{("0" + mins).slice(-2)} : </Typography>
-        <Typography variant="h2">Minutes</Typography>
+      <Box>
+        <Typography variant="h2">{("0" + mins).slice(-2)} </Typography>
+        <Typography variant="p">min</Typography>
       </Box>
-      <Box sx={{textAlign:"center"}}>
+      <Box>
         <Typography variant="h2">{("0" + seconds).slice(-2)}</Typography>
-        <Typography variant="h2">Seconds</Typography>
+        <Typography variant="p">sec</Typography>
       </Box>
     </Box>
+    <Typography
+      sx={{ margin: "20px 0", fontSize: "24px !important" }}
+      variant="h2"
+    >
+      TO START
+    </Typography>
+  </Box>
   );
 }

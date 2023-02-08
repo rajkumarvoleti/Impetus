@@ -4,8 +4,7 @@ import { useEffect, useRef } from "react";
 import Countdown from "../components/Countdown";
 
 const styles = {
-  scrollbarWidth: "none",
-  overflowY:"hidden",
+  
   height: "100vh",
   width: "100vw",
   position: "absolute",
@@ -27,6 +26,9 @@ const styles = {
   },
   ".noMarginT":{
     marginTop:"0",
+  },
+  ".Heading":{
+    zIndex:"10",
   }
 };
 
@@ -35,7 +37,7 @@ export default function VideoText({ hideIt }) {
 
   return (
     <Box ref={scrollRef} sx={styles} className="center1">
-      <Typography variant="h1" >IMPETUS</Typography>
+      <Typography variant="h1" className="Heading">IMPETUS</Typography>
       <Typography variant="h4" className="noMarginB">Anuanl Techfest of Department of Mechanical Engineering,</Typography>
       <Typography variant="h4" className="noMarginT">IIEST Shibpur</Typography>
       <Countdown />
