@@ -91,51 +91,13 @@ export default function CadathonPage() {
       <Box sx={dataStyles} className="data">
         <Box>
           <Typography sx={{ textIndent: "60px" }} variant="p">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi,
-            magnam unde quam quis doloremque soluta reiciendis rem modi
-            voluptate iure amet pariatur laudantium fuga saepe architecto at
-            possimus sit dignissimos. Quo animi omnis tempore cupiditate
-            eligendi asperiores reprehenderit?
+
+            Impetus 6.0 brings to you a proper carnival game of skill. Dodge between one bunker to another to make a lead over others. Test the cognitive and hand coordination in breaking down the complete pyramid. Try your hands on darts and wire wand loop. Take help with your partner in moving through the proper pathway in completing the event. If you can manage these, some prizes are surely waiting for you
           </Typography>
           <Typography variant="p">Date: 01/02/03 05:06pm</Typography>
-          <Box sx={{ width: "100%" }} className="center1">
-            <Button variant="contained" size="large">
-              Register Now
-            </Button>
-          </Box>
+          
         </Box>
-        <Box className="data">
-          <Typography variant="h2">Flow of the events</Typography>
-          <Typography sx={{ textIndent: "60px" }} variant="p">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt
-            molestiae hic quidem enim libero odit fuga adipisci minima dolorem
-            vitae quam distinctio in nesciunt doloribus, sapiente voluptates?
-            Natus, expedita ipsam. Perferendis ullam officia voluptatum atque
-            corporis sint possimus hic?
-          </Typography>
-          <ul>
-            <li>
-              ➜ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio,
-              reprehenderit.
-            </li>
-            <li>
-              ➜ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio,
-              reprehenderit.
-            </li>
-            <li>
-              ➜ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio,
-              reprehenderit.
-            </li>
-            <li>
-              ➜ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio,
-              reprehenderit.
-            </li>
-            <li>
-              ➜ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio,
-              reprehenderit.
-            </li>
-          </ul>
-        </Box>
+        
         <Box>
           <Typography variant="h2">Judging Criteria</Typography>
           <ul>

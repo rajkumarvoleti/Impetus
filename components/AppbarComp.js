@@ -63,13 +63,14 @@ export default function AppbarComp() {
           transform: "translateX(-50%)",
         }}
       >
-        <Image
+        <Image 
           onClick={goToHome}
-          src="/images/logo.svg"
+          src="/images/impetusLogo.png"
+          // src="/images/Impetus Logo white.png"
           //"./images/Impetus Logo white.png"
           alt="logo"
-          width={50}
-          height={50}
+          width={90}
+          height={90}
           className="logo"
         />
         <SideBarComp />

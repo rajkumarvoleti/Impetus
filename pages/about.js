@@ -117,22 +117,16 @@ export default function AboutPage() {
         />
         <Box className="content">
           <Typography variant="p">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            non aut qui id nam libero repellat molestias, fugit voluptates alias
-            perspiciatis? Numquam ad voluptas dolores ducimus ratione doloremque
-            a fugit. Nostrum exercitationem asperiores ad impedit. Quisquam nemo
-            iure atque libero, at harum repellendus suscipit sed mollitia vel
-            nostrum rerum a nam veritatis cum iusto dignissimos. Aspernatur,
-            non? Inventore, sapiente. Minima? Nisi esse delectus ab repellendus
-            nesciunt error, animi quod aperiam repudiandae sed? Totam, amet?
-            Maxime laboriosam rerum suscipit. Sint in libero nam iusto cumque
-            reiciendis impedit officiis! Excepturi, recusandae fugit.
+
+          Theoretical knowledge will serve no purpose until combined with skills and real-world knowledge. IMPETUS is an attempt to bring the industry closer to the students at IIEST, Shibpur. It is organized annually by the Society of Mechanical Engineers (SME) on behalf of the department of Mechanical Engineering. This occasion unites experts from both industries and education on IIEST's soil and provides opportunity to the students to get the best of both worlds. The various events in impetus are designed to enrich one's practical knowledge, while they also give you a chance to interact with leading industry professionals in the field of mechanical engineering.<br></br><br></br>
+
+            So, no matter where you come from, we will make sure you add a feather to your cap on the way back.
           </Typography>
           <Typography variant="p">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            {/* Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam
             non aut qui id nam libero repellat molestias, fugit voluptates alias
             perspiciatis? Numquam ad voluptas dolores ducimus ratione doloremque
-            a fugit. pturi, recusandae fugit.
+            a fugit. pturi, recusandae fugit. */}
           </Typography>
           <Typography className="date" variant="p">
             17th Feb - 19th Feb
@@ -146,22 +140,13 @@ export default function AboutPage() {
         <Image src="/images/SMEwhite.png" height="300" width="300" alt="SME" />
         <Box className="content">
           <Typography variant="p">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            non aut qui id nam libero repellat molestias, fugit voluptates alias
-            perspiciatis? Numquam ad voluptas dolores ducimus ratione doloremque
-            a fugit. Nostrum exercitationem asperiores ad impedit. Quisquam nemo
-            iure atque libero, at harum repellendus suscipit sed mollitia vel
-            nostrum rerum a nam veritatis cum iusto dignissimos. Aspernatur,
-            non? Inventore, sapiente. Minima? Nisi esse delectus ab repellendus
-            nesciunt error, animi quod aperiam repudiandae sed? Totam, amet?
-            Maxime laboriosam rerum suscipit. Sint in libero nam iusto cumque
-            reiciendis impedit officiis! Excepturi, recusandae fugit.
+          It was on 4th March, 1921, a diploma course on mechanical engineering was started and this was the beginning of the golden journey for the department. The first degree level course started on 17th july 1930 and the post graduate courses began in 1854. Ever since it's inauguration, the department has had a rich legacy of producing extremely talented engineers who have been top performers in their domain and are still adding feathers to the cap. The department has earned its name and fame across the country as well as in the world through its methodical approach of teaching and research in it's field. The faculty consists of erudite teachers and almost all the faculty members have earned the credit of having quite a few praiseworthy research papers published in internationally acclaimed research journals. The academic and cultural society of department of mechanical engineering is the Society of Mechanical Engineers (SME). A number of international societies have their student section: Society of Automotive Engineers (SAE), American Society of Mechanical Engineers (ASME) and Indian Society of Heating, Refrigerating and Air conditioning Engineers (ISHRAE). Prominent speakers from the academic world and industrial domain are often invited for delivering lectures and Industrial visits are also organised by the department for making the students aware about the modern developments in the industries.
           </Typography>
           <Typography variant="p">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            {/* Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam
             non aut qui id nam libero repellat molestias, fugit voluptates alias
             perspiciatis? Numquam ad voluptas dolores ducimus ratione doloremque
-            a fugit. pturi, recusandae fugit.
+            a fugit. pturi, recusandae fugit. */}
           </Typography>
         </Box>
       </Box>

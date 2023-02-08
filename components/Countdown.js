@@ -30,7 +30,7 @@ export default function Countdown() {
     margin: "50px 0",
     maxWidth: "90vw",
     div: {
-      width: "150px",
+      width: "170px",
     },
     [theme.breakpoints.down("md")]: {
       div: {
@@ -44,19 +44,19 @@ export default function Countdown() {
 
   return (
     <Box sx={styles}>
-      <Box>
+      <Box sx={{textAlign:"center"}}>
         <Typography variant="h2">{("0" + days).slice(-2)} : </Typography>
         <Typography variant="h2">Days</Typography>
       </Box>
-      <Box>
+      <Box sx={{textAlign:"center"}}>
         <Typography variant="h2">{("0" + hours).slice(-2)} : </Typography>
         <Typography variant="h2">Hours</Typography>
       </Box>
-      <Box>
+      <Box sx={{textAlign:"center"}}>
         <Typography variant="h2">{("0" + mins).slice(-2)} : </Typography>
         <Typography variant="h2">Minutes</Typography>
       </Box>
-      <Box>
+      <Box sx={{textAlign:"center"}}>
         <Typography variant="h2">{("0" + seconds).slice(-2)}</Typography>
         <Typography variant="h2">Seconds</Typography>
       </Box>

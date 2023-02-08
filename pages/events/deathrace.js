@@ -48,6 +48,12 @@ const dataStyles = {
     alignItems: "center",
     margin: "30px 0",
   },
+  ".nestedList":{
+    margin:"0",
+  },
+  ".nestedList li":{
+    marginLeft:"30px",
+  }
 };
 
 export default function CadathonPage() {
@@ -97,79 +103,100 @@ export default function CadathonPage() {
       <Box sx={dataStyles} className="data">
         <Box>
           <Typography sx={{ textIndent: "60px" }} variant="p">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi,
-            magnam unde quam quis doloremque soluta reiciendis rem modi
-            voluptate iure amet pariatur laudantium fuga saepe architecto at
-            possimus sit dignissimos. Quo animi omnis tempore cupiditate
-            eligendi asperiores reprehenderit?
+          This competition aims to build a robot that can be manually controlled to maneuver across a track
+with different obstacle.
           </Typography>
-          <Typography variant="p">Date: 01/02/03 05:06pm</Typography>
-          <Box sx={{ width: "100%" }} className="center1">
-            <Button variant="contained" size="large">
+          
+          <ul className="nestedList" style={{fontSize:"21px"}}>
+            Dates:
+            <li>-Round 1: 17th February, 2023  4:30pm-6:00pm</li>
+            <li>-Round 2: 18th February, 2023  6pm-7pm</li>
+          </ul>
+          <Box sx={{ width: "100%", marginTop:"30px" }} className="center1">
+          <Button variant="contained" size="large" onClick={event => window.location.href = 'https://forms.gle/9Yr3SwWXFUFFZXsQ6'}>
               Register Now
             </Button>
           </Box>
         </Box>
         <Box className="data">
-          <Typography variant="h2">Flow of the events</Typography>
+          <Typography variant="h2">Objective</Typography>
           <Typography sx={{ textIndent: "60px" }} variant="p">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt
-            molestiae hic quidem enim libero odit fuga adipisci minima dolorem
-            vitae quam distinctio in nesciunt doloribus, sapiente voluptates?
-            Natus, expedita ipsam. Perferendis ullam officia voluptatum atque
-            corporis sint possimus hic?
+          Reach the limit line with minimum penalties in the least possible time.
           </Typography>
+          <Typography variant="h2">Basic Information</Typography>
           <ul>
             <li>
-              ➜ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio,
-              reprehenderit.
+              ➜ Registration – Till 1 hour before commencement of Round 1
             </li>
             <li>
-              ➜ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio,
-              reprehenderit.
+              ➜ Participation – Team
             </li>
             <li>
-              ➜ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio,
-              reprehenderit.
+              ➜ Venue – Netaji Bhavan
             </li>
             <li>
-              ➜ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio,
-              reprehenderit.
+              ➜ No. of Rounds – 2
+            </li>
+            
+            <li>
+              ➜ Prizes worth <b>Rs.8000/-</b>
+            </li>
+          </ul>
+          <Typography variant="h2">Flow of the events</Typography>
+          <Typography sx={{ textIndent: "60px" }} variant="p">
+          Death Race is going to be held in 2 rounds. Candidates qualified from the first round can only
+participate in second round (No lateral entry allowed).
+          </Typography>
+          <Typography variant="h2">Rules and Regulations</Typography>
+          <ul>
+            <li>
+              ➜ Registered candidates are to be present in the amenities before the commencement
+of the event.
             </li>
             <li>
-              ➜ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio,
-              reprehenderit.
+             
+              <ul className="nestedList">
+              ➜ ROUND 1-
+                <li>
+                  - The first round is the HEATS; all the foams win take a run in the arena one at a time. The time taken to complete the arena will be noted. There is a maximum time limit of 10 minutes beyond which the bot cannot continue to run.
+                </li>
+                <li>
+                  - Participants Completing the arena is a must in order to be considered for
+Qualification to the next round.
+                </li>
+                <li>
+                  - One restart is allowed per team in the first round. However, in the next round, the team will start with same penalty points
+                </li>
+                
+              </ul>
             </li>
+            <li>
+              
+              <ul className="nestedList">
+              ➜ ROUND 2-
+                <li>- Second round will be a knockout round, where two teams win face off
+against each other. Loser will be eliminated and the winner moves on to the next round, subsequent similar rounds will carry on until only two teams are left
+for the final showdown</li>
+                <li>Restarts from checkpoint are allowed.</li>
+              </ul>
+            </li>
+
           </ul>
         </Box>
         <Box>
-          <Typography variant="h2">Judging Criteria</Typography>
-          <ul>
-            <li>
-              ➜ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio,
-              reprehenderit.
-            </li>
-            <li>
-              ➜ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio,
-              reprehenderit.
-            </li>
-            <li>
-              ➜ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio,
-              reprehenderit.
-            </li>
-            <li>
-              ➜ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio,
-              reprehenderit.
-            </li>
-            <li>
-              ➜ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio,
-              reprehenderit.
-            </li>
-          </ul>
+          <Typography variant="h6">If any team faces any problem, they are supposed to report to the Event Co-Ordinator or
+            Pool Volunteer without much delay.<br></br><br></br></Typography>
+          
+
           <Box className="fee">
-            <Typography>Registration fee: 1500</Typography>
-            <Button variant="contained">Register Now</Button>
+            <Typography variant="h3">Registration fee: 1500</Typography>
+            <Box sx={{ width: "100%" }} className="center1">
+            <Button variant="contained" size="large" onClick={event => window.location.href = 'https://forms.gle/9Yr3SwWXFUFFZXsQ6'}>
+              Register Now
+            </Button>
           </Box>
+          </Box>
+          <Typography variant="h2" sx={{textAlign:"center", marginTop:"20px"}}>Event Coordinators</Typography>
           <Box className="contact">
             <ContactCard />
             <ContactCard />

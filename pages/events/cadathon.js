@@ -43,14 +43,14 @@ const dataStyles = {
   textAlign: "justify",
   maxWidth: "800px",
   ".data": {
-    margin: "50px 0",
+    margin: "50px 0 0 0",
   },
   "div span,ul": {
     display: "block",
     margin: "20px 0",
   },
   "div ul li": {
-    textIndent: "30px",
+    // textIndent: "30px",
   },
   ".fee": {
     width: "100%",
@@ -65,6 +65,12 @@ const dataStyles = {
     alignItems: "center",
     margin: "30px 0",
   },
+  ".nestedList":{
+    margin:"0",
+  },
+  ".nestedList li":{
+    marginLeft:"30px",
+  }
 };
 
 export default function CadathonPage() {
@@ -109,79 +115,113 @@ export default function CadathonPage() {
       <Box sx={dataStyles} className="data">
         <Box>
           <Typography sx={{ textIndent: "60px" }} variant="p">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi,
-            magnam unde quam quis doloremque soluta reiciendis rem modi
-            voluptate iure amet pariatur laudantium fuga saepe architecto at
-            possimus sit dignissimos. Quo animi omnis tempore cupiditate
-            eligendi asperiores reprehenderit?
+            This competition aims to develop the idea of assembly of 3D structures on a CAD software.
+            This event will be organized by the Society of Automotive Engineers (SAE), IIEST Shibpur
+            under the banner of "Impetus 6.0".
           </Typography>
-          <Typography variant="p">Date: 01/02/03 05:06pm</Typography>
-          <Box sx={{ width: "100%" }} className="center1">
-            <Button variant="contained" size="large">
+          
+          <ul className="nestedList" style={{fontSize:"21px"}}>
+            Dates:
+            <li>-Round 1: 17th February, 2023  1pm-2pm</li>
+            <li>-Round 2: 18th February, 2023  10am-11:30am</li>
+          </ul>
+          <Box sx={{ width: "100%", marginTop:"30px" }} className="center1">
+          <Button variant="contained" size="large" onClick={event => window.location.href = 'https://forms.gle/NRdSf7w4pvX5E96y7'}>
               Register Now
             </Button>
           </Box>
         </Box>
         <Box className="data">
-          <Typography variant="h2">Flow of the events</Typography>
+          <Typography variant="h2">Objective</Typography>
           <Typography sx={{ textIndent: "60px" }} variant="p">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt
-            molestiae hic quidem enim libero odit fuga adipisci minima dolorem
-            vitae quam distinctio in nesciunt doloribus, sapiente voluptates?
-            Natus, expedita ipsam. Perferendis ullam officia voluptatum atque
-            corporis sint possimus hic?
+            Initially, the organizing team will set up an objective and the participants will have to
+            designed it within the speculated time while satisfying some given condition.
           </Typography>
+          <Typography variant="h2">Basic Information</Typography>
           <ul>
             <li>
-              ➜ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio,
-              reprehenderit.
+              ➜ Registration – Till 1 hour before commencement of Round 1
             </li>
             <li>
-              ➜ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio,
-              reprehenderit.
+              ➜ Participation – Individual
             </li>
             <li>
-              ➜ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio,
-              reprehenderit.
+              ➜ Venue – Department building (IIEST Shibpur)
             </li>
             <li>
-              ➜ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio,
-              reprehenderit.
+              ➜ No. of Rounds – 2
             </li>
             <li>
-              ➜ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio,
-              reprehenderit.
+              <ul className="nestedList">
+              ➜ Duration of each round-
+                <li>Round 1- 60 min</li>
+                <li>Round 2- 150min</li>
+              </ul>
+              
             </li>
+            <li>
+              ➜ Prizes worth <b>Rs.8000/-</b>
+            </li>
+          </ul>
+          <Typography variant="h2">Flow of the events</Typography>
+          <Typography sx={{ textIndent: "60px" }} variant="p">
+            <b>CADathon</b> is going to be held in 2 rounds. In the first round of competition participants are
+            expected to replicate the given parts and submit them in an hour. Candidates qualified from
+            the first round can only participate in second round (No lateral entry allowed).
+          </Typography>
+          <Typography variant="h2">Rules and Regulations</Typography>
+          <ul>
+            <li>
+              ➜ Registered candidates are to be present in the department building before the
+              commencement of the event.
+            </li>
+            <li>
+             
+              <ul className="nestedList">
+              ➜ ROUND 1-
+                <li>
+                  -Each participant will be provided with an objective
+                </li>
+                <li>
+                  -Participants are required to bring their own laptop with any CAD software
+                  installed in it.
+                </li>
+                <li>
+                  -Participants need to replicate a 2D drawing of some components into their 3D
+                  design.
+                </li>
+                <li>
+                  -The top participants of 1st round will continue to Round 2. Evaluation will be
+                  done based on accuracy and time consumed.
+                </li>
+              </ul>
+            </li>
+            <li>
+              
+              <ul className="nestedList">
+              ➜ ROUND 2-
+                <li>-The selected participants from 1st round will be provided with an objective to
+                  replicate a dynamic mechanical mechanism based on the problem statement.</li>
+                <li>Participants will be evaluated based on time and accuracy.</li>
+              </ul>
+            </li>
+
           </ul>
         </Box>
         <Box>
-          <Typography variant="h2">Judging Criteria</Typography>
-          <ul>
-            <li>
-              ➜ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio,
-              reprehenderit.
-            </li>
-            <li>
-              ➜ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio,
-              reprehenderit.
-            </li>
-            <li>
-              ➜ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio,
-              reprehenderit.
-            </li>
-            <li>
-              ➜ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio,
-              reprehenderit.
-            </li>
-            <li>
-              ➜ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio,
-              reprehenderit.
-            </li>
-          </ul>
+          <Typography variant="h6">If any team faces any problem, they are supposed to report to the Event Co-Ordinator or
+            Pool Volunteer without much delay.<br></br><br></br></Typography>
+          
+
           <Box className="fee">
-            <Typography>Registration fee: 1500</Typography>
-            <Button variant="contained">Register Now</Button>
+            <Typography variant="h3">Registration fee: 1500</Typography>
+            <Box sx={{ width: "100%" }} className="center1">
+            <Button variant="contained" size="large" onClick={event => window.location.href = 'https://forms.gle/NRdSf7w4pvX5E96y7'}>
+              Register Now
+            </Button>
           </Box>
+          </Box>
+          <Typography variant="h2" sx={{textAlign:"center", marginTop:"20px"}}>Event Coordinators</Typography>
           <Box className="contact">
             <ContactCard />
             <ContactCard />

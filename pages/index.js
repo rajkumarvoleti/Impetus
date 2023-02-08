@@ -11,6 +11,8 @@ import { useLoading } from "../components/LoadingContext";
 import LoadingComp from "../components/LoadingComp";
 
 const styles = {
+  scrollbarWidth: "none",
+  overflowY:"hidden",
   minHeight: "100vh",
   minWidth: "100vw",
 };
