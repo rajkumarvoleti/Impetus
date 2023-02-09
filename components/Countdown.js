@@ -27,7 +27,6 @@ export default function Countdown() {
   const styles = {
     display: "flex",
     flexDirection: "row",
-    margin: "50px 0",
     maxWidth: "90vw",
     div: {
       width: "80px",
@@ -43,23 +42,30 @@ export default function Countdown() {
 
   return (
     <Box sx={{ margin: "60px 0" }} className="center1">
-    <Box sx={styles}>
-      <Box>
-        <Typography variant="h2">{("0" + days).slice(-2)}</Typography>
-        <Typography variant="p">days</Typography>
+      <Box sx={styles}>
+        <Box>
+          <Typography variant="h2">{("0" + days).slice(-2)}</Typography>
+          <Typography variant="p">days</Typography>
+        </Box>
+        <Box>
+          <Typography variant="h2">{("0" + hours).slice(-2)} </Typography>
+          <Typography variant="p">hours</Typography>
+        </Box>
+        <Box>
+          <Typography variant="h2">{("0" + mins).slice(-2)} </Typography>
+          <Typography variant="p">min</Typography>
+        </Box>
+        <Box>
+          <Typography variant="h2">{("0" + seconds).slice(-2)}</Typography>
+          <Typography variant="p">sec</Typography>
+        </Box>
       </Box>
-      <Box>
-        <Typography variant="h2">{("0" + hours).slice(-2)} </Typography>
-        <Typography variant="p">hours</Typography>
-      </Box>
-      <Box>
-        <Typography variant="h2">{("0" + mins).slice(-2)} </Typography>
-        <Typography variant="p">min</Typography>
-      </Box>
-      <Box>
-        <Typography variant="h2">{("0" + seconds).slice(-2)}</Typography>
-        <Typography variant="p">sec</Typography>
-      </Box>
+      <Typography
+        sx={{ margin: "20px 0", fontSize: "24px !important" }}
+        variant="h2"
+      >
+        TO START
+      </Typography>
     </Box>
     <Typography
       sx={{ margin: "20px 0", fontSize: "24px !important" }}
