@@ -84,19 +84,13 @@ export default function HomePageAbout() {
               <Typography className="flux" variant="h1">
                 IMPETUS
               </Typography>
-              <p>
-                Theoretical knowledge will serve no purpose until combined with
-                skills and real-world knowledge. IMPETUS is an attempt to bring
-                the industry closer to the students at IIEST, Shibpur. It is
-                organized annually by the Society of Mechanical Engineers (SME)
-                on behalf of the department of Mechanical Engineering. This
-                occasion unites experts from both industries and education on
-                IIEST&apos;s soil and provides opportunity to the students to
-                get the best of both worlds. The various events in impetus are
-                designed to enrich one&apos;s practical knowledge, while they
-                also give you a chance to interact with leading industry
-                professionals in the field of mechanical engineering.
-              </p>
+              <Typography variant="p">
+                IMPETUS is an annual event organized by the Society of
+                Mechanical Engineers at IIEST Shibpur to bring industry and
+                education closer together. The events aim to provide students
+                with practical knowledge and opportunities to interact with
+                industry professionals in mechanical engineering.
+              </Typography>
               <LearnMore link={"about"} />
             </Box>
             <Box className="trailer center1">
