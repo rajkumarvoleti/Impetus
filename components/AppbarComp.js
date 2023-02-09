@@ -55,15 +55,14 @@ export default function AppbarComp() {
       <AppBar
         className="appbar"
         style={{
-          // background: `${top ? "transparent" : "rgb(0,0,0,0.3)"}`,
           background: "transparent",
-          // backdropFilter: "blur(2px)",
+          backdropFilter: `${top ? "none" : "blur(5px)"}`,
           position: "fixed",
           left: "50%",
           transform: "translateX(-50%)",
         }}
       >
-        <Image 
+        <Image
           onClick={goToHome}
           src="/images/impetusLogo.png"
           // src="/images/Impetus Logo white.png"
