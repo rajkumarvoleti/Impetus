@@ -79,9 +79,9 @@ export default function ExpoPage() {
             iste harum, ad, molestias deleniti, maiores hic veritatis sit saepe
             illum. Veritatis, facilis. Sit.
           </Typography>
-          <Button sx={{ margin: "30px 0" }} variant="contained">
+          {/* <Button sx={{ margin: "30px 0" }} variant="contained">
             Register
-          </Button>
+          </Button> */}
         </Box>
       </Box>
       <Box className="EV">
@@ -99,9 +99,9 @@ export default function ExpoPage() {
             iste harum, ad, molestias deleniti, maiores hic veritatis sit saepe
             illum. Veritatis, facilis. Sit.
           </Typography>
-          <Button sx={{ margin: "30px 0" }} variant="contained">
+          {/* <Button sx={{ margin: "30px 0" }} variant="contained">
             Register
-          </Button>
+          </Button> */}
         </Box>
       </Box>
       <Box sx={{ margin: "70px 0" }} className="Robo">
@@ -119,9 +119,9 @@ export default function ExpoPage() {
             iste harum, ad, molestias deleniti, maiores hic veritatis sit saepe
             illum. Veritatis, facilis. Sit.
           </Typography>
-          <Button sx={{ margin: "30px 0" }} variant="contained">
+          {/* <Button sx={{ margin: "30px 0" }} variant="contained">
             Register
-          </Button>
+          </Button> */}
         </Box>
       </Box>
       <Contact />

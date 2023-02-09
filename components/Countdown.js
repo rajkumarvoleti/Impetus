@@ -67,5 +67,12 @@ export default function Countdown() {
         TO START
       </Typography>
     </Box>
+    <Typography
+      sx={{ margin: "20px 0", fontSize: "24px !important" }}
+      variant="h2"
+    >
+      TO START
+    </Typography>
+  </Box>
   );
 }

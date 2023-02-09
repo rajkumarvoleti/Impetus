@@ -97,79 +97,123 @@ export default function CadathonPage() {
       <Box sx={dataStyles} className="data">
         <Box>
           <Typography sx={{ textIndent: "60px" }} variant="p">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi,
-            magnam unde quam quis doloremque soluta reiciendis rem modi
-            voluptate iure amet pariatur laudantium fuga saepe architecto at
-            possimus sit dignissimos. Quo animi omnis tempore cupiditate
-            eligendi asperiores reprehenderit?
+          SCRAPYARD, an event that enables your untouched creativity and reasoning abilities to explode. Show case your innovative ideas as a team to create the assembly that fits the given problem statement. 
           </Typography>
-          <Typography variant="p">Date: 01/02/03 05:06pm</Typography>
-          <Box sx={{ width: "100%" }} className="center1">
-            <Button variant="contained" size="large">
+          
+          <ul className="nestedList" style={{fontSize:"21px"}}>
+            Dates:
+            <li>-Round 1: 17th February, 2023  3:30pm-4:30pm</li>
+            <li>-Round 2: 18th February, 2023  6:00pm-8:00pm</li>
+          </ul>
+          <Box sx={{ width: "100%", marginTop:"30px" }} className="center1">
+          <Box sx={{ width: "100%", marginTop: "30px" }} className="center1">
+            <Button variant="contained" size="large" onClick={event => window.location.href = 'https://forms.gle/dasQGHp3orck9jLp7'}>
               Register Now
             </Button>
           </Box>
+          </Box>
         </Box>
         <Box className="data">
-          <Typography variant="h2">Flow of the events</Typography>
+          <Typography variant="h2">Objective</Typography>
           <Typography sx={{ textIndent: "60px" }} variant="p">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt
-            molestiae hic quidem enim libero odit fuga adipisci minima dolorem
-            vitae quam distinctio in nesciunt doloribus, sapiente voluptates?
-            Natus, expedita ipsam. Perferendis ullam officia voluptatum atque
-            corporis sint possimus hic?
+          This is an event of 2 rounds. In the 1st round, Teams will be given a test of 30 questions. In the succeeding round the selected few teams will be given a problem statement on which they have to use their creative skills to make a structure out of scrap that fits the problem statement. 
           </Typography>
+          <Typography variant="h2">Basic Information</Typography>
           <ul>
             <li>
-              ➜ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio,
-              reprehenderit.
+              ➜ Registration: Through G-forms, till 1 hour before commencement of Round 1
             </li>
             <li>
-              ➜ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio,
-              reprehenderit.
+              ➜ Participation: A team of 2-3 members
             </li>
             <li>
-              ➜ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio,
-              reprehenderit.
+              ➜ No. of Rounds: 2
             </li>
             <li>
-              ➜ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio,
-              reprehenderit.
+              ➜ Venue: Round 1-Gallery 6, Round 2-1st Lobby
             </li>
             <li>
-              ➜ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio,
-              reprehenderit.
+            Duration of each round: Round 1-1hr, Round 2-2hr
+              
             </li>
+            <li>
+              ➜ Prizes worth <b>Rs.10000/-</b>
+            </li>
+          </ul>
+          <Typography variant="h2">Flow of the events</Typography>
+          <Typography sx={{ textIndent: "60px" }} variant="p">
+            <ul>
+              <li>●	Scrapyard is going to be held in 2 rounds. Candidates qualified from the first round can only participate in second round (No lateral entry allowed)</li>
+              <li>●	Registration will be done through google forms. And the registered teams will be provided with WhatsApp group link. Through which all the details about the event will be notified.</li>
+              <li>
+                <ul>
+                ●	Round 1:
+                <li>⮚	Round 1 is a test. It consists of 30 questions which should be completed within the given time limit of 1hr.</li>
+                <li>⮚	The Event team will provide the teams with OMR sheet along with the question paper. </li>
+                <li>question paper. 
+⮚	After the completion of the test, the results will be notified through WhatsApp group.
+</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                ●	Round: 2
+                <li>⮚	The selected teams which are qualified through round-1 will be given a problem statement.</li>
+                <li>⮚	They should make a structure out of scrap that fits the problem statement with in 2hr time limit.</li>
+                
+                </ul>
+              </li>
+              
+            </ul>
+          </Typography>
+          <Typography variant="h2">Rules and Regulations</Typography>
+          <ul>
+            <li>
+            ●	Registered candidates are to be present in the venue before the commencement of the event.
+            </li>
+            <li>●	One participant cannot be a part of more than one team. </li>
+            <li>●	No change in team structure is permitted after the team is registered.</li>
+            <li>●	Usage of digital devices is strictly prohibited. Violation leads to immediate disqualification.</li>
+            <li>
+             
+              <ul className="nestedList">
+              ●	Round-1: 
+                <li>
+                ⮚	Participants are required to bring ball point pen along with them to fill the OMR sheet.
+                </li>
+                <li>
+                ⮚	Any type of malpractice will not be entertained during the test.
+                </li>               
+                
+              </ul>
+            </li>
+            <li>
+              
+              <ul className="nestedList">
+              ●	Round-2:
+                <li>⮚	All the requirements for this round will be provided.</li>
+                <li>⮚	Plagiarism is prohibited.</li>
+              </ul>
+            </li>
+            <li>
+            ●	EVENT CO-ORDINATER HAVE THE FINAL SAY IN ALL ASPECTS IN THIS EVENT.
+            </li>
+
           </ul>
         </Box>
         <Box>
-          <Typography variant="h2">Judging Criteria</Typography>
-          <ul>
-            <li>
-              ➜ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio,
-              reprehenderit.
-            </li>
-            <li>
-              ➜ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio,
-              reprehenderit.
-            </li>
-            <li>
-              ➜ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio,
-              reprehenderit.
-            </li>
-            <li>
-              ➜ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio,
-              reprehenderit.
-            </li>
-            <li>
-              ➜ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio,
-              reprehenderit.
-            </li>
-          </ul>
+          
+          
+
           <Box className="fee">
-            <Typography>Registration fee: 1500</Typography>
-            <Button variant="contained">Register Now</Button>
+            <Typography variant="h3">Registration fee: 1500</Typography>
+            <Box sx={{ width: "100%" }} className="center1">
+            <Button variant="contained" size="large" onClick={event => window.location.href = 'https://forms.gle/dasQGHp3orck9jLp7'}>
+              Register Now
+            </Button>
           </Box>
+          </Box>
+          <Typography variant="h2" sx={{textAlign:"center", marginTop:"20px"}}>Event Coordinators</Typography>
           <Box className="contact">
             <ContactCard />
             <ContactCard />

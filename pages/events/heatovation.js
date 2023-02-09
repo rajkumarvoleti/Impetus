@@ -96,79 +96,123 @@ export default function CadathonPage() {
       <Box sx={dataStyles} className="data">
         <Box>
           <Typography sx={{ textIndent: "60px" }} variant="p">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi,
-            magnam unde quam quis doloremque soluta reiciendis rem modi
-            voluptate iure amet pariatur laudantium fuga saepe architecto at
-            possimus sit dignissimos. Quo animi omnis tempore cupiditate
-            eligendi asperiores reprehenderit?
+            HEATOVATION is an event organized by the Impetus 6.0 which invites participation
+            from students with entrepreneurial/ problem-solving mindsets in the field of HVAC pan India. It would require its participants to present their solutions to the panel of judges and answer their queries based on the presentation.
           </Typography>
-          <Typography variant="p">Date: 01/02/03 05:06pm</Typography>
-          <Box sx={{ width: "100%" }} className="center1">
-            <Button variant="contained" size="large">
+
+          <ul className="nestedList" style={{ fontSize: "22px" }}>
+            Dates: 18th February, 2023  3pm-5:30pm
+
+          </ul>
+          <Box sx={{ width: "100%", marginTop: "30px" }} className="center1">
+          <Button variant="contained" size="large" onClick={event => window.location.href = 'https://forms.gle/jEjFTbph1K6W3aH79'}>
               Register Now
             </Button>
           </Box>
         </Box>
         <Box className="data">
-          <Typography variant="h2">Flow of the events</Typography>
-          <Typography sx={{ textIndent: "60px" }} variant="p">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt
-            molestiae hic quidem enim libero odit fuga adipisci minima dolorem
-            vitae quam distinctio in nesciunt doloribus, sapiente voluptates?
-            Natus, expedita ipsam. Perferendis ullam officia voluptatum atque
-            corporis sint possimus hic?
+          <Typography variant="h2">Objective</Typography>
+          <Typography sx={{ textIndent: "60px" }} style={{fontSize:"1rem"}} variant="p">
+            <ul>
+            <li>➜ You have to upload the presentation along with an abstract of your idea (in less than 350
+              words) on the given link and the top 5 performers will be selected for the second round.</li>
+            <li>➜ In the second round, the participants will be given an opportunity to present the idea in front
+              of the judges after which top performers will be announced.</li>
+            <li>➜ Team size : Individual or group of a maximum of 2 members.</li>
+            <li>➜ Event duration : 1 hour 15 minutes</li>
+            <li>➜ Rules are subject to change and decisions of impetus team are absolute and binding.</li>
+            </ul>
           </Typography>
+          <Typography variant="h2">Basic Information</Typography>
           <ul>
             <li>
-              ➜ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio,
-              reprehenderit.
+              ➜ Deadline for round 1– 2 days before commencement of the event
             </li>
             <li>
-              ➜ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio,
-              reprehenderit.
+              ➜ Participation – team of maximum 2 members
             </li>
             <li>
-              ➜ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio,
-              reprehenderit.
+              ➜ Expected Participation – 15+ teams
             </li>
             <li>
-              ➜ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio,
-              reprehenderit.
+              ➜ No. of Rounds – 2
+            </li>
+
+            <li>
+              ➜ Prizes worth <b>Rs.8000/-</b>
+            </li>
+          </ul>
+          <Typography variant="h2">Flow of the events</Typography>
+          <Typography sx={{ textIndent: "60px" }} variant="p">
+            The following event occur in two rounds. The first round will be an online pitch deck
+            submission. You have to upload the presentation along with an abstract of the presentation
+            on the given form link and the top 5 performers will be selected for the second round.
+            In the second round, the participants will be given an opportunity to present the idea in
+            front of the judges after which top performers will be announced.
+          </Typography>
+
+          <Typography variant="h2">Rules and Regulations</Typography>
+          <ul>
+
+            <li>
+
+              <ul className="nestedList">
+                ➜ BASIC RULES-
+                <li>
+                  -This competition is open to every student from the colleges all over India.
+                </li>
+                <li>
+                  -Start-up idea presentation is a must for this competition.
+                </li>
+                <li>
+                  -Formation of Teams: A maximum of 2 members is permitted per team.
+                </li>
+                <li>
+                  -A candidate can participate individually also.
+                </li>
+                <li>One participant cannot be a part of more than one team.</li>
+                <li>No change in team structure is permitted after the team is registered.</li>
+                <li>Registration: Individuals/teams registered through this form will only be considered valid.</li>
+              </ul>
             </li>
             <li>
-              ➜ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio,
-              reprehenderit.
+
+              <ul className="nestedList">
+                ➜ ROUND 1-
+                <li>-This will be an online pitch deck submission round. Participants have to submit their
+                  presentation (in .pptx format) along with an abstract.</li>
+                <li>-The word limit of abstract should be strictly within 350 words (in .docx format).</li>
+                <li>-Abstract should be precise and to the point and must be an entrepreneurial/ problem-solving.</li>
+                <li>-Participants have to submit their files through the provided link only.</li>
+                <li>-The last date for the round 1 will be three days before the event and the result will be
+                  announced two days before the event.</li>
+
+              </ul>
+              <ul className="nestedList">
+                ➜ ROUND 2-
+                <li>-This will be a presentation round.</li>
+                <li>The participants will be given an opportunity to present their idea in-front of the judges</li>
+                <li>-Time limit for the presentation is 10 minutes and another 5 minutes time will be given for
+                  interaction with the judges.</li>
+              </ul>
             </li>
+
           </ul>
         </Box>
         <Box>
-          <Typography variant="h2">Judging Criteria</Typography>
-          <ul>
-            <li>
-              ➜ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio,
-              reprehenderit.
-            </li>
-            <li>
-              ➜ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio,
-              reprehenderit.
-            </li>
-            <li>
-              ➜ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio,
-              reprehenderit.
-            </li>
-            <li>
-              ➜ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio,
-              reprehenderit.
-            </li>
-            <li>
-              ➜ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio,
-              reprehenderit.
-            </li>
-          </ul>
+          <Typography variant="h6">If any team faces any problem, they are supposed to report to the Event Co-Ordinator or
+            Pool Volunteer without much delay.<br></br><br></br></Typography>
+
+
           <Box className="fee">
-            <Typography>Registration fee: 1500</Typography>
-            <Button variant="contained">Register Now</Button>
+            <Typography variant="h3">Registration fee: 1500</Typography>
+            <Box sx={{ width: "100%" }} className="center1">
+            <Button variant="contained" size="large" onClick={event => window.location.href = 'https://forms.gle/jEjFTbph1K6W3aH79'}>
+              Register Now
+            </Button>
+            </Box>
           </Box>
+          <Typography variant="h2" sx={{ textAlign: "center", marginTop: "20px" }}>Event Coordinators</Typography>
           <Box className="contact">
             <ContactCard />
             <ContactCard />

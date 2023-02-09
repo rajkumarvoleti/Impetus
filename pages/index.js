@@ -11,6 +11,7 @@ import { useLoading } from "../components/LoadingContext";
 import LoadingComp from "../components/LoadingComp";
 
 const styles = {
+  
   minHeight: "100vh",
   minWidth: "100vw",
 };
