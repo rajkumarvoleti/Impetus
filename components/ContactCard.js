@@ -27,12 +27,14 @@ const styles = {
   textAlign: "center",
 };
 
-export default function ContactCard() {
+const ContactCard=({person})=>{
   return (
     <Box sx={styles} className="pcard">
       <Image
         className="profile"
-        src="/images/guy.png"
+        // ({person.imgname}="#")?
+        src={`/images/${person.imgname}`}
+        style={{borderRadius:"50%",border:"solid 5px white"}}
         alt="guy"
         height="200"
         width="200"
@@ -40,30 +42,32 @@ export default function ContactCard() {
 
       <Box className="title">
         <Typography variant="h3" fontSize="25px">
-          Priyanshu Choudary
+          {person.name}
         </Typography>
         <Typography variant="h4" fontSize="18px">
-          CONVENER
+          {person.post}
         </Typography>
         <Typography variant="h5" fontSize="16px">
-          priyanshu@techniche.org
+          
         </Typography>
         <Typography varint="h5" fontSize="16px">
-          +91 9799054122
+          {person.phone}
         </Typography>
       </Box>
 
       <Box className="text">
-        <a href="#">
+        {/* <a href="#">
           <FacebookIcon />
-        </a>
-        <a href="#">
+        </a> */}
+        <a href={person.insta}>
           <InstagramIcon />
         </a>
-        <a href="#">
+        <a href={person.link}>
           <LinkedInIcon />
         </a>
       </Box>
     </Box>
   );
 }
+
+export default ContactCard;

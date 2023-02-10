@@ -94,7 +94,7 @@ export default function HomePageAbout() {
               <LearnMore link={"about"} />
             </Box>
             <Box className="trailer center1">
-              <LiteYouTubeEmbed id="2lkuTTIsR60" />
+              <LiteYouTubeEmbed id="Y9VOzNnr8aY" />
             </Box>
           </Box>
         </motion.div>

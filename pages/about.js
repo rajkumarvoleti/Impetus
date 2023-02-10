@@ -92,8 +92,28 @@ export default function AboutPage() {
       videoRef.current?.pause();
     };
   }, []);
-
+  
+  const person = {
+    person1: {
+      name: "Ayush Jaiswal",
+      phone: "+91 7766962188",
+      post: "Main Coordinator",
+      imgname: "Ayush_Jaiswal(Main Co ordinator).jpg",
+      insta: "https://instagram.com/ayushashokjaiswal?igshid=ZDdkNTZiNTM=",
+      link: "https://www.linkedin.com/in/ayush-jaiswal-ab8a491a6",
+    },
+    person2:
+    {
+      name: "S.V.S Sai Raghav",
+      phone: "+91 9550994950",
+      post: "Main Coordinator",
+      imgname: "S.V.S_Sai_Raghav.jpg",
+      insta: "https://instagram.com/raagu_1237?igshid=ZDdkNTZiNTM=",
+      link: "https://www.linkedin.com/in/raghavsingupuram",
+    }};
   return (
+    
+
     <Box sx={styles} className="center1">
       <Box className="videos">
         <video
@@ -153,7 +173,7 @@ export default function AboutPage() {
             It was on 4th March, 1921, a diploma course on mechanical
             engineering was started and this was the beginning of the golden
             journey for the department. The first degree level course started on
-            17th july 1930 and the post graduate courses began in 1854. Ever
+            17th july 1930 and the post graduate courses began in 1954. Ever
             since it&apos;s inauguration, the department has had a rich legacy
             of producing extremely talented engineers who have been top
             performers in their domain and are still adding feathers to the cap.
@@ -182,8 +202,9 @@ export default function AboutPage() {
         </Box>
       </Box>
       <Box className="contact">
-        <ContactCard />
-        <ContactCard />
+        <ContactCard person={person.person1}/>
+        <ContactCard person={person.person2}/>
+        
       </Box>
       <Contact />
     </Box>

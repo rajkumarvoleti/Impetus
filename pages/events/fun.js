@@ -92,14 +92,14 @@ export default function CadathonPage() {
         <Box>
           <Typography sx={{ textIndent: "60px" }} variant="p">
 
-            Impetus 6.0 brings to you a proper carnival game of skill. Dodge between one bunker to another to make a lead over others. Test the cognitive and hand coordination in breaking down the complete pyramid. Try your hands on darts and wire wand loop. Take help with your partner in moving through the proper pathway in completing the event. If you can manage these, some prizes are surely waiting for you
+          Impetus 6.0 brings to you a proper carnival game of skill. Dodge between one bunker to another to make a lead over others . Test the cognitive and hand coordination in breaking down the complete pyramid. Try your hands on darts and wire wand loop. Take help with your partner in moving through the proper pathway in completing the event. If you can manage all these , some prizes are surely waiting for you.
           </Typography>
-          <Typography variant="p">Date: 01/02/03 05:06pm</Typography>
+          {/* <Typography variant="p">Date: 01/02/03 05:06pm</Typography> */}
           
         </Box>
         
         <Box>
-          <Typography variant="h2">Judging Criteria</Typography>
+          {/* <Typography variant="h2">Judging Criteria</Typography>
           <ul>
             <li>
               ➜ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio,
@@ -121,15 +121,12 @@ export default function CadathonPage() {
               ➜ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio,
               reprehenderit.
             </li>
-          </ul>
+          </ul> */}
           <Box className="fee">
-            <Typography>Registration fee: 1500</Typography>
-            <Button variant="contained">Register Now</Button>
+            {/* <Typography>Registration fee: 1500</Typography> */}
+            {/* <Button variant="contained">Register Now</Button> */}
           </Box>
-          <Box className="contact">
-            <ContactCard />
-            <ContactCard />
-          </Box>
+          
         </Box>
       </Box>
       <Contact />
