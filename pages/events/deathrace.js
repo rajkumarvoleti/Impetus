@@ -6,6 +6,7 @@ import ContactCard from "../../components/ContactCard";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { useRouter } from "next/router";
+import EventMag from "../../components/EventManagement";
 
 const imageStyles = {
   width: "80vw",
@@ -87,6 +88,22 @@ export default function CadathonPage() {
       [theme.breakpoints.down("md")]: {
         bottom: "50px",
       },
+    },
+  };
+  const person = {
+    person1: {
+      name: "Shobhit Das",
+      phone: "+91 7602274162",
+    },
+    person2:
+    {
+      name: "Abhishek Rajput",
+      phone: "+91 9355127436",
+    },
+    person3:
+    {
+      name: "Avi Ambast",
+      phone: "+91 7277876396",
     },
   };
   return (
@@ -189,7 +206,12 @@ for the final showdown</li>
           
 
           <Box className="fee">
-            <Typography variant="h3">Registration fee: 1500</Typography>
+            <Typography variant="h3">Registration fee:</Typography>
+            <ul className="nestedList" style={{ fontSize: "21px" }}>
+             
+            <li>-  Free (for IIEST Students)</li>
+            <li>-  Rs.50 (for non-IIEST Students)</li>
+          </ul>
             <Box sx={{ width: "100%" }} className="center1">
             <Button variant="contained" size="large" onClick={event => window.location.href = 'https://forms.gle/9Yr3SwWXFUFFZXsQ6'}>
               Register Now
@@ -198,8 +220,9 @@ for the final showdown</li>
           </Box>
           <Typography variant="h2" sx={{textAlign:"center", marginTop:"20px"}}>Event Coordinators</Typography>
           <Box className="contact">
-            <ContactCard />
-            <ContactCard />
+            <EventMag person={person.person1} />
+            <EventMag person={person.person2} />
+            <EventMag person={person.person3} />
           </Box>
         </Box>
       </Box>

@@ -6,6 +6,7 @@ import ContactCard from "../../components/ContactCard";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { useRouter } from "next/router";
+import EventMag from "../../components/EventManagement";
 
 const imageStyles = {
   width: "80vw",
@@ -73,6 +74,8 @@ const dataStyles = {
   },
 };
 
+
+
 export default function CadathonPage() {
   const theme = useTheme();
   const router = useRouter();
@@ -103,6 +106,17 @@ export default function CadathonPage() {
       },
     },
   };
+  const person = {
+    person1: {
+      name: "Avi Ambast",
+      phone: "+91 7277876396",
+    },
+    person2:
+    {
+      name: "Shobhit Das",
+      phone: "+91 7602274162",
+    }};
+  
 
   return (
     <Box sx={{ width: "100vw" }} className="center1">
@@ -217,7 +231,12 @@ export default function CadathonPage() {
           </Typography>
 
           <Box className="fee">
-            <Typography variant="h3">Registration fee: 1500</Typography>
+            <Typography variant="h3">Registration fee: </Typography>
+            <ul className="nestedList" style={{ fontSize: "21px" }}>
+             
+            <li>-  Free (for IIEST Students)</li>
+            <li>-  Rs.50 (for non-IIEST Students)</li>
+          </ul>
             <Box sx={{ width: "100%" }} className="center1">
               <Button
                 variant="contained"
@@ -237,8 +256,9 @@ export default function CadathonPage() {
             Event Coordinators
           </Typography>
           <Box className="contact">
-            <ContactCard />
-            <ContactCard />
+            <EventMag person={person.person1}/>
+            <EventMag person={person.person2}/>
+            
           </Box>
         </Box>
       </Box>

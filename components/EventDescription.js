@@ -86,7 +86,7 @@ export default function EventDescription({ index, setCurrIdx, currIdx }) {
   const valorant =
     "The Valorant gaming event is a competition that brings together talented players to showcase their skills and compete for recognition. It is an exciting opportunity for Valorant fans to experience high-level gameplay and celebrate the top talent in the game.";
   const fun =
-    "Impetus 6.0 offers a carnival game of skill with events like dodging between bunkers, breaking down pyramids, playing darts, and navigating a pathway with a partner. Prizes await successful participants.";
+    "Impetus 6.0 brings to you a proper carnival game of skill. Dodge between one bunker to another to make a lead over others . Test the cognitive and hand coordination in breaking down the complete pyramid. Try your hands on darts and wire wand loop. Take help with your partner in moving through the proper pathway in completing the event. If you can manage all these , some prizes are surely waiting for you.";
 
   const content = [
     cadathon,

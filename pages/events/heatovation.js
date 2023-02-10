@@ -2,10 +2,11 @@ import { Button, IconButton, Typography, useTheme } from "@mui/material";
 import { Box } from "@mui/system";
 import Image from "next/image";
 import Contact from "../../components/Contact";
-import ContactCard from "../../components/ContactCard";
+// import ContactCard from "../../components/ContactCard";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { useRouter } from "next/router";
+import EventMag from "../../components/EventManagement";
 
 const imageStyles = {
   width: "80vw",
@@ -82,6 +83,17 @@ export default function CadathonPage() {
       },
     },
   };
+  const person = {
+    person1: {
+      name: "Upendra Kikkari",
+      phone: "+91 9704810737",
+    },
+    person2:
+    {
+      name: "Sayantan Paul",
+      phone: "+91 9830664404",
+    }
+  };
   return (
     <Box sx={{ width: "100vw" }} className="center1">
       <Box sx={headerStyles} className="center2">
@@ -105,22 +117,22 @@ export default function CadathonPage() {
 
           </ul>
           <Box sx={{ width: "100%", marginTop: "30px" }} className="center1">
-          <Button variant="contained" size="large" onClick={event => window.location.href = 'https://forms.gle/jEjFTbph1K6W3aH79'}>
+            <Button variant="contained" size="large" onClick={event => window.location.href = 'https://forms.gle/jEjFTbph1K6W3aH79'}>
               Register Now
             </Button>
           </Box>
         </Box>
         <Box className="data">
           <Typography variant="h2">Objective</Typography>
-          <Typography sx={{ textIndent: "60px" }} style={{fontSize:"1rem"}} variant="p">
+          <Typography sx={{ textIndent: "60px" }} style={{ fontSize: "1rem" }} variant="p">
             <ul>
-            <li>➜ You have to upload the presentation along with an abstract of your idea (in less than 350
-              words) on the given link and the top 5 performers will be selected for the second round.</li>
-            <li>➜ In the second round, the participants will be given an opportunity to present the idea in front
-              of the judges after which top performers will be announced.</li>
-            <li>➜ Team size : Individual or group of a maximum of 2 members.</li>
-            <li>➜ Event duration : 1 hour 15 minutes</li>
-            <li>➜ Rules are subject to change and decisions of impetus team are absolute and binding.</li>
+              <li>➜ You have to upload the presentation along with an abstract of your idea (in less than 350
+                words) on the given link and the top 5 performers will be selected for the second round.</li>
+              <li>➜ In the second round, the participants will be given an opportunity to present the idea in front
+                of the judges after which top performers will be announced.</li>
+              <li>➜ Team size : Individual or group of a maximum of 2 members.</li>
+              <li>➜ Event duration : 1 hour 15 minutes</li>
+              <li>➜ Rules are subject to change and decisions of impetus team are absolute and binding.</li>
             </ul>
           </Typography>
           <Typography variant="h2">Basic Information</Typography>
@@ -205,17 +217,22 @@ export default function CadathonPage() {
 
 
           <Box className="fee">
-            <Typography variant="h3">Registration fee: 1500</Typography>
+            <Typography variant="h3">Registration fee: </Typography>
+            <ul className="nestedList" style={{ fontSize: "21px" }}>
+             
+            <li>-  Free (for IIEST Students)</li>
+            <li>-  Rs.100 (for non-IIEST Students)</li>
+          </ul>
             <Box sx={{ width: "100%" }} className="center1">
-            <Button variant="contained" size="large" onClick={event => window.location.href = 'https://forms.gle/jEjFTbph1K6W3aH79'}>
-              Register Now
-            </Button>
+              <Button variant="contained" size="large" onClick={event => window.location.href = 'https://forms.gle/jEjFTbph1K6W3aH79'}>
+                Register Now
+              </Button>
             </Box>
           </Box>
           <Typography variant="h2" sx={{ textAlign: "center", marginTop: "20px" }}>Event Coordinators</Typography>
           <Box className="contact">
-            <ContactCard />
-            <ContactCard />
+            <EventMag person={person.person1} />
+            <EventMag person={person.person2} />
           </Box>
         </Box>
       </Box>

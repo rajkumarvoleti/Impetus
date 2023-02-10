@@ -86,7 +86,14 @@ export default function IAMPage() {
       },
     },
   };
+  const person={
+    person1:{
 
+    },
+    person2:{
+
+    },
+  }
   return (
     <Box>
       <BackgroundParticles />
@@ -241,8 +248,9 @@ export default function IAMPage() {
           Our Speakers
         </Typography>
         <Box className="contact">
-          <ContactCard />
-          <ContactCard />
+          <ContactCard person={person.person1}/>
+          <ContactCard person={person.person1}/>
+          
         </Box>
         <Contact />
       </Box>
