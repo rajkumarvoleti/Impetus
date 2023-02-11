@@ -15,7 +15,7 @@ export default function CarouselComp() {
     }
   };
 
-  const urls = ["/images/pic1.jpg", "/images/pic2.jpg", "/images/pic5.jpg"];
+  const urls = ["/images/img1.jpg", "/images/img2.jpg", "/images/img3.jpg"];
 
   const styles = {
     position: "relative",
