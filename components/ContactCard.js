@@ -1,3 +1,4 @@
+import { useState , useEffect} from "react";
 import { Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import Image from "next/image";
@@ -29,11 +30,13 @@ const styles = {
 };
 
 const ContactCard = ({ person }) => {
+
   const [hover, setHover] = useState(false);
 
   const onHover = () => setHover(true);
   const offHover = () => setHover(false);
   const toggleHover = () => setHover(!hover);
+
 
   return (
     <Box sx={styles} className="pcard">
@@ -48,6 +51,7 @@ const ContactCard = ({ person }) => {
         alt="guy"
         height="200"
         width="200"
+        onClick={clicked}
       />
 
       <Box className="title">
@@ -57,7 +61,7 @@ const ContactCard = ({ person }) => {
         <Typography variant="h4" fontSize="18px">
           {person.post}
         </Typography>
-        <Typography variant="h5" fontSize="16px"></Typography>
+
         <Typography varint="h5" fontSize="16px">
           {person.phone}
         </Typography>

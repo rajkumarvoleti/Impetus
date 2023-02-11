@@ -73,25 +73,25 @@ export default function Contact() {
           </Link>
         </Box>
         <Box className="icons center2">
-          <IconButton>
+          
+          <IconButton onClick={event => window.location.href = 'https://www.facebook.com/smeiiests/'}>
             <FacebookIcon />
           </IconButton>
-          <IconButton>
+          <IconButton onClick={event => window.location.href = 'https://www.linkedin.com/in/society-of-mechanical-engineers-iiest-shibpur-89244a193'}>
             <LinkedInIcon />
           </IconButton>
-          <IconButton>
+          <IconButton onClick={event => window.location.href = 'https://www.instagram.com/sme.iiests/?hl=en'}>
             <InstagramIcon />
           </IconButton>
-          <IconButton>
+          <IconButton onClick={event => window.location.href = 'https://www.youtube.com/@smeiiests7235'}>
             <YouTubeIcon />
           </IconButton>
-          <IconButton>
-            <TwitterIcon />
-          </IconButton>
+          
         </Box>
         <Box className="terms center1 ">
           <em>Privacy Policy / Terms of Services</em>
-          <p>Meet The Team</p>
+          <Link href="/team" style={{ margin: "10px 0 30px 0", color: "white", textDecoration: "none" }}>Meet the team</Link>
+          {/* <p>Meet The Team</p> */}
         </Box>
       </Box>
     </Box>
