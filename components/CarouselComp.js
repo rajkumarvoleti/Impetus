@@ -15,7 +15,11 @@ export default function CarouselComp() {
     }
   };
 
-  const urls = ["/images/img1.jpg", "/images/img2.jpg", "/images/img3.jpg"];
+  const urls = [
+    "/images/image1.jpg",
+    "/images/image2.jpg",
+    "/images/image3.jpg",
+  ];
 
   const styles = {
     position: "relative",
