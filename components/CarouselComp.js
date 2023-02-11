@@ -32,7 +32,6 @@ export default function CarouselComp() {
     },
     maxWidth: "800px",
     maxHeight: "90vh",
-    filter: "grayscale(70%)",
   };
 
   const styles2 = {

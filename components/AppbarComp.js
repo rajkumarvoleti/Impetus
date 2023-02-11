@@ -69,9 +69,8 @@ export default function AppbarComp() {
           // src="/images/Impetus Logo white.png"
           //"./images/Impetus Logo white.png"
           alt="logo"
-          width="70px"
-          height="70px"
-
+          width="70"
+          height="70"
           className="logo"
         />
         <SideBarComp />

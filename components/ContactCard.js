@@ -1,4 +1,4 @@
-import { useState , useEffect} from "react";
+import { useState, useEffect } from "react";
 import { Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import Image from "next/image";
@@ -6,7 +6,6 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import IconButton from "@mui/material/IconButton";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import { useState } from "react";
 
 const styles = {
   height: "400px",
@@ -30,13 +29,11 @@ const styles = {
 };
 
 const ContactCard = ({ person }) => {
-
   const [hover, setHover] = useState(false);
 
   const onHover = () => setHover(true);
   const offHover = () => setHover(false);
   const toggleHover = () => setHover(!hover);
-
 
   return (
     <Box sx={styles} className="pcard">
@@ -51,7 +48,6 @@ const ContactCard = ({ person }) => {
         alt="guy"
         height="200"
         width="200"
-        onClick={clicked}
       />
 
       <Box className="title">

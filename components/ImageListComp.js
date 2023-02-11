@@ -91,20 +91,20 @@ const itemData = [
   {
     img: "/images/pic4.jpg",
     // title: "Coffee",
-    cols: 2,
+    cols: 3,
     rows: 2,
   },
   {
     img: "/images/pic5.jpg",
     // title: "Mushrooms",
-    cols: 4,
-    rows: 6,
+    cols: 3,
+    rows: 2,
   },
   {
     img: "/images/pic6.jpg",
     // title: "Breakfast",
     cols: 6,
-    rows: 6,
+    rows: 3,
   },
   {
     img: "/images/pic7.jpg",
@@ -119,15 +119,15 @@ const itemData = [
     rows: 2,
   },
   {
-    img: "/images/pic9.jpg",
-    // title: "Coffee",
-    cols: 4,
-    rows: 2,
-  },
-  {
     img: "/images/pic10.jpg",
     // title: "Mushrooms",
-    cols: 2,
-    rows: 4,
+    cols: 3,
+    rows: 1,
+  },
+  {
+    img: "/images/pic9.jpg",
+    // title: "Coffee",
+    cols: 12,
+    rows: 2,
   },
 ];
