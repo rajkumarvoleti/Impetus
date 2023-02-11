@@ -1,8 +1,5 @@
 import { Box } from "@mui/system";
 import Image from "next/image";
-import Image1 from "../public/images/pic5.jpg";
-import Image2 from "../public/images/pic2.jpg";
-import Image3 from "../public/images/pic1.jpg";
 import Carousel from "react-elastic-carousel";
 import { useRef } from "react";
 import { Typography } from "@mui/material";
@@ -18,8 +15,7 @@ export default function CarouselComp() {
     }
   };
 
-  const urls = [Image1.src, Image2.src, Image3.src];
-  // const urls = ["/images/pic5.jpg", "/images/pic2.jpg", "/images/pic1.jpg"];
+  const urls = ["/images/pic1.jpg", "/images/pic2.jpg", "/images/pic5.jpg"];
 
   const styles = {
     position: "relative",
