@@ -51,7 +51,7 @@ export default function CarouselComp() {
           <Box key={url} sx={styles}>
             <Image
               src={url}
-              alt="abacus"
+              alt="photo"
               layout="fill"
               objectFit="cover"
               key={url}
