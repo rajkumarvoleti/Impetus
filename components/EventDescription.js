@@ -80,13 +80,13 @@ export default function EventDescription({ index, setCurrIdx, currIdx }) {
   const scrapyard =
     'Innovation need not come from what everyone considers to be a resource; it can also come from making use of what others consider to be waste and producing something useful. With this thought in mind IMPETUS 6.0 presents to you "Scrapyard"';
   const quiz =
-    'To instil the essence of quizzing, IMechE IIEST, Shibpur brings to you a Grand General Technical Quiz: "Quizzical Suspects" under the banner of Impetus 6.0 This quiz is designed to challenge and engage students, allowing them to showcase their technical knowledge and skills';
+    "To instil the essence of quizzing, IMechE IIEST, Shibpur brings to you a Grand General Technical Quiz: 'Quizzical Suspects' under the banner of Impetus 6.0 .The quiz tests and showcases students' technical knowledge and skills.";
   const deathrace =
     "The Death Race is a thrilling competition that brings together talented individuals to showcase their skills in building and maneuvering a robot through a challenging track filled with obstacles. ";
   const valorant =
     "The Valorant gaming event is a competition that brings together talented players to showcase their skills and compete for recognition. It is an exciting opportunity for Valorant fans to experience high-level gameplay and celebrate the top talent in the game.";
   const fun =
-    "Impetus 6.0 brings to you a proper carnival game of skill. Dodge between one bunker to another to make a lead over others . Test the cognitive and hand coordination in breaking down the complete pyramid. Try your hands on darts and wire wand loop. Take help with your partner in moving through the proper pathway in completing the event. If you can manage all these , some prizes are surely waiting for you.";
+    "Impetus 6.0 presents a carnival game of skill. Dodge between bunkers to lead, test hand coordination with pyramid breaking, aim for prizes with darts and wire wand loop. Work with a partner to navigate the proper pathway for a chance to win rewards.";
 
   const content = [
     cadathon,

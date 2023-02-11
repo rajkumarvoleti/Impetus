@@ -34,7 +34,7 @@ const ContactCard=({person})=>{
         className="profile"
         // ({person.imgname}="#")?
         src={`/images/${person.imgname}`}
-        style={{borderRadius:"50%",border:"solid 5px white"}}
+        style={{borderRadius:"50%"}}
         alt="guy"
         height="200"
         width="200"
