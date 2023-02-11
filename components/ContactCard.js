@@ -6,6 +6,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import IconButton from "@mui/material/IconButton";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import { useState } from "react";
 
 const styles = {
   height: "400px",
@@ -16,7 +17,7 @@ const styles = {
   "div h4": {
     margin: "10px",
   },
-  div: {
+  ".title": {
     display: "flex !important",
     flexDirection: "column",
   },
@@ -30,19 +31,21 @@ const styles = {
 
 const ContactCard = ({ person }) => {
 
-  
+  const [hover, setHover] = useState(false);
 
-  const clicked = () => {
+  const onHover = () => setHover(true);
+  const offHover = () => setHover(false);
+  const toggleHover = () => setHover(!hover);
 
-    
-    console.log("img was clicked")
-  }
-  const [text, setText] = useState('Enter text here');
+
   return (
     <Box sx={styles} className="pcard">
       <Image
-        className="profile"
+        className={`profile ${hover ? "profileHover" : ""}`}
         // ({person.imgname}="#")?
+        onMouseEnter={onHover}
+        onClick={toggleHover}
+        onMouseLeave={offHover}
         src={`/images/${person.imgname}`}
         style={{ borderRadius: "50%" }}
         alt="guy"
@@ -58,12 +61,18 @@ const ContactCard = ({ person }) => {
         <Typography variant="h4" fontSize="18px">
           {person.post}
         </Typography>
+
         <Typography varint="h5" fontSize="16px">
           {person.phone}
         </Typography>
       </Box>
 
-      <Box className="text">
+      <Box
+        onMouseEnter={onHover}
+        onClick={toggleHover}
+        onMouseLeave={offHover}
+        className={`text ${hover ? "textHover" : ""}`}
+      >
         {/* <a href="#">
           <FacebookIcon />
         </a> */}
@@ -76,6 +85,6 @@ const ContactCard = ({ person }) => {
       </Box>
     </Box>
   );
-}
+};
 
 export default ContactCard;

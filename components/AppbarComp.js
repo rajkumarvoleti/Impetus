@@ -55,6 +55,7 @@ export default function AppbarComp() {
       <AppBar
         className="appbar"
         style={{
+          mt: "30px",
           background: "transparent",
           backdropFilter: `${top ? "none" : "blur(5px)"}`,
           position: "fixed",
@@ -68,8 +69,9 @@ export default function AppbarComp() {
           // src="/images/Impetus Logo white.png"
           //"./images/Impetus Logo white.png"
           alt="logo"
-          width={70}
-          height={70}
+          width="70px"
+          height="70px"
+
           className="logo"
         />
         <SideBarComp />
