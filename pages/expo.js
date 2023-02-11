@@ -71,11 +71,27 @@ export default function ExpoPage() {
         <Box className="content center1">
           <Typography variant="h2">Tech Show</Typography>
           <Typography variant="p">
-            Get ready for a Tech Show involving some of most future gen techs that will fascinate your mind. At this Tech Show, we Impetus 6.0 bring you-<br></br><br></br>
-            1. VIRTUAL REALITY ZONE - Feel the aura and landscape of the moon with your own eyes. Virtual reality experience from actual satellite footages to get the experience of having your own foot on the moon.<br></br><br></br>
-            2. AUGMENTED REALITY ZONE(Selfie Zone) - In the current world of Insta, Snapchat and Reels, the rulers are those who know how to Filter. Here, Design your own mobile filters with our AR technology, take snaps, share with your friends and family, get millions and millions of likes and love. Just dont forget to tag our Impetus in it.<br></br><br></br>
-            3. 3-D Printing - Get to see industry specialists work on one of most advanced 3-D printers in the world to create amazing miracles. A magic to amaze, a magic to learn, a magic to be the future.
-            <br></br><br></br>
+            Get ready for a Tech Show involving some of most future gen techs
+            that will fascinate your mind. At this Tech Show, we Impetus 6.0
+            bring you-<br></br>
+            <br></br>
+            1. VIRTUAL REALITY ZONE - Feel the aura and landscape of the moon
+            with your own eyes. Virtual reality experience from actual satellite
+            footages to get the experience of having your own foot on the moon.
+            <br></br>
+            <br></br>
+            2. AUGMENTED REALITY ZONE(Selfie Zone) - In the current world of
+            Insta, Snapchat and Reels, the rulers are those who know how to
+            Filter. Here, Design your own mobile filters with our AR technology,
+            take snaps, share with your friends and family, get millions and
+            millions of likes and love. Just dont forget to tag our Impetus in
+            it.<br></br>
+            <br></br>
+            3. 3-D Printing - Get to see industry specialists work on one of
+            most advanced 3-D printers in the world to create amazing miracles.
+            A magic to amaze, a magic to learn, a magic to be the future.
+            <br></br>
+            <br></br>
             Venue- Parade Ground, IIEST Shibpur Campus
           </Typography>
           {/* <Button sx={{ margin: "30px 0" }} variant="contained">
@@ -90,9 +106,19 @@ export default function ExpoPage() {
         <Box className="content center1">
           <Typography variant="h2">Electric Vehicle Expo</Typography>
           <Typography variant="p">
-            With the world moving towards being an eco-friendly place to be, we engineers have to the pioneers while moving ahead in our vehicles. And these vehicles just can't be a usual bike or car, they need to be ELECTRIC.<br></br><br></br>
-            So we at IMPETUS 6.0 bring to you, a designated expo for the EVs that are gonna rule the roads soon. During the Impetus 6.0 events do come to our expo to gaze upon one of the most efficient electronic vehicle and get a chance to meet the manufacturers of this NextGen Technology. Not only these EVs will be a cool way to roam around but they will make you realise that how important this transition of electronic vehicles are in the current world scenario.<br></br><br></br>
-
+            With the world moving towards being an eco-friendly place to be, we
+            engineers have to the pioneers while moving ahead in our vehicles.
+            And these vehicles just can&apos;t be a usual bike or car, they need
+            to be ELECTRIC.<br></br>
+            <br></br>
+            So we at IMPETUS 6.0 bring to you, a designated expo for the EVs
+            that are gonna rule the roads soon. During the Impetus 6.0 events do
+            come to our expo to gaze upon one of the most efficient electronic
+            vehicle and get a chance to meet the manufacturers of this NextGen
+            Technology. Not only these EVs will be a cool way to roam around but
+            they will make you realise that how important this transition of
+            electronic vehicles are in the current world scenario.<br></br>
+            <br></br>
             Venue- Netaji Bhawan, IIEST Shibpur Campus
           </Typography>
           {/* <Button sx={{ margin: "30px 0" }} variant="contained">
@@ -107,10 +133,19 @@ export default function ExpoPage() {
         <Box className="content center1">
           <Typography variant="h2">Humanoid Robo Expo</Typography>
           <Typography variant="p">
-            From imagination to daydreams. From dreams to sci-fi movies. From movies to possible future. And now, we bring the FUTURE here.<br></br><br></br>
-            Come to IIEST Shibpur to meet our ROBO FRIEND, 'ENZO'. A robot that has helped thousands of patients when even nurses cant keep close to them. A robot that the served has humanity when it was needed the most.<br></br><br></br>
-            At the expo, get to see our humanoid robot, Enzo. Get a chance to physically meet it, meet the industrial experts who made it and learn from the best.<br></br><br></br>
-
+            From imagination to daydreams. From dreams to sci-fi movies. From
+            movies to possible future. And now, we bring the FUTURE here.
+            <br></br>
+            <br></br>
+            Come to IIEST Shibpur to meet our ROBO FRIEND, &apos;ENZO&apos;. A
+            robot that has helped thousands of patients when even nurses cant
+            keep close to them. A robot that the served has humanity when it was
+            needed the most.<br></br>
+            <br></br>
+            At the expo, get to see our humanoid robot, Enzo. Get a chance to
+            physically meet it, meet the industrial experts who made it and
+            learn from the best.<br></br>
+            <br></br>
             Venue - Parade Ground, IIEST Shibpur Campus
           </Typography>
           {/* <Button sx={{ margin: "30px 0" }} variant="contained">
@@ -118,7 +153,7 @@ export default function ExpoPage() {
           </Button> */}
         </Box>
       </Box>
-      
+
       <Contact />
     </Box>
   );
