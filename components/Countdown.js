@@ -6,12 +6,14 @@ export default function Countdown() {
   const [mins, setMins] = useState(0);
   const [hours, setHours] = useState(0);
   const [days, setDays] = useState(0);
+  const [dead, setDead] = useState(false);
   const theme = useTheme();
 
   const deadline = "February, 17, 2023";
 
   const getTime = () => {
     const time = Date.parse(deadline) - Date.now();
+    if (time <= 0) setDead(true);
     setDays(Math.floor(time / (1000 * 60 * 60 * 24)));
     setHours(Math.floor((time / (1000 * 60 * 60)) % 24));
     setMins(Math.floor((time / 1000 / 60) % 60));
@@ -39,6 +41,15 @@ export default function Countdown() {
       backdropFilter: "blur(5px)",
     },
   };
+
+  if (dead)
+    return (
+      <Box>
+        <Typography sx={{ margin: "50px" }} variant="h2">
+          IS LIVE NOW!
+        </Typography>
+      </Box>
+    );
 
   return (
     <Box sx={{ margin: "60px 0" }} className="center1">

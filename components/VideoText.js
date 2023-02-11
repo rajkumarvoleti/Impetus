@@ -20,6 +20,13 @@ const styles = {
     m: "20px 0",
     textAlign: "center",
     overflowY: "hidden",
+    fontSize: {
+      lg: "24px",
+      md: "24px",
+      sm: "18px",
+      xs: "18px",
+    },
+    maxWidth: "80vw",
   },
   ".noMarginB": {
     marginBottom: "10px",

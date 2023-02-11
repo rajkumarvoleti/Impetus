@@ -91,7 +91,7 @@ p {
   color: white;
 }
 
-.pcard:hover .text {
+/* .pcard:hover .text {
   position: absolute;
   top: 120px;
   opacity: 1;
@@ -100,12 +100,29 @@ p {
   justify-content: center;
   max-height: 60px;
   gap: 5px 15px;
+} */
+
+.textHover {
+  position: absolute;
+  top: 120px;
+  opacity: 1;
+  display: flex !important;
+  flex-direction: row;
+  justify-content: center;
+  max-height: 60px !important;
+  gap: 5px 15px;
 }
 
-.pcard:hover .profile {
+.profileHover {
   transition: all 0.3s ease;
   opacity: 0.5;
 }
+
+/* .pcard:hover .profile {
+  transition: all 0.3s ease;
+  opacity: 0.5;
+} */
+
 .cards {
   display: flex;
   flex-wrap: wrap;
