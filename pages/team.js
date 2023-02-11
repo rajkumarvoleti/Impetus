@@ -65,7 +65,7 @@ export default function TeamPage() {
       phone: "+91 9359746978",
       post: "Sponsorship Head",
       imgname: "ARNAB ABHIJIT SHARMA.jpg",
-      insta: "https://instagram.com/raagu_1237?igshid=ZDdkNTZiNTM=",
+      insta: "#",
       link: "https://www.linkedin.com/in/arnab-sharma-56733118b",
     },
     person6:
@@ -137,8 +137,8 @@ export default function TeamPage() {
       phone: "+91 7985400976",
       post: "TA and Logistics",
       imgname: "SHUBHANKAR_SARKAR (TA and Logistics).jpg",
-      insta: "https://instagram.com/raagu_1237?igshid=ZDdkNTZiNTM=",
-      link: "https://www.linkedin.com/in/raghavsingupuram",
+      insta: "#",
+      link: "#",
     },
     person14:
     {
@@ -148,6 +148,15 @@ export default function TeamPage() {
       imgname: "VOLETI_DHARMA (Technical Head).jpg",
       insta: "https://www.instagram.com/rajkumar_be_mee/",
       link: "https://www.linkedin.com/in/rajkumar-voleti/",
+    },
+    person15:
+    {
+      name: "Utsab Kundu",
+      phone: "+91 8100460390",
+      post: "Technical Executive",
+      imgname: "utsab.jpg",
+      insta: "https://www.instagram.com/utsab_kundu5/",
+      link: "https://www.linkedin.com/in/utsab-kundu-3a742421b/",
     },
   }
 
@@ -176,6 +185,7 @@ export default function TeamPage() {
         <Typography variant="h2" style={{ marginBottom: "20px" }}>Technical Team</Typography>
         <Box>
           <ContactCard person={person.person14} />
+          <ContactCard person={person.person15} />
         </Box>
         <Typography variant="h2" style={{ marginBottom: "20px" }}>Content & Design Team</Typography>
         <Box>

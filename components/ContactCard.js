@@ -1,3 +1,4 @@
+import { useState , useEffect} from "react";
 import { Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import Image from "next/image";
@@ -27,17 +28,27 @@ const styles = {
   textAlign: "center",
 };
 
-const ContactCard=({person})=>{
+const ContactCard = ({ person }) => {
+
+  
+
+  const clicked = () => {
+
+    
+    console.log("img was clicked")
+  }
+  const [text, setText] = useState('Enter text here');
   return (
     <Box sx={styles} className="pcard">
       <Image
         className="profile"
         // ({person.imgname}="#")?
         src={`/images/${person.imgname}`}
-        style={{borderRadius:"50%"}}
+        style={{ borderRadius: "50%" }}
         alt="guy"
         height="200"
         width="200"
+        onClick={clicked}
       />
 
       <Box className="title">
@@ -46,9 +57,6 @@ const ContactCard=({person})=>{
         </Typography>
         <Typography variant="h4" fontSize="18px">
           {person.post}
-        </Typography>
-        <Typography variant="h5" fontSize="16px">
-          
         </Typography>
         <Typography varint="h5" fontSize="16px">
           {person.phone}

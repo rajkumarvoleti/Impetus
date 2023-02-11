@@ -93,7 +93,7 @@ p {
 
 .pcard:hover .text {
   position: absolute;
-  top: 120px;
+  top: 130px;
   opacity: 1;
   display: flex;
   flex-direction: row;

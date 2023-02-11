@@ -244,14 +244,14 @@ export default function IAMPage() {
             </Box>
           </Box>
         </Box>
-        <Typography variant="h2" style={{ mt: "20px", mb: "15px" }}>
+        {/* <Typography variant="h2" style={{ mt: "20px", mb: "15px" }}>
           Our Speakers
         </Typography>
         <Box className="contact">
           <ContactCard person={person.person1}/>
           <ContactCard person={person.person1}/>
           
-        </Box>
+        </Box> */}
         <Contact />
       </Box>
     </Box>

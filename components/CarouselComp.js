@@ -1,8 +1,8 @@
 import { Box } from "@mui/system";
 import Image from "next/image";
-import Image1 from "../public/images/img1.jpg";
-import Image2 from "../public/images/img2.jpg";
-import Image3 from "../public/images/img3.jpg";
+import Image1 from "../public/images/pic5.jpg";
+import Image2 from "../public/images/pic2.jpg";
+import Image3 from "../public/images/pic1.jpg";
 import Carousel from "react-elastic-carousel";
 import { useRef } from "react";
 import { Typography } from "@mui/material";
