@@ -8,10 +8,11 @@ const styles = {
   width: "400px",
 };
 
-export default function SponsorCard() {
+const SponsorCard=({sponsor})=> {
   return (
     <Box sx={styles} className="card">
-      <Image src="/images/cocacola.png" alt="card" width="300" height="210" />
+      <Image src={`/images/${sponsor.imgname}`} alt="card" width="300" height="210" />
     </Box>
   );
 }
+export default SponsorCard;

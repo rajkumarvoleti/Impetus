@@ -173,6 +173,10 @@ export default function TeamPage() {
           <ContactCard person={person.person7} />
           <ContactCard person={person.person8} />
         </Box>
+        <Typography variant="h2" style={{ marginBottom: "20px" }}>Technical Team</Typography>
+        <Box>
+          <ContactCard person={person.person14} />
+        </Box>
         <Typography variant="h2" style={{ marginBottom: "20px" }}>Content & Design Team</Typography>
         <Box>
           <ContactCard person={person.person9} />
@@ -190,10 +194,7 @@ export default function TeamPage() {
         <Box>
           <ContactCard person={person.person13} />
         </Box>
-        <Typography variant="h2" style={{ marginBottom: "20px" }}>Technical Team</Typography>
-        <Box>
-          <ContactCard person={person.person14} />
-        </Box>
+        
 
       </Box>
 
