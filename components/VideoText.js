@@ -48,7 +48,7 @@ export default function VideoText({ hideIt }) {
         IMPETUS
       </Typography>
       <Typography variant="h4" className="noMarginB">
-        Anuanl Techfest of Department of Mechanical Engineering,
+        Annual Techfest of Department of Mechanical Engineering,
       </Typography>
       <Typography variant="h4" className="noMarginT">
         IIEST Shibpur
