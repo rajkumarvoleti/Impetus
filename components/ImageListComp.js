@@ -9,9 +9,8 @@ import { repeat } from "lodash";
 function srcset(image, width, height, rows = 1, cols = 1) {
   return {
     src: `${image}?w=${width * cols}&h=${height * rows}&fit=crop&auto=format`,
-    srcSet: `${image}?w=${width * cols}&h=${
-      height * rows
-    }&fit=crop&auto=format&dpr=2 2x`,
+    srcSet: `${image}?w=${width * cols}&h=${height * rows
+      }&fit=crop&auto=format&dpr=2 2x`,
   };
 }
 
@@ -54,10 +53,10 @@ export default function ImageListComp() {
               position="top"
               actionIcon={
                 <IconButton
-                  sx={{ color: "white" }}
-                  aria-label={`star ${item.title}`}
+                  // sx={{ color: "white" }}
+                  // aria-label={`star ${item.title}`}
                 >
-                  <StarBorderIcon />
+                  {/* <StarBorderIcon /> */}
                 </IconButton>
               }
               actionPosition="left"

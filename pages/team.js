@@ -59,7 +59,7 @@ export default function TeamPage() {
       phone: "+91 9359746978",
       post: "Sponsorship Head",
       imgname: "ARNAB ABHIJIT SHARMA.jpg",
-      insta: "#",
+      insta: "https://www.instagram.com/arnab_sharma09/?igshid=ZDdkNTZiNTM%3D",
       link: "https://www.linkedin.com/in/arnab-sharma-56733118b",
     },
     person6: {

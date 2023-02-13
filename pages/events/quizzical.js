@@ -116,8 +116,8 @@ export default function CadathonPage() {
 
           <ul className="nestedList" style={{ fontSize: "21px" }}>
             Dates:
-            <li>-Round 1: 17th February, 2023 4pm-6pm</li>
-            <li>-Round 2: 17th February, 2023 6pm-8pm</li>
+            <li><ul className="BulletNone"><li>Round 1: 17th February, 2023 4pm-6pm</li></ul></li>
+            <li><ul className="BulletNone"><li>Round 2: 17th February, 2023 6pm-8pm</li></ul></li>
           </ul>
           <Box sx={{ width: "100%", marginTop: "30px" }} className="center1">
             <Button
@@ -133,25 +133,25 @@ export default function CadathonPage() {
         </Box>
         <Box className="data">
           <Typography variant="h2">Basic Information</Typography>
-          <ul>
-            <li>
-              ➜ Registration(online) - Till 2 hours before commencement of Round
+          <ul className="bulletArrow">
+            <li><ul className="BulletNone"><li>
+              Registration(online) - Till 2 hours before commencement of Round
               1
-            </li>
-            <li>
-              ➜ Registration (Offline)- On spot registrations subject to
+            </li></ul></li>
+            <li><ul className="BulletNone"><li>
+              Registration (Offline)- On spot registrations subject to
               availability.
-            </li>
-            <li>➜ Participation - Teams of size (1-3)</li>
-            <li>
-              ➜ Venue - Gallery 6, Department of Mechanical Engineering (IIEST
+            </li></ul></li>
+            <li><ul className="BulletNone"><li>Participation - Teams of size (1-3)</li></ul></li>
+            <li><ul className="BulletNone"><li>
+              Venue - Gallery 6, Department of Mechanical Engineering (IIEST
               Shibpur)
-            </li>
-            <li>➜ No. of Rounds - 2</li>
-            <li>➜ Duration of each round- Round 1-30 min & Round 2-30min</li>
-            <li>
-              ➜ Prizes worth <b>Rs.10000/-</b>
-            </li>
+            </li></ul></li>
+            <li><ul className="BulletNone"><li>No. of Rounds - 2</li></ul></li>
+            <li><ul className="BulletNone"><li>Duration of each round- Round 1-30 min & Round 2-30min</li></ul></li>
+            <li><ul className="BulletNone"><li>
+              Prizes worth <b>Rs.10000/-</b>
+            </li></ul></li>
           </ul>
           <Typography variant="h2">Flow of the events</Typography>
           <Typography sx={{ textIndent: "60px" }} variant="p">
@@ -163,25 +163,25 @@ export default function CadathonPage() {
             easily participate and win laurels.
           </Typography>
           <Typography variant="h2">Rules and Regulations</Typography>
-          <ul>
-            <li>
-              ➜ Teams will have to register 2 hours before the deadline of the
-              registration form.
-            </li>
-            <li>
-              ➜ On-spot registrations on subject to availability of slots.
-            </li>
-            <li>
-              ➜ The quiz will be of two rounds. First round will have 10
-              questions. +10/0- for each question.
-            </li>
-            <li>
-              ➜ The second round will be of bounce and pounce format. Teams
+          <ul className="bulletArrow">
+            <li><ul className="BulletNone"><li>
+              Teams will have to register 2 hours before the deadline of the
+              registration form.</li></ul></li>
+            
+            <li><ul className="BulletNone"><li>
+              On-spot registrations on subject to availability of slots.</li></ul></li>
+            
+            <li><ul className="BulletNone"><li>
+              The quiz will be of two rounds. First round will have 10
+              questions. +10/0- for each question.</li></ul></li>
+            
+            <li><ul className="BulletNone"><li>
+              The second round will be of bounce and pounce format. Teams
               pouncing will get +10/-5, for each question. Teams who will answer
-              the questions on bounce will get +5/-0 for each question.
-            </li>
-            <li>➜ Quizmaster&apos;s say is final.</li>
-            <li>➜ Team size 1-3 people.</li>
+              the questions on bounce will get +5/-0 for each question.</li></ul></li>
+            
+            <li><ul className="BulletNone"><li>Quizmaster&apos;s say is final.</li></ul></li>
+            <li><ul className="BulletNone"><li>Team size 1-3 people.</li></ul></li>
           </ul>
         </Box>
         <Box>
@@ -195,8 +195,8 @@ export default function CadathonPage() {
             <Typography variant="h3">Registration fee: </Typography>
             <ul className="nestedList" style={{ fontSize: "21px" }}>
              
-            <li>-  Free (for IIEST Students)</li>
-            <li>-  Rs.70 (for non-IIEST Students)</li>
+            <li><ul className="BulletNone"><li>Free (for IIEST Students)</li></ul></li>
+            <li><ul className="BulletNone"><li>Rs.70 (for non-IIEST Students)</li></ul></li>
           </ul>
             <Box sx={{ width: "100%" }} className="center1">
               <Button

@@ -51,7 +51,7 @@ const dataStyles = {
     margin: "20px 0",
   },
   "div ul li": {
-    // textIndent: "30px",
+    textIndent: "30px",
   },
   ".fee": {
     width: "100%",
@@ -70,7 +70,7 @@ const dataStyles = {
     margin: "0",
   },
   ".nestedList li": {
-    marginLeft: "30px",
+    // marginLeft: "30px",
   },
 };
 
@@ -137,8 +137,8 @@ export default function CadathonPage() {
 
           <ul className="nestedList" style={{ fontSize: "21px" }}>
             Dates:
-            <li>-Round 1: 17th February, 2023 1pm-2pm</li>
-            <li>-Round 2: 18th February, 2023 10am-11:30am</li>
+            <li><ul className="BulletNone"><li>Round 1: 17th February, 2023 1pm-2pm</li></ul></li>
+            <li><ul className="BulletNone"><li>Round 2: 18th February, 2023 10am-11:30am</li></ul></li>
           </ul>
           <Box sx={{ width: "100%", marginTop: "30px" }} className="center1">
             <Button
@@ -160,20 +160,20 @@ export default function CadathonPage() {
             while satisfying some given condition.
           </Typography>
           <Typography variant="h2">Basic Information</Typography>
-          <ul>
-            <li>➜ Registration – Till 1 hour before commencement of Round 1</li>
-            <li>➜ Participation – Individual</li>
-            <li>➜ Venue – Department building (IIEST Shibpur)</li>
-            <li>➜ No. of Rounds – 2</li>
+          <ul className="bulletArrow">
+            <li><ul className="BulletNone"><li>Registration – Till 1 hour before commencement of Round 1</li></ul></li>
+            <li><ul className="BulletNone"><li>Participation – Individual</li></ul></li>
+            <li><ul className="BulletNone"><li>Venue – Department building (IIEST Shibpur)</li></ul></li>
+            <li><ul className="BulletNone"><li>No. of Rounds – 2</li></ul></li>
             <li>
               <ul className="nestedList">
-                ➜ Duration of each round-
-                <li>Round 1- 60 min</li>
-                <li>Round 2- 150min</li>
+                Duration of each round-
+                <li><ul className="BulletNone"><li>Round 1- 60 min</li></ul></li>
+                <li><ul className="BulletNone"><li>Round 2- 150min</li></ul></li>
               </ul>
             </li>
             <li>
-              ➜ Prizes worth <b>Rs.8000/-</b>
+              Prizes worth <b>Rs.8000/-</b>
             </li>
           </ul>
           <Typography variant="h2">Flow of the events</Typography>
@@ -185,40 +185,40 @@ export default function CadathonPage() {
             allowed).
           </Typography>
           <Typography variant="h2">Rules and Regulations</Typography>
-          <ul>
-            <li>
-              ➜ Registered candidates are to be present in the department
+          <ul className="bulletArrow">
+            <li><ul className="BulletNone"><li>
+              Registered candidates are to be present in the department
               building before the commencement of the event.
-            </li>
+            </li></ul></li>
             <li>
               <ul className="nestedList">
-                ➜ ROUND 1-
-                <li>-Each participant will be provided with an objective</li>
-                <li>
-                  -Participants are required to bring their own laptop with any
+                ROUND 1-
+                <li><ul className="BulletNone"><li>Each participant will be provided with an objective</li></ul></li>
+                <li><ul className="BulletNone"><li>
+                  Participants are required to bring their own laptop with any
                   CAD software installed in it.
-                </li>
-                <li>
-                  -Participants need to replicate a 2D drawing of some
+                </li></ul></li>
+                <li><ul className="BulletNone"><li>
+                  Participants need to replicate a 2D drawing of some
                   components into their 3D design.
-                </li>
-                <li>
-                  -The top participants of 1st round will continue to Round 2.
+                </li></ul></li>
+                <li><ul className="BulletNone"><li>
+                  The top participants of 1st round will continue to Round 2.
                   Evaluation will be done based on accuracy and time consumed.
-                </li>
+                </li></ul></li>
               </ul>
             </li>
             <li>
               <ul className="nestedList">
-                ➜ ROUND 2-
-                <li>
-                  -The selected participants from 1st round will be provided
+                ROUND 2-
+                <li><ul className="BulletNone"><li>
+                  The selected participants from 1st round will be provided
                   with an objective to replicate a dynamic mechanical mechanism
                   based on the problem statement.
-                </li>
-                <li>
+                </li></ul></li>
+                <li><ul className="BulletNone"><li>
                   Participants will be evaluated based on time and accuracy.
-                </li>
+                </li></ul></li>
               </ul>
             </li>
           </ul>
@@ -234,8 +234,8 @@ export default function CadathonPage() {
             <Typography variant="h3">Registration fee: </Typography>
             <ul className="nestedList" style={{ fontSize: "21px" }}>
              
-            <li>-  Free (for IIEST Students)</li>
-            <li>-  Rs.50 (for non-IIEST Students)</li>
+            <li><ul className="BulletNone"><li>Free (for IIEST Students)</li></ul></li>
+            <li><ul className="BulletNone"><li>Rs.50 (for non-IIEST Students)</li></ul></li>
           </ul>
             <Box sx={{ width: "100%" }} className="center1">
               <Button
