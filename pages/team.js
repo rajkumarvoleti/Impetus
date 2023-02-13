@@ -123,8 +123,8 @@ export default function TeamPage() {
       phone: "+91 7985400976",
       post: "TA and Logistics",
       imgname: "SHUBHANKAR_SARKAR (TA and Logistics).jpg",
-      insta: "#",
-      link: "#",
+      insta: "https://instagram.com/shubhsark_9?igshid=ZDdkNTZiNTM=",
+      link: "https://www.linkedin.com/in/shubhankar-sarkar-8a4394249/",
     },
     person14: {
       name: "Voleti Rajkumar",
