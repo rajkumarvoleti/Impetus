@@ -10,6 +10,7 @@ import AppbarComp from "../components/AppbarComp";
 import LoadingComp from "../components/LoadingComp";
 import { Router } from "next/router";
 import { LoadingStateProvider } from "../components/LoadingContext";
+import Head from "next/head";
 
 const clientSideEmotionCache = createEmotionCache();
 
@@ -36,6 +37,9 @@ const MyApp = (props) => {
   return (
     <CacheProvider value={emotionCache}>
       <ThemeProvider theme={darkTheme}>
+        <Head>
+          <title>IMPETUS 6.0</title>
+        </Head>
         <CssBaseline />
         <LoadingStateProvider>
           {loading && <LoadingComp />}
