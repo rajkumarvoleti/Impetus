@@ -1,4 +1,5 @@
 import { Box } from "@mui/system";
+import { useEffect, useRef } from "react";
 import { useLoading } from "./LoadingContext";
 
 const styles = {
@@ -18,10 +19,17 @@ const styles = {
 
 export default function HomePageVideo() {
   const { startLoading, stopLoading } = useLoading();
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    const readyState = videoRef.current.readyState;
+    if (readyState !== 4) startLoading();
+  }, []);
 
   return (
     <Box sx={styles}>
       <video
+        ref={videoRef}
         onLoadStart={startLoading}
         onCanPlay={stopLoading}
         autoPlay
