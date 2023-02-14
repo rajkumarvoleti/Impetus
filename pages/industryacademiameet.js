@@ -96,7 +96,7 @@ export default function IAMPage() {
       <Box sx={styles} className="center1">
         <CarouselComp />
         <Typography variant="h1">Industry Academia Meet</Typography>
-        <Typography variant="h4">19th February, 2023 - ?-? PM</Typography>
+        <Typography variant="h4">19th February, 2023 - 9AM-6PM</Typography>
         <Box className="content">
           <Typography variant="p">
             {/* Industry-Academia Meet is a platform where we aim to establish a
