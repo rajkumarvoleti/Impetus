@@ -118,7 +118,7 @@ export default function CadathonPage() {
           </Typography>
 
           <ul style={{ fontSize: "22px" }}>
-            Dates: 18th February, 2023 3pm-5:30pm
+            Dates: 18th February, 2023 2:15pm
           </ul>
           <Box sx={{ width: "100%", marginTop: "30px" }} className="center1">
             <Button

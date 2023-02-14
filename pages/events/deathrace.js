@@ -126,12 +126,12 @@ export default function CadathonPage() {
             Dates:
             <li>
               <ul className="BulletNone">
-                <li>Round 1: 17th February, 2023 4:30pm-6:00pm</li>
+                <li>Round 1: 17th February, 2023 5pm</li>
               </ul>
             </li>
             <li>
               <ul className="BulletNone">
-                <li>Round 2: 18th February, 2023 6pm-7pm</li>
+                <li>Round 2: 18th February, 2023 12:45pm</li>
               </ul>
             </li>
           </ul>
@@ -274,7 +274,7 @@ export default function CadathonPage() {
               </li>
               <li>
                 <ul className="BulletNone">
-                  <li>Rs.50 (for non-IIEST Students)</li>
+                  <li>Rs.250 (for non-IIEST Students)</li>
                 </ul>
               </li>
             </ul>
