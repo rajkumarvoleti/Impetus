@@ -116,7 +116,7 @@ export default function Contact() {
           </Link>
 
           <em style={{ margin: "10px 0 30px 0" }}>
-            Copyright © 2023 - All rights reserved by Instruo
+            Copyright © 2023 - All rights reserved by Impetus
           </em>
           {/* <p>Meet The Team</p> */}
         </Box>
