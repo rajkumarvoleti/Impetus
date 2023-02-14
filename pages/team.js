@@ -59,7 +59,7 @@ export default function TeamPage() {
       phone: "+91 9359746978",
       post: "Sponsorship Head",
       imgname: "ARNAB ABHIJIT SHARMA.jpg",
-      insta: "#",
+      insta: "https://www.instagram.com/arnab_sharma09/?igshid=ZDdkNTZiNTM%3D",
       link: "https://www.linkedin.com/in/arnab-sharma-56733118b",
     },
     person6: {
@@ -123,8 +123,8 @@ export default function TeamPage() {
       phone: "+91 7985400976",
       post: "TA and Logistics",
       imgname: "SHUBHANKAR_SARKAR (TA and Logistics).jpg",
-      insta: "#",
-      link: "#",
+      insta: "https://instagram.com/shubhsark_9?igshid=ZDdkNTZiNTM=",
+      link: "https://www.linkedin.com/in/shubhankar-sarkar-8a4394249/",
     },
     person14: {
       name: "Voleti Rajkumar",

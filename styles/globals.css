@@ -186,3 +186,41 @@ p {
     margin-top: 20px !important;
   }
 }
+
+
+.data ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.data li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px;
+}
+
+.bulletArrow li::before {
+  content: "➔";
+  position: absolute;
+  left: 0;
+  /* top: 5px; */
+}
+.nestedList li::before {
+  content: "-";
+  position: absolute;
+  left: 0;
+  /* top: 5px; */
+}
+.BulletNone li {
+  position: relative;
+  text-indent: 0!IMPORTANT;
+  padding-left: 30px;
+  margin-bottom: 10px;
+}
+.BulletNone li::before {
+  /* content: ""; */
+  /* position: absolute; */
+  text-indent: 0;
+  left: 0;
+  /* top: 5px; */
+}

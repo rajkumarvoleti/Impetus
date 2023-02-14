@@ -120,11 +120,11 @@ export default function CadathonPage() {
         <Box className="data">
           <Typography variant="h2">Problem Statement</Typography>
           <Typography sx={{ textIndent: "60px" }} style={{}} variant="p">
-            <ul>
-              <li>➜ Effective desalination using solar power systems.</li>
-              <li>➜ Waste heat and district heating</li>
-              <li>➜ Design of cooling vest for regulating body temperatures for miners.</li>
-              <li>➜ Thermo-electric refrigeration for household applications</li>
+            <ul className="bulletArrow">
+            <li><ul className="BulletNone"><li>Effective desalination using solar power systems.</li></ul></li>
+            <li><ul className="BulletNone"><li>Waste heat and district heating</li></ul></li>
+            <li><ul className="BulletNone"><li>Design of cooling vest for regulating body temperatures for miners.</li></ul></li>
+            <li><ul className="BulletNone"><li>Thermo-electric refrigeration for household applications</li></ul></li>
             </ul>
             <Box sx={{ width: "100%", marginTop: "30px" }} className="center1">
               <Button variant="contained" size="large" onClick={event => window.location.href = 'https://forms.gle/7hvpvMP7NWcABpCF9'}>
@@ -134,34 +134,39 @@ export default function CadathonPage() {
           </Typography>
           <Typography variant="h2">Objective</Typography>
           <Typography sx={{ textIndent: "60px" }} style={{}} variant="p">
-            <ul>
-              <li>➜ You have to upload the presentation along with an abstract of your idea (in less than 350
-                words) on the given link and the top 5 performers will be selected for the second round.</li>
-              <li>➜ In the second round, the participants will be given an opportunity to present the idea in front
-                of the judges after which top performers will be announced.</li>
-              <li>➜ Team size : Individual or group of a maximum of 2 members.</li>
-              <li>➜ Event duration : 1 hour 15 minutes</li>
-              <li>➜ Rules are subject to change and decisions of impetus team are absolute and binding.</li>
+            <ul className="bulletArrow">
+              <li>
+                <ul className="BulletNone">
+                  <li>You have to upload the presentation along with an abstract of your idea (in less than 350
+                    words) on the given link and the top 5 performers will be selected for the second round.
+                  </li>
+                </ul>
+              </li>
+              <li><ul className="BulletNone"><li>In the second round, the participants will be given an opportunity to present the idea in front
+                of the judges after which top performers will be announced.</li></ul></li>
+              <li><ul className="BulletNone"><li>Team size : Individual or group of a maximum of 2 members.</li></ul></li>
+              <li><ul className="BulletNone"><li>Event duration : 1 hour 15 minutes</li></ul></li>
+              <li><ul className="BulletNone"><li>Rules are subject to change and decisions of impetus team are absolute and binding.</li></ul></li>
             </ul>
           </Typography>
           <Typography variant="h2">Basic Information</Typography>
-          <ul>
-            <li>
-              ➜ Deadline for round 1– 2 days before commencement of the event
-            </li>
-            <li>
-              ➜ Participation – team of maximum 2 members
-            </li>
-            <li>
-              ➜ Expected Participation – 15+ teams
-            </li>
-            <li>
-              ➜ No. of Rounds – 2
-            </li>
+          <ul className="bulletArrow">
+            <li><ul className="BulletNone"><li>
+              Deadline for round 1– 2 days before commencement of the event
+            </li></ul></li>
+            <li><ul className="BulletNone"><li>
+              Participation – team of maximum 2 members
+            </li></ul></li>
+            <li><ul className="BulletNone"><li>
+              Expected Participation – 15+ teams
+            </li></ul></li>
+            <li><ul className="BulletNone"><li>
+              No. of Rounds – 2
+            </li></ul></li>
 
-            <li>
-              ➜ Prizes worth <b>Rs.8000/-</b>
-            </li>
+            <li><ul className="BulletNone"><li>
+              Prizes worth <b>Rs.8000/-</b>
+            </li></ul></li>
           </ul>
           <Typography variant="h2">Flow of the events</Typography>
           <Typography sx={{ textIndent: "60px" }} variant="p">
@@ -173,48 +178,41 @@ export default function CadathonPage() {
           </Typography>
 
           <Typography variant="h2">Rules and Regulations</Typography>
-          <ul>
+          <ul className="bulletArrow">
 
             <li>
 
               <ul className="nestedList">
-                ➜ BASIC RULES-
-                <li>
-                  - This competition is open to every student from the colleges all over India.
-                </li>
-                <li>
-                  - Start-up idea presentation is a must for this competition.
-                </li>
-                <li>
-                  - Formation of Teams: A maximum of 2 members is permitted per team.
-                </li>
-                <li>
-                  - A candidate can participate individually also.
-                </li>
-                <li>- One participant cannot be a part of more than one team.</li>
-                <li>- No change in team structure is permitted after the team is registered.</li>
-                <li>- Registration: Individuals/teams registered through this form will only be considered valid.</li>
+                BASIC RULES-
+                <li><ul className="BulletNone"><li>This competition is open to every student from the colleges all over India.</li></ul></li>
+                <li><ul className="BulletNone"><li>Start-up idea presentation is a must for this competition.</li></ul></li>
+                <li><ul className="BulletNone"><li>Formation of Teams: A maximum of 2 members is permitted per team.</li></ul></li>
+                <li><ul className="BulletNone"><li>A candidate can participate individually also.</li></ul></li>
+                <li><ul className="BulletNone"><li>One participant cannot be a part of more than one team.</li></ul></li>
+                <li><ul className="BulletNone"><li>No change in team structure is permitted after the team is registered.</li></ul></li>
+                <li><ul className="BulletNone"><li>Registration: Individuals/teams registered through this form will only be considered valid.</li></ul></li>
               </ul>
             </li>
             <li>
 
               <ul className="nestedList">
-                ➜ ROUND 1-
-                <li>- This will be an online pitch deck submission round. Participants have to submit their
-                  presentation (in .pptx format) along with an abstract.</li>
-                <li>- The word limit of abstract should be strictly within 350 words (in .docx format).</li>
-                <li>- Abstract should be precise and to the point and must be an entrepreneurial/ problem-solving.</li>
-                <li>- Participants have to submit their files through the provided link only.</li>
-                <li>- The last date for the round 1 will be three days before the event and the result will be
-                  announced two days before the event.</li>
+                ROUND 1-
+                <li><ul className="BulletNone"><li>This will be an online pitch deck submission round. Participants have to submit their presentation (in .pptx format) along with an abstract.</li></ul></li>
+                <li><ul className="BulletNone"><li>The word limit of abstract should be strictly within 350 words (in .docx format).</li></ul></li>
+                <li><ul className="BulletNone"><li>Abstract should be precise and to the point and must be an entrepreneurial/ problem-solving.</li></ul></li>
+                <li><ul className="BulletNone"><li>Participants have to submit their files through the provided link only.</li></ul></li>
+                <li><ul className="BulletNone"><li>The last date for the round 1 will be three days before the event and the result will be
+                  announced two days before the event.</li></ul></li>
 
               </ul>
+            </li>
+            <li>
               <ul className="nestedList">
-                ➜ ROUND 2-
-                <li>- This will be a presentation round.</li>
-                <li>- The participants will be given an opportunity to present their idea in-front of the judges</li>
-                <li>- Time limit for the presentation is 10 minutes and another 5 minutes time will be given for
-                  interaction with the judges.</li>
+                ROUND 2-
+                <li><ul className="BulletNone"><li>This will be a presentation round.</li></ul></li>
+                <li><ul className="BulletNone"><li>The participants will be given an opportunity to present their idea in-front of the judges</li></ul></li>
+                <li><ul className="BulletNone"><li>Time limit for the presentation is 10 minutes and another 5 minutes time will be given for
+                  interaction with the judges.</li></ul></li>
               </ul>
             </li>
 
@@ -229,8 +227,8 @@ export default function CadathonPage() {
             <Typography variant="h3">Registration fee: </Typography>
             <ul className="nestedList" style={{ fontSize: "21px" }}>
 
-              <li>-  Free (for IIEST Students)</li>
-              <li>-  Rs.100 (for non-IIEST Students)</li>
+              <li><ul className="BulletNone"><li> Free (for IIEST Students)</li></ul></li>
+              <li><ul className="BulletNone"><li> Rs.100 (for non-IIEST Students)</li></ul></li>
             </ul>
             {/* <Box sx={{ width: "100%" }} className="center1">
               <Button variant="contained" size="large" onClick={event => window.location.href = 'https://forms.gle/jEjFTbph1K6W3aH79'}>
