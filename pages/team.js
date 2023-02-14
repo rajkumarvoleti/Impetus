@@ -55,7 +55,7 @@ export default function TeamPage() {
       link: "https://www.linkedin.com/in/ayush-kumar-singh-515209193/",
     },
     person5: {
-      name: "Arnab Abijit Sharma ",
+      name: "Arnab Abhijit Sharma ",
       phone: "+91 9359746978",
       post: "Sponsorship Head",
       imgname: "ARNAB ABHIJIT SHARMA.jpg",
