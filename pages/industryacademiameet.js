@@ -85,6 +85,13 @@ export default function IAMPage() {
         margin: "0",
       },
     },
+    ".bulletArrow li": {
+      textIndent: "0",
+      paddingLeft: "40px",
+    },
+    ".bulletBox": {
+      position: "relative",
+    },
   };
   const person = {
     person1: {},
@@ -96,7 +103,7 @@ export default function IAMPage() {
       <Box sx={styles} className="center1">
         <CarouselComp />
         <Typography variant="h1">Industry Academia Meet</Typography>
-        <Typography variant="h4">19th February, 2023 - 9AM-6PM</Typography>
+        <Typography variant="h4">19th February, 2023 - 9AM to 6PM</Typography>
         <Box className="content">
           <Typography variant="p">
             {/* Industry-Academia Meet is a platform where we aim to establish a
@@ -147,59 +154,57 @@ export default function IAMPage() {
             <Typography variant="h2" sx={{ textIndent: "0" }}>
               Takeaways for the Corporate
             </Typography>
-            <Typography variant="p">
-              <ul>
+            <Box className="bulletBox">
+              <ul className="bulletArrow">
                 <li>
-                  ➜ Resolving technical issues through projects and consultancy
+                  Resolving technical issues through projects and consultancy
                 </li>
                 <li>
-                  ➜ Presentation of viable solutions through sound studies and
+                  Presentation of viable solutions through sound studies and
                   research publications by the top-notch aca- demicians of the
                   institute
                 </li>
                 <li>
-                  ➜ Innovative and time-effective strategies to ease the hiring
+                  Innovative and time-effective strategies to ease the hiring
                   process Active interaction of the industries with the scholars
                   of the institute and to brainstorm issues and challenges faced
                   by the respective members
                 </li>
-                <li>➜ Understand the insights and rate the institute</li>
+                <li>Understand the insights and rate the institute</li>
               </ul>
               <br></br>
               <br></br>
-            </Typography>
+            </Box>
             <Typography variant="h2" sx={{ textIndent: "0" }}>
               Benifits for the Institute
             </Typography>
-            <Typography variant="p">
-              <ul>
+            <Box className="bulletBox">
+              <ul className="bulletArrow">
                 <li>
-                  ➜ A chance to meet and interact with elite officials,
-                  technical and HR heads from multiple sectors
+                  A chance to meet and interact with elite officials, technical
+                  and HR heads from multiple sectors
                 </li>
                 <li>
-                  ➜ Learn the basic fundamentals and the newest trends in campus
+                  Learn the basic fundamentals and the newest trends in campus
                   hiring
                 </li>
                 <li>
-                  ➜ To showcase the technical prowess of the institute and their
+                  To showcase the technical prowess of the institute and their
                   success stories to the re- cruiters
                 </li>
                 <li>
-                  ➜ An effort to change the landscape of campus recruitment in
-                  the pool of campus talent and remodel training and
-                  skill-building exercises to sculpt out the industry - ready
-                  young engineers to persuade recruiters
+                  An effort to change the landscape of campus recruitment in the
+                  pool of campus talent and remodel training and skill-building
+                  exercises to sculpt out the industry - ready young engineers
+                  to persuade recruiters
                 </li>
+                <li>Way to enable students to choose the most relevant job</li>
                 <li>
-                  ➜ Way to enable students to choose the most relevant job
-                </li>
-                <li>
-                  ➜ Develop a better employment ecosystem which is a win-win for
+                  Develop a better employment ecosystem which is a win-win for
                   the students, institute and corporate.
                 </li>
               </ul>
-            </Typography>
+            </Box>
           </Typography>
           <br></br>
         </Box>
@@ -219,8 +224,10 @@ export default function IAMPage() {
               <Typography variant="p">
                 Active interaction between the industries and scholars of the
                 institute and brainstorming prevalent issues and challenges -
-                paving the way for future collaboration.Lorem ipsum dolor sit
-                amet consectetur adipisicing elit. Animi, quia.
+                paving the way for future collaboration.It facilitates
+                interactions between academia and industrialists by providing a
+                forum for dialogue, identifying common interests, and exploring
+                potential collaborative opportunities.
               </Typography>
             </Box>
           </Box>
@@ -238,9 +245,10 @@ export default function IAMPage() {
               </Typography>
               <Typography variant="p">
                 Innovative and time-effective strategies to ease the hiring
-                process.Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Animi, quia.Lorem ipsum dolor sit amet consectetur adipisicing
-                elit. Animi, quia.
+                process. It can provide a platform for knowledge exchange,
+                collaboration, and networking, which can inform and shape
+                strategic planning. Insights gained from academia can inform
+                industry decision-making and help drive innovation.
               </Typography>
             </Box>
           </Box>
@@ -259,9 +267,10 @@ export default function IAMPage() {
               <Typography variant="p">
                 Presentation of viable solutions through sound studies and
                 research publications by the top- notch academicians of the
-                institute.Lorem ipsum dolor sit amet consectetur adipisicing
-                elit. Animi, quia.Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Animi, quia.
+                institute. Industry academia meets can help academics identify
+                real-world problems and develop practical solutions by providing
+                insights into industry needs and access to industry expertise,
+                resources, and networks.
               </Typography>
             </Box>
           </Box>
@@ -279,9 +288,11 @@ export default function IAMPage() {
               </Typography>
               <Typography variant="p">
                 An opportunity to interact with prominent delegates from other
-                industries and research institutes during IMPETUS 2023.Lorem
-                ipsum dolor sit amet amet consectetur adipisicing elit. Animi,
-                quia.
+                industries and research institutes during IMPETUS 2023.It can
+                help build connections with industries by providing
+                opportunities for networking, knowledge exchange, and
+                collaboration, leading to potential partnerships and business
+                opportunities..
               </Typography>
             </Box>
           </Box>
@@ -295,7 +306,6 @@ export default function IAMPage() {
           <ContactCard person={person.person1}/>
           
         </Box> */}
-
 
         <Contact />
       </Box>

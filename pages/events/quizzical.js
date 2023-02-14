@@ -49,6 +49,9 @@ const dataStyles = {
     alignItems: "center",
     margin: "30px 0",
   },
+  ".data h2, .fee h3": {
+    margin: "40px 0",
+  },
 };
 
 export default function CadathonPage() {
@@ -89,11 +92,10 @@ export default function CadathonPage() {
       name: "Mahesh Bandlamudi",
       phone: "+91 8639555844",
     },
-    person2:
-    {
+    person2: {
       name: "Sayantan Paul",
       phone: "+91 9830664404",
-    }
+    },
   };
   return (
     <Box sx={{ width: "100vw" }} className="center1">
@@ -116,8 +118,16 @@ export default function CadathonPage() {
 
           <ul className="nestedList" style={{ fontSize: "21px" }}>
             Dates:
-            <li><ul className="BulletNone"><li>Round 1: 17th February, 2023 4pm-6pm</li></ul></li>
-            <li><ul className="BulletNone"><li>Round 2: 17th February, 2023 6pm-8pm</li></ul></li>
+            <li>
+              <ul className="BulletNone">
+                <li>Round 1: 17th February, 2023 4pm-6pm</li>
+              </ul>
+            </li>
+            <li>
+              <ul className="BulletNone">
+                <li>Round 2: 17th February, 2023 6pm-8pm</li>
+              </ul>
+            </li>
           </ul>
           <Box sx={{ width: "100%", marginTop: "30px" }} className="center1">
             <Button
@@ -134,24 +144,52 @@ export default function CadathonPage() {
         <Box className="data">
           <Typography variant="h2">Basic Information</Typography>
           <ul className="bulletArrow">
-            <li><ul className="BulletNone"><li>
-              Registration(online) - Till 2 hours before commencement of Round
-              1
-            </li></ul></li>
-            <li><ul className="BulletNone"><li>
-              Registration (Offline)- On spot registrations subject to
-              availability.
-            </li></ul></li>
-            <li><ul className="BulletNone"><li>Participation - Teams of size (1-3)</li></ul></li>
-            <li><ul className="BulletNone"><li>
-              Venue - Gallery 6, Department of Mechanical Engineering (IIEST
-              Shibpur)
-            </li></ul></li>
-            <li><ul className="BulletNone"><li>No. of Rounds - 2</li></ul></li>
-            <li><ul className="BulletNone"><li>Duration of each round- Round 1-30 min & Round 2-30min</li></ul></li>
-            <li><ul className="BulletNone"><li>
-              Prizes worth <b>Rs.10000/-</b>
-            </li></ul></li>
+            <li>
+              <ul className="BulletNone">
+                <li>
+                  Registration(online) - Till 2 hours before commencement of
+                  Round 1
+                </li>
+              </ul>
+            </li>
+            <li>
+              <ul className="BulletNone">
+                <li>
+                  Registration (Offline)- On spot registrations subject to
+                  availability.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <ul className="BulletNone">
+                <li>Participation - Teams of size (1-3)</li>
+              </ul>
+            </li>
+            <li>
+              <ul className="BulletNone">
+                <li>
+                  Venue - Gallery 6, Department of Mechanical Engineering (IIEST
+                  Shibpur)
+                </li>
+              </ul>
+            </li>
+            <li>
+              <ul className="BulletNone">
+                <li>No. of Rounds - 2</li>
+              </ul>
+            </li>
+            <li>
+              <ul className="BulletNone">
+                <li>Duration of each round- Round 1-30 min & Round 2-30min</li>
+              </ul>
+            </li>
+            <li>
+              <ul className="BulletNone">
+                <li>
+                  Prizes worth <b>Rs.10000/-</b>
+                </li>
+              </ul>
+            </li>
           </ul>
           <Typography variant="h2">Flow of the events</Typography>
           <Typography sx={{ textIndent: "60px" }} variant="p">
@@ -164,24 +202,53 @@ export default function CadathonPage() {
           </Typography>
           <Typography variant="h2">Rules and Regulations</Typography>
           <ul className="bulletArrow">
-            <li><ul className="BulletNone"><li>
-              Teams will have to register 2 hours before the deadline of the
-              registration form.</li></ul></li>
-            
-            <li><ul className="BulletNone"><li>
-              On-spot registrations on subject to availability of slots.</li></ul></li>
-            
-            <li><ul className="BulletNone"><li>
-              The quiz will be of two rounds. First round will have 10
-              questions. +10/0- for each question.</li></ul></li>
-            
-            <li><ul className="BulletNone"><li>
-              The second round will be of bounce and pounce format. Teams
-              pouncing will get +10/-5, for each question. Teams who will answer
-              the questions on bounce will get +5/-0 for each question.</li></ul></li>
-            
-            <li><ul className="BulletNone"><li>Quizmaster&apos;s say is final.</li></ul></li>
-            <li><ul className="BulletNone"><li>Team size 1-3 people.</li></ul></li>
+            <li>
+              <ul className="BulletNone">
+                <li>
+                  Teams will have to register 2 hours before the deadline of the
+                  registration form.
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <ul className="BulletNone">
+                <li>
+                  On-spot registrations on subject to availability of slots.
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <ul className="BulletNone">
+                <li>
+                  The quiz will be of two rounds. First round will have 10
+                  questions. +10/0- for each question.
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <ul className="BulletNone">
+                <li>
+                  The second round will be of bounce and pounce format. Teams
+                  pouncing will get +10/-5, for each question. Teams who will
+                  answer the questions on bounce will get +5/-0 for each
+                  question.
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <ul className="BulletNone">
+                <li>Quizmaster&apos;s say is final.</li>
+              </ul>
+            </li>
+            <li>
+              <ul className="BulletNone">
+                <li>Team size 1-3 people.</li>
+              </ul>
+            </li>
           </ul>
         </Box>
         <Box>
@@ -194,10 +261,17 @@ export default function CadathonPage() {
           <Box className="fee">
             <Typography variant="h3">Registration fee: </Typography>
             <ul className="nestedList" style={{ fontSize: "21px" }}>
-             
-            <li><ul className="BulletNone"><li>Free (for IIEST Students)</li></ul></li>
-            <li><ul className="BulletNone"><li>Rs.70 (for non-IIEST Students)</li></ul></li>
-          </ul>
+              <li>
+                <ul className="BulletNone">
+                  <li>Free (for IIEST Students)</li>
+                </ul>
+              </li>
+              <li>
+                <ul className="BulletNone">
+                  <li>Rs.70 (for non-IIEST Students)</li>
+                </ul>
+              </li>
+            </ul>
             <Box sx={{ width: "100%" }} className="center1">
               <Button
                 variant="contained"

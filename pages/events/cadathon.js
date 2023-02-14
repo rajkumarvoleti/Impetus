@@ -69,12 +69,10 @@ const dataStyles = {
   ".nestedList": {
     margin: "0",
   },
-  ".nestedList li": {
-    // marginLeft: "30px",
+  ".data h2, .fee h3": {
+    margin: "40px 0",
   },
 };
-
-
 
 export default function CadathonPage() {
   const theme = useTheme();
@@ -111,12 +109,11 @@ export default function CadathonPage() {
       name: "Avi Ambast",
       phone: "+91 7277876396",
     },
-    person2:
-    {
+    person2: {
       name: "Shobhit Das",
       phone: "+91 7602274162",
-    }};
-  
+    },
+  };
 
   return (
     <Box sx={{ width: "100vw" }} className="center1">
@@ -137,8 +134,16 @@ export default function CadathonPage() {
 
           <ul className="nestedList" style={{ fontSize: "21px" }}>
             Dates:
-            <li><ul className="BulletNone"><li>Round 1: 17th February, 2023 1pm-2pm</li></ul></li>
-            <li><ul className="BulletNone"><li>Round 2: 18th February, 2023 10am-11:30am</li></ul></li>
+            <li>
+              <ul className="BulletNone">
+                <li>Round 1: 17th February, 2023 1pm-2pm</li>
+              </ul>
+            </li>
+            <li>
+              <ul className="BulletNone">
+                <li>Round 2: 18th February, 2023 10am-11:30am</li>
+              </ul>
+            </li>
           </ul>
           <Box sx={{ width: "100%", marginTop: "30px" }} className="center1">
             <Button
@@ -161,15 +166,41 @@ export default function CadathonPage() {
           </Typography>
           <Typography variant="h2">Basic Information</Typography>
           <ul className="bulletArrow">
-            <li><ul className="BulletNone"><li>Registration – Till 1 hour before commencement of Round 1</li></ul></li>
-            <li><ul className="BulletNone"><li>Participation – Individual</li></ul></li>
-            <li><ul className="BulletNone"><li>Venue – Department building (IIEST Shibpur)</li></ul></li>
-            <li><ul className="BulletNone"><li>No. of Rounds – 2</li></ul></li>
+            <li>
+              <ul className="BulletNone">
+                <li>
+                  Registration – Till 1 hour before commencement of Round 1
+                </li>
+              </ul>
+            </li>
+            <li>
+              <ul className="BulletNone">
+                <li>Participation – Individual</li>
+              </ul>
+            </li>
+            <li>
+              <ul className="BulletNone">
+                <li>Venue – Department building (IIEST Shibpur)</li>
+              </ul>
+            </li>
+            <li>
+              <ul className="BulletNone">
+                <li>No. of Rounds – 2</li>
+              </ul>
+            </li>
             <li>
               <ul className="nestedList">
                 Duration of each round-
-                <li><ul className="BulletNone"><li>Round 1- 60 min</li></ul></li>
-                <li><ul className="BulletNone"><li>Round 2- 150min</li></ul></li>
+                <li>
+                  <ul className="BulletNone">
+                    <li>Round 1- 60 min</li>
+                  </ul>
+                </li>
+                <li>
+                  <ul className="BulletNone">
+                    <li>Round 2- 150min</li>
+                  </ul>
+                </li>
               </ul>
             </li>
             <li>
@@ -186,39 +217,68 @@ export default function CadathonPage() {
           </Typography>
           <Typography variant="h2">Rules and Regulations</Typography>
           <ul className="bulletArrow">
-            <li><ul className="BulletNone"><li>
-              Registered candidates are to be present in the department
-              building before the commencement of the event.
-            </li></ul></li>
+            <li>
+              <ul className="BulletNone">
+                <li>
+                  Registered candidates are to be present in the department
+                  building before the commencement of the event.
+                </li>
+              </ul>
+            </li>
             <li>
               <ul className="nestedList">
                 ROUND 1-
-                <li><ul className="BulletNone"><li>Each participant will be provided with an objective</li></ul></li>
-                <li><ul className="BulletNone"><li>
-                  Participants are required to bring their own laptop with any
-                  CAD software installed in it.
-                </li></ul></li>
-                <li><ul className="BulletNone"><li>
-                  Participants need to replicate a 2D drawing of some
-                  components into their 3D design.
-                </li></ul></li>
-                <li><ul className="BulletNone"><li>
-                  The top participants of 1st round will continue to Round 2.
-                  Evaluation will be done based on accuracy and time consumed.
-                </li></ul></li>
+                <li>
+                  <ul className="BulletNone">
+                    <li>Each participant will be provided with an objective</li>
+                  </ul>
+                </li>
+                <li>
+                  <ul className="BulletNone">
+                    <li>
+                      Participants are required to bring their own laptop with
+                      any CAD software installed in it.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <ul className="BulletNone">
+                    <li>
+                      Participants need to replicate a 2D drawing of some
+                      components into their 3D design.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <ul className="BulletNone">
+                    <li>
+                      The top participants of 1st round will continue to Round
+                      2. Evaluation will be done based on accuracy and time
+                      consumed.
+                    </li>
+                  </ul>
+                </li>
               </ul>
             </li>
             <li>
               <ul className="nestedList">
                 ROUND 2-
-                <li><ul className="BulletNone"><li>
-                  The selected participants from 1st round will be provided
-                  with an objective to replicate a dynamic mechanical mechanism
-                  based on the problem statement.
-                </li></ul></li>
-                <li><ul className="BulletNone"><li>
-                  Participants will be evaluated based on time and accuracy.
-                </li></ul></li>
+                <li>
+                  <ul className="BulletNone">
+                    <li>
+                      The selected participants from 1st round will be provided
+                      with an objective to replicate a dynamic mechanical
+                      mechanism based on the problem statement.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <ul className="BulletNone">
+                    <li>
+                      Participants will be evaluated based on time and accuracy.
+                    </li>
+                  </ul>
+                </li>
               </ul>
             </li>
           </ul>
@@ -233,10 +293,17 @@ export default function CadathonPage() {
           <Box className="fee">
             <Typography variant="h3">Registration fee: </Typography>
             <ul className="nestedList" style={{ fontSize: "21px" }}>
-             
-            <li><ul className="BulletNone"><li>Free (for IIEST Students)</li></ul></li>
-            <li><ul className="BulletNone"><li>Rs.50 (for non-IIEST Students)</li></ul></li>
-          </ul>
+              <li>
+                <ul className="BulletNone">
+                  <li>Free (for IIEST Students)</li>
+                </ul>
+              </li>
+              <li>
+                <ul className="BulletNone">
+                  <li>Rs.50 (for non-IIEST Students)</li>
+                </ul>
+              </li>
+            </ul>
             <Box sx={{ width: "100%" }} className="center1">
               <Button
                 variant="contained"
@@ -256,9 +323,8 @@ export default function CadathonPage() {
             Event Coordinators
           </Typography>
           <Box className="contact">
-            <EventMag person={person.person1}/>
-            <EventMag person={person.person2}/>
-            
+            <EventMag person={person.person1} />
+            <EventMag person={person.person2} />
           </Box>
         </Box>
       </Box>

@@ -73,24 +73,51 @@ export default function Contact() {
           </Link>
         </Box>
         <Box className="icons center2">
-          
-          <IconButton onClick={event => window.location.href = 'https://www.facebook.com/smeiiests/'}>
+          <IconButton
+            onClick={(event) =>
+              (window.location.href = "https://www.facebook.com/smeiiests/")
+            }
+          >
             <FacebookIcon />
           </IconButton>
-          <IconButton onClick={event => window.location.href = 'https://www.linkedin.com/in/society-of-mechanical-engineers-iiest-shibpur-89244a193'}>
+          <IconButton
+            onClick={(event) =>
+              (window.location.href =
+                "https://www.linkedin.com/in/society-of-mechanical-engineers-iiest-shibpur-89244a193")
+            }
+          >
             <LinkedInIcon />
           </IconButton>
-          <IconButton onClick={event => window.location.href = 'https://www.instagram.com/sme.iiests/?hl=en'}>
+          <IconButton
+            onClick={(event) =>
+              (window.location.href =
+                "https://www.instagram.com/sme.iiests/?hl=en")
+            }
+          >
             <InstagramIcon />
           </IconButton>
-          <IconButton onClick={event => window.location.href = 'https://www.youtube.com/@smeiiests7235'}>
+          <IconButton
+            onClick={(event) =>
+              (window.location.href = "https://www.youtube.com/@smeiiests7235")
+            }
+          >
             <YouTubeIcon />
           </IconButton>
-          
         </Box>
         <Box className="terms center1 ">
-          <em>Privacy Policy / Terms of Services</em>
-          <Link href="/team" style={{ margin: "10px 0 30px 0", color: "white", textDecoration: "none" }}>Meet the team</Link>
+          <Link
+            href="/team"
+            style={{
+              color: "white",
+              textDecoration: "none",
+            }}
+          >
+            Meet the team
+          </Link>
+
+          <em style={{ margin: "10px 0 30px 0" }}>
+            Copyright © 2023 - All rights reserved by Instruo
+          </em>
           {/* <p>Meet The Team</p> */}
         </Box>
       </Box>

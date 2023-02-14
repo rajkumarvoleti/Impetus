@@ -48,6 +48,9 @@ const dataStyles = {
     alignItems: "center",
     margin: "30px 0",
   },
+  ".data h2, .fee h3": {
+    margin: "40px 0",
+  },
 };
 
 export default function CadathonPage() {
@@ -91,22 +94,33 @@ export default function CadathonPage() {
       <Box sx={dataStyles} className="data">
         <Box>
           <Typography sx={{ textIndent: "60px" }} variant="p">
-
-          Impetus 6.0 brings to you a proper carnival game of skill. Dodge between one bunker to another to make a lead over others . Test the cognitive and hand coordination in breaking down the complete pyramid. Try your hands on darts and wire wand loop. Take help with your partner in moving through the proper pathway in completing the event. If you can manage all these , some prizes are surely waiting for you.
+            Impetus 6.0 brings to you a proper carnival game of skill. Dodge
+            between one bunker to another to make a lead over others . Test the
+            cognitive and hand coordination in breaking down the complete
+            pyramid. Try your hands on darts and wire wand loop. Take help with
+            your partner in moving through the proper pathway in completing the
+            event. If you can manage all these , some prizes are surely waiting
+            for you.
           </Typography>
           {/* <Typography variant="p">Date: 01/02/03 05:06pm</Typography> */}
           <Typography variant="h2">Lazer Maze Game</Typography>
           <Typography variant="p">
-
-            Imagine being in utter darkness, smoke all around and you are trapped in a maze made of Lazer Lights. Go through the maze with upmost precision to push the buzzer that gets to amazing gifts. But but but, One wrong step, one touch and you are gone. Seemed enthralling, this is what we are bringing you all at our mega-techfest, the name everyone knows.<br></br><br></br>
-            A fun, exciting, full of adrenaline rush maze filled with a lot of twists and turns and amazing gifts. Be a part of this over-the-top experience that you will find nowhere.<br></br><br></br>
-
-            And for the fans of TBBT, you know what this is, you know what this is gonna be, so get ready to have a BUZZZZINGA!<br></br><br></br>
-
+            Imagine being in utter darkness, smoke all around and you are
+            trapped in a maze made of Lazer Lights. Go through the maze with
+            upmost precision to push the buzzer that gets to amazing gifts. But
+            but but, One wrong step, one touch and you are gone. Seemed
+            enthralling, this is what we are bringing you all at our
+            mega-techfest, the name everyone knows.<br></br>
+            <br></br>A fun, exciting, full of adrenaline rush maze filled with a
+            lot of twists and turns and amazing gifts. Be a part of this
+            over-the-top experience that you will find nowhere.<br></br>
+            <br></br>
+            And for the fans of TBBT, you know what this is, you know what this
+            is gonna be, so get ready to have a BUZZZZINGA!<br></br>
+            <br></br>
             Venue - Parade Ground, IIEST Shibpur.
           </Typography>
-          
-        </Box>       
+        </Box>
       </Box>
       <Contact />
     </Box>
