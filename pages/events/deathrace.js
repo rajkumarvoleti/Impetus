@@ -62,7 +62,7 @@ export default function CadathonPage() {
   const router = useRouter();
 
   const goNext = () => {
-    router.push("/events/valorant");
+    router.push("/events/lineFollower");
   };
   const goBack = () => {
     router.push("/events/quizzical");

@@ -62,10 +62,10 @@ export default function CadathonPage() {
   const router = useRouter();
 
   const goNext = () => {
-    router.push("/events/valorant");
+    router.push("/events/roadMap");
   };
   const goBack = () => {
-    router.push("/events/quizzical");
+    router.push("/events/deathrace");
   };
 
   const headerStyles = {
@@ -246,7 +246,7 @@ export default function CadathonPage() {
               </li>
               <li>
                 <ul className="BulletNone">
-                  <li>Rs.__ (for non-IIEST Students)</li>
+                  <li>Rs. 150(for non-IIEST Students)</li>
                 </ul>
               </li>
             </ul>
