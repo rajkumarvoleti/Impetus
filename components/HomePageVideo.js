@@ -23,7 +23,7 @@ export default function HomePageVideo() {
 
   useEffect(() => {
     const readyState = videoRef.current.readyState;
-    if (readyState !== 4) startLoading();
+    // if (readyState !== 4) startLoading();
   }, []);
 
   return (
