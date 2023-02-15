@@ -19,7 +19,7 @@ export default function EventPage() {
     "scrapyard_.jpg",
     "quizzical.jpg",
     "deathrace.jpg",
-    "deathrace.jpg",
+    "linefollower1.png",
     "roadmap1.png",
     "Valorant.jpg",
     "fun_.jpg",
