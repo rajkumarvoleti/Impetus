@@ -36,7 +36,18 @@ export default function EventPage() {
     "550px",
     "580px",
   ];
-  const position = ["25%", "30%", "29%", "27%", "29%", "27%","27%","27%", "29%", "28%"];
+  const position = [
+    "25%",
+    "30%",
+    "29%",
+    "27%",
+    "29%",
+    "27%",
+    "27%",
+    "27%",
+    "29%",
+    "28%",
+  ];
 
   const descRef = useRef(null);
 

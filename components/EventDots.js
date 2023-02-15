@@ -13,7 +13,7 @@ export default function EventDots({ currIdx, setCurrIdx }) {
     mt: "65px",
     ml: "20px",
     div: {
-      margin: "6px 0",
+      margin: "5px 0",
     },
     "div div": {
       width: "8px",

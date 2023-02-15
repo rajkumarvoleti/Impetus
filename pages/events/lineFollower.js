@@ -99,7 +99,6 @@ export default function CadathonPage() {
       name: "Abhishek Rajput",
       phone: "+91 9355127436",
     },
-    
   };
   return (
     <Box sx={{ width: "100vw" }} className="center1">
@@ -115,12 +114,12 @@ export default function CadathonPage() {
       <Box sx={dataStyles} className="data">
         <Box>
           <Typography sx={{ textIndent: "60px" }} variant="p">
-          This competition aims to build a robot that can automatically maneuver over the lines made on  a flat surface
+            This competition aims to build a robot that can automatically
+            maneuver over the lines made on a flat surface
           </Typography>
 
           <ul className="nestedList" style={{ fontSize: "21px" }}>
             Dates: Round 1 + Round 2 : 17th February, 2023 6:00pm
-            
           </ul>
           <Box sx={{ width: "100%", marginTop: "30px" }} className="center1">
             <Button
@@ -137,7 +136,8 @@ export default function CadathonPage() {
         <Box className="data">
           <Typography variant="h2">Objective</Typography>
           <Typography sx={{ textIndent: "60px" }} variant="p">
-          Reach the final destination with minimum loss of aggregates and time while tracking the path.
+            Reach the final destination with minimum loss of aggregates and time
+            while tracking the path.
           </Typography>
           <Typography variant="h2">Basic Information</Typography>
           <ul className="bulletArrow">
@@ -179,14 +179,17 @@ export default function CadathonPage() {
           </ul>
           <Typography variant="h2">Flow of the events</Typography>
           <Typography sx={{ textIndent: "60px" }} variant="p">
-          Line follower bot is going to be held in 2 rounds. Candidates qualified from the first round can only participate in second round (No lateral entry allowed).
+            Line follower bot is going to be held in 2 rounds. Candidates
+            qualified from the first round can only participate in second round
+            (No lateral entry allowed).
           </Typography>
           <Typography variant="h2">Rules and Regulations</Typography>
           <ul className="bulletArrow">
             <li>
               <ul className="BulletNone">
                 <li>
-                  Registered candidates are to be present in the amenities before the commencement of the event.
+                  Registered candidates are to be present in the amenities
+                  before the commencement of the event.
                 </li>
               </ul>
             </li>
@@ -196,11 +199,13 @@ export default function CadathonPage() {
                 <li>
                   <ul className="BulletNone">
                     <li>
-                    In this round, the time required to complete the circuit and the corresponding points earned will be recorded. A leaderboard will be created taking into account the points and the time taken
+                      In this round, the time required to complete the circuit
+                      and the corresponding points earned will be recorded. A
+                      leaderboard will be created taking into account the points
+                      and the time taken
                     </li>
                   </ul>
                 </li>
-                
               </ul>
             </li>
             <li>
@@ -209,14 +214,24 @@ export default function CadathonPage() {
                 <li>
                   <ul className="BulletNone">
                     <li>
-                    The first part is called the "Dry Run".In this run, the bot starts from the Start and finds its way to reach the End of the arena. The bot must follow an algorithm to find its path to the End, and it can store turns in its memory to discover the shortest path during the second part of the journey. There are no restrictions for covering all the checkpoints.
+                      The first part is called the &quot;Dry Run&quot;.In this
+                      run, the bot starts from the Start and finds its way to
+                      reach the End of the arena. The bot must follow an
+                      algorithm to find its path to the End, and it can store
+                      turns in its memory to discover the shortest path during
+                      the second part of the journey. There are no restrictions
+                      for covering all the checkpoints.
                     </li>
                   </ul>
                 </li>
                 <li>
                   <ul className="BulletNone">
                     <li>
-                    The second part is called the "Actual Run." During this run, the bot must start over from the Start and find its way to the End by following the best possible path that was stored from the first run. The timer will be reset to zero as the "Actual Run" begins.
+                      The second part is called the &quot;Actual Run&quot;.
+                      During this run, the bot must start over from the Start
+                      and find its way to the End by following the best possible
+                      path that was stored from the first run. The timer will be
+                      reset to zero as the &quot;Actual Run&quot; begins.
                     </li>
                   </ul>
                 </li>
