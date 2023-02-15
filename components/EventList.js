@@ -33,6 +33,8 @@ export default function EventList({ setCurrIdx }) {
     "Scrapyard",
     "Quizzical",
     "Death Race",
+    "Line Follower",
+    "RoadMap",
     "Valorant",
     "Fun",
   ];

@@ -62,10 +62,10 @@ export default function CadathonPage() {
   const router = useRouter();
 
   const goNext = () => {
-    router.push("/events/lineFollower");
+    router.push("/events/roadMap");
   };
   const goBack = () => {
-    router.push("/events/quizzical");
+    router.push("/events/deathrace");
   };
 
   const headerStyles = {
@@ -99,10 +99,7 @@ export default function CadathonPage() {
       name: "Abhishek Rajput",
       phone: "+91 9355127436",
     },
-    person3: {
-      name: "Avi Ambast",
-      phone: "+91 7277876396",
-    },
+    
   };
   return (
     <Box sx={{ width: "100vw" }} className="center1">
@@ -118,29 +115,19 @@ export default function CadathonPage() {
       <Box sx={dataStyles} className="data">
         <Box>
           <Typography sx={{ textIndent: "60px" }} variant="p">
-            This competition aims to build a robot that can be manually
-            controlled to maneuver across a track with different obstacle.
+          This competition aims to build a robot that can automatically maneuver over the lines made on  a flat surface
           </Typography>
 
           <ul className="nestedList" style={{ fontSize: "21px" }}>
-            Dates:
-            <li>
-              <ul className="BulletNone">
-                <li>Round 1: 17th February, 2023 5pm</li>
-              </ul>
-            </li>
-            <li>
-              <ul className="BulletNone">
-                <li>Round 2: 18th February, 2023 12:45pm</li>
-              </ul>
-            </li>
+            Dates: Round 1 + Round 2 : 17th February, 2023 6:00pm
+            
           </ul>
           <Box sx={{ width: "100%", marginTop: "30px" }} className="center1">
             <Button
               variant="contained"
               size="large"
               onClick={(event) =>
-                (window.location.href = "https://forms.gle/9Yr3SwWXFUFFZXsQ6")
+                (window.location.href = "#")
               }
             >
               Register Now
@@ -150,8 +137,7 @@ export default function CadathonPage() {
         <Box className="data">
           <Typography variant="h2">Objective</Typography>
           <Typography sx={{ textIndent: "60px" }} variant="p">
-            Reach the limit line with minimum penalties in the least possible
-            time.
+          Reach the final destination with minimum loss of aggregates and time while tracking the path.
           </Typography>
           <Typography variant="h2">Basic Information</Typography>
           <ul className="bulletArrow">
@@ -169,7 +155,12 @@ export default function CadathonPage() {
             </li>
             <li>
               <ul className="BulletNone">
-                <li>Venue – Netaji Bhavan</li>
+                <li>Team Size – 1 to 4</li>
+              </ul>
+            </li>
+            <li>
+              <ul className="BulletNone">
+                <li>Venue – Amenities</li>
               </ul>
             </li>
             <li>
@@ -181,24 +172,21 @@ export default function CadathonPage() {
             <li>
               <ul className="BulletNone">
                 <li>
-                  Prizes worth <b>Rs.8000/-</b>
+                  Prizes worth <b>Rs.6000/-</b>
                 </li>
               </ul>
             </li>
           </ul>
           <Typography variant="h2">Flow of the events</Typography>
           <Typography sx={{ textIndent: "60px" }} variant="p">
-            Death Race is going to be held in 2 rounds. Candidates qualified
-            from the first round can only participate in second round (No
-            lateral entry allowed).
+          Line follower bot is going to be held in 2 rounds. Candidates qualified from the first round can only participate in second round (No lateral entry allowed).
           </Typography>
           <Typography variant="h2">Rules and Regulations</Typography>
           <ul className="bulletArrow">
             <li>
               <ul className="BulletNone">
                 <li>
-                  Registered candidates are to be present in the amenities
-                  before the commencement of the event.
+                  Registered candidates are to be present in the amenities before the commencement of the event.
                 </li>
               </ul>
             </li>
@@ -208,30 +196,11 @@ export default function CadathonPage() {
                 <li>
                   <ul className="BulletNone">
                     <li>
-                      The first round is the HEATS; all the foams win take a run
-                      in the arena one at a time. The time taken to complete the
-                      arena will be noted. There is a maximum time limit of 10
-                      minutes beyond which the bot cannot continue to run.
+                    In this round, the time required to complete the circuit and the corresponding points earned will be recorded. A leaderboard will be created taking into account the points and the time taken
                     </li>
                   </ul>
                 </li>
-                <li>
-                  <ul className="BulletNone">
-                    <li>
-                      Participants Completing the arena is a must in order to be
-                      considered for Qualification to the next round.
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <ul className="BulletNone">
-                    <li>
-                      One restart is allowed per team in the first round.
-                      However, in the next round, the team will start with same
-                      penalty points
-                    </li>
-                  </ul>
-                </li>
+                
               </ul>
             </li>
             <li>
@@ -240,17 +209,20 @@ export default function CadathonPage() {
                 <li>
                   <ul className="BulletNone">
                     <li>
-                      Second round will be a knockout round, where two teams win
-                      face off against each other. Loser will be eliminated and
-                      the winner moves on to the next round, subsequent similar
-                      rounds will carry on until only two teams are left for the
-                      final showdown
+                    The first part is called the "Dry Run".In this run, the bot starts from the Start and finds its way to reach the End of the arena. The bot must follow an algorithm to find its path to the End, and it can store turns in its memory to discover the shortest path during the second part of the journey. There are no restrictions for covering all the checkpoints.
                     </li>
                   </ul>
                 </li>
                 <li>
                   <ul className="BulletNone">
-                    <li>Restarts from checkpoint are allowed.</li>
+                    <li>
+                    The second part is called the "Actual Run." During this run, the bot must start over from the Start and find its way to the End by following the best possible path that was stored from the first run. The timer will be reset to zero as the "Actual Run" begins.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <ul className="BulletNone">
+                    <li>No restarts are allowed.</li>
                   </ul>
                 </li>
               </ul>
@@ -274,7 +246,7 @@ export default function CadathonPage() {
               </li>
               <li>
                 <ul className="BulletNone">
-                  <li>Rs.250 (for non-IIEST Students)</li>
+                  <li>Rs. 150(for non-IIEST Students)</li>
                 </ul>
               </li>
             </ul>
@@ -283,7 +255,7 @@ export default function CadathonPage() {
                 variant="contained"
                 size="large"
                 onClick={(event) =>
-                  (window.location.href = "https://forms.gle/9Yr3SwWXFUFFZXsQ6")
+                  (window.location.href = "#")
                 }
               >
                 Register Now
@@ -299,7 +271,6 @@ export default function CadathonPage() {
           <Box className="contact">
             <EventMag person={person.person1} />
             <EventMag person={person.person2} />
-            <EventMag person={person.person3} />
           </Box>
         </Box>
       </Box>

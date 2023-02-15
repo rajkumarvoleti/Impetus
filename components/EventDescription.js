@@ -57,6 +57,8 @@ export default function EventDescription({ index, setCurrIdx, currIdx }) {
     "Scrapyard",
     "Quizzical Suspects",
     "Death Race",
+    "Line Follower",
+    "Road Map",
     "Valorant",
     "Fun Bunkers",
   ];
@@ -67,6 +69,8 @@ export default function EventDescription({ index, setCurrIdx, currIdx }) {
     "scrapyard",
     "quizzical",
     "deathrace",
+    "lineFollower",
+    "roadMap",
     "valorant",
     "fun",
   ];
@@ -83,6 +87,10 @@ export default function EventDescription({ index, setCurrIdx, currIdx }) {
     "To instil the essence of quizzing, IMechE IIEST, Shibpur brings to you a Grand General Technical Quiz: 'Quizzical Suspects' under the banner of Impetus 6.0 .The quiz tests and showcases students' technical knowledge and skills.";
   const deathrace =
     "The Death Race is a thrilling competition that brings together talented individuals to showcase their skills in building and maneuvering a robot through a challenging track filled with obstacles. ";
+  const lineFollower =
+    "The Death Race is a thrilling competition that brings together talented individuals to showcase their skills in building and maneuvering a robot through a challenging track filled with obstacles. ";
+  const roadMap =
+    "The Death Race is a thrilling competition that brings together talented individuals to showcase their skills in building and maneuvering a robot through a challenging track filled with obstacles. ";
   const valorant =
     "The Valorant gaming event is a competition that brings together talented players to showcase their skills and compete for recognition. It is an exciting opportunity for Valorant fans to experience high-level gameplay and celebrate the top talent in the game.";
   const fun =
@@ -95,6 +103,8 @@ export default function EventDescription({ index, setCurrIdx, currIdx }) {
     scrapyard,
     quiz,
     deathrace,
+    lineFollower,
+    roadMap,
     valorant,
     fun,
   ];
@@ -103,10 +113,10 @@ export default function EventDescription({ index, setCurrIdx, currIdx }) {
     <Box ref={ref} sx={styles}>
       <Box>
         <Typography ref={headingRef} variant="h2">
-          {heading[currIdx % 8]}
+          {heading[currIdx % 10]}
         </Typography>
-        <Typography variant="p">{content[currIdx % 8]}</Typography>
-        <LearnMore link={`/events/${link[currIdx % 8]}`} />
+        <Typography variant="p">{content[currIdx % 10]}</Typography>
+        <LearnMore link={`/events/${link[currIdx % 10]}`} />
 
         {/* `url(/images/${images[currIdx%8]}) */}
       </Box>

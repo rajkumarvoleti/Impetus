@@ -19,6 +19,8 @@ export default function EventPage() {
     "scrapyard_.jpg",
     "quizzical.jpg",
     "deathrace.jpg",
+    "deathrace.jpg",
+    "roadmap1.png",
     "Valorant.jpg",
     "fun_.jpg",
   ];
@@ -29,10 +31,12 @@ export default function EventPage() {
     "530px",
     "580px",
     "580px",
+    "580px",
+    "580px",
     "550px",
     "580px",
   ];
-  const position = ["25%", "30%", "29%", "27%", "29%", "27%", "29%", "28%"];
+  const position = ["25%", "30%", "29%", "27%", "29%", "27%","27%","27%", "29%", "28%"];
 
   const descRef = useRef(null);
 
@@ -42,17 +46,17 @@ export default function EventPage() {
     minHeight: "100vh",
     backgroundColor: "black",
     background: `url(/images/${
-      images[currIdx % 8]
+      images[currIdx % 10]
     }) no-repeat , url(/images/grid-white.svg) no-repeat `,
 
-    background: `url(/images/${images[currIdx % 8]}) no-repeat  `,
+    background: `url(/images/${images[currIdx % 10]}) no-repeat  `,
 
-    backgroundSize: `${size[currIdx % 8]} auto`,
+    backgroundSize: `${size[currIdx % 10]} auto`,
     [theme.breakpoints.down("md")]: {
-      backgroundSize: `calc(${size[currIdx % 8]} - 200px) auto`,
+      backgroundSize: `calc(${size[currIdx % 10]} - 200px) auto`,
     },
 
-    backgroundPosition: `${position[currIdx % 8]} center`,
+    backgroundPosition: `${position[currIdx % 10]} center`,
 
     [theme.breakpoints.down("lg")]: {
       backgroundPosition: "50% 10%",
@@ -69,7 +73,7 @@ export default function EventPage() {
   };
 
   const moveUp = () => {
-    setCurrIdx((idx) => (idx === 7 ? idx : idx + 1));
+    setCurrIdx((idx) => (idx === 9 ? idx : idx + 1));
   };
 
   const moveDown = () => {
@@ -180,6 +184,16 @@ export default function EventPage() {
           />
           <EventDescription
             index={7}
+            setCurrIdx={setCurrIdx}
+            currIdx={currIdx}
+          />
+          <EventDescription
+            index={8}
+            setCurrIdx={setCurrIdx}
+            currIdx={currIdx}
+          />
+          <EventDescription
+            index={9}
             setCurrIdx={setCurrIdx}
             currIdx={currIdx}
           />

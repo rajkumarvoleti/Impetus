@@ -115,7 +115,7 @@ export default function Contact() {
             Meet the team
           </Link>
 
-          <em style={{ margin: "10px 0 30px 0" }}>
+          <em style={{ margin: "10px 0 30px 0" , textAlign:"center"}}>
             Copyright © 2023 - All rights reserved by Impetus
           </em>
           {/* <p>Meet The Team</p> */}
