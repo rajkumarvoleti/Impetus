@@ -14,7 +14,7 @@ const imageStyles = {
   minWidth: "400px",
   minHeight: "400px",
 
-  background: `url(/images/deathrace_pg.jpg)  no-repeat  `,
+  background: `url(/images/LINEFOLLOWER.png)  no-repeat  `,
 
   backgroundSize: "contain",
   backgroundRepeat: "no-repeat",
@@ -127,7 +127,7 @@ export default function CadathonPage() {
               variant="contained"
               size="large"
               onClick={(event) =>
-                (window.location.href = "#")
+                (window.location.href = "https://forms.gle/P2KHM37KQzLBS1cQ8")
               }
             >
               Register Now
@@ -255,7 +255,7 @@ export default function CadathonPage() {
                 variant="contained"
                 size="large"
                 onClick={(event) =>
-                  (window.location.href = "#")
+                  (window.location.href = "https://forms.gle/P2KHM37KQzLBS1cQ8")
                 }
               >
                 Register Now
