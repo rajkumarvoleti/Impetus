@@ -1,10 +1,41 @@
-import { Typography, useTheme } from "@mui/material";
+import { Divider, Tab, Tabs, Typography, useTheme } from "@mui/material";
+import { tabsClasses } from "@mui/material/Tabs";
 import { Box } from "@mui/system";
+import { useState } from "react";
 import Contact from "../components/Contact";
 import ContactCard from "../components/ContactCard";
 
+function TabPanel(props) {
+  const { children, value, index, ...other } = props;
+
+  return (
+    <Box
+      role="tabpanel"
+      hidden={value !== index}
+      id={`simple-tabpanel-${index}`}
+      aria-labelledby={`simple-tab-${index}`}
+      {...other}
+    >
+      {value === index && <Box>{children}</Box>}
+    </Box>
+  );
+}
+
 export default function TeamPage() {
   const theme = useTheme();
+  const [value, setValue] = useState(0);
+  const classes = {
+    root: {
+      justifyContent: "center",
+    },
+    scroller: {
+      flexGrow: "0",
+    },
+  };
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
 
   const styles = {
     margin: "50px 0",
@@ -17,7 +48,26 @@ export default function TeamPage() {
       justifyContent: "center",
       alignItems: "center",
       flexWrap: "wrap",
-      mb: "50px",
+    },
+    ".tabs": {
+      width: "1000px",
+      maxWidth: "95vw",
+      mb: "100px",
+      ".tab": {
+        margin: "10px",
+        fontSize: {
+          lg: "16px",
+          md: "16px",
+          sm: "12px",
+          xs: "12px",
+        },
+      },
+      ".Mui-selected": {
+        backgroundColor: "blue",
+        border: "0px",
+        borderRadius: "10px",
+        color: "white",
+      },
     },
   };
 
@@ -135,8 +185,7 @@ export default function TeamPage() {
       link: "https://www.linkedin.com/in/rajkumar-voleti/",
     },
 
-    person15:
-    {
+    person15: {
       name: "Utsab Kundu",
       phone: "+91 8100460390",
       post: "Technical Executive",
@@ -146,68 +195,59 @@ export default function TeamPage() {
     },
   };
 
-
-
   return (
     <>
       <Box sx={styles} className="center1">
         <Typography variant="h1">Contact Us</Typography>
         <br></br>
-        <Typography variant="h2" style={{ marginBottom: "20px" }}>
-          Main Coordinators
-        </Typography>
-        <Box>
+        <Box className="tabs">
+          <Tabs value={value} onChange={handleChange}>
+            <Tab className="tab" label="Main Coordinators" />
+            <Tab className="tab" label="Sponsorship Team" />
+            <Tab className="tab" label="Event Management Team" />
+            <Tab className="tab" label="Technical Team" />
+            <Tab className="tab" label="Content and Design Team" />
+            <Tab className="tab" label="Publicity Team" />
+            <Tab className="tab" label="Finance Team" />
+            <Tab className="tab" label="Food and Logistics Team" />
+          </Tabs>
+        </Box>
+        <TabPanel value={value} index={0} className="contactCards">
           <ContactCard person={person.person1} />
           <ContactCard person={person.person2} />
-        </Box>
-        <Typography variant="h2" style={{ marginBottom: "20px" }}>
-          Sponsorship Team
-        </Typography>
-        <Box>
+        </TabPanel>
+        <TabPanel value={value} index={1} className="contactCards">
           <ContactCard person={person.person3} />
           <ContactCard person={person.person4} />
           <ContactCard person={person.person5} />
-        </Box>
-        <Typography variant="h2" style={{ marginBottom: "20px" }}>
-          Event Management Team
-        </Typography>
-        <Box>
+        </TabPanel>
+        <TabPanel value={value} index={2} className="contactCards">
           <ContactCard person={person.person6} />
           <ContactCard person={person.person7} />
           <ContactCard person={person.person8} />
-        </Box>
-        <Typography variant="h2" style={{ marginBottom: "20px" }}>
-          Technical Team
-        </Typography>
-        <Box>
+        </TabPanel>
+
+        <TabPanel value={value} index={3} className="contactCards">
           <ContactCard person={person.person14} />
           <ContactCard person={person.person15} />
-        </Box>
-        <Typography variant="h2" style={{ marginBottom: "20px" }}>
-          Content & Design Team
-        </Typography>
-        <Box>
+        </TabPanel>
+
+        <TabPanel value={value} index={4} className="contactCards">
           <ContactCard person={person.person9} />
-        </Box>
-        <Typography variant="h2" style={{ marginBottom: "20px" }}>
-          Publicity Team
-        </Typography>
-        <Box>
+        </TabPanel>
+
+        <TabPanel value={value} index={5} className="contactCards">
           <ContactCard person={person.person10} />
-        </Box>
-        <Typography variant="h2" style={{ marginBottom: "20px" }}>
-          Finance Team
-        </Typography>
-        <Box>
+        </TabPanel>
+
+        <TabPanel value={value} index={6} className="contactCards">
           <ContactCard person={person.person11} />
           <ContactCard person={person.person12} />
-        </Box>
-        <Typography variant="h2" style={{ marginBottom: "20px" }}>
-          Food and Logistics Team
-        </Typography>
-        <Box>
+        </TabPanel>
+
+        <TabPanel value={value} index={7} className="contactCards">
           <ContactCard person={person.person13} />
-        </Box>
+        </TabPanel>
       </Box>
       <Contact />
     </>

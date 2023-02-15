@@ -92,8 +92,8 @@ export default function CadathonPage() {
       phone: "+91 9704810737",
     },
     person2: {
-      name: "Sayantan Paul",
-      phone: "+91 9830664404",
+      name: "Mahesh Bandlamudi",
+      phone: "+91 8639555844",
     },
   };
   return (

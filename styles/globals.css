@@ -187,8 +187,7 @@ p {
   }
 }
 
-
-.data ul{
+.data ul {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -213,7 +212,7 @@ p {
 }
 .BulletNone li {
   position: relative;
-  text-indent: 0!IMPORTANT;
+  text-indent: 0 !important;
   padding-left: 30px;
   margin-bottom: 10px;
 }
@@ -223,4 +222,8 @@ p {
   text-indent: 0;
   left: 0;
   /* top: 5px; */
+}
+
+.MuiTabs-indicator {
+  display: none;
 }
