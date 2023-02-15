@@ -14,7 +14,7 @@ const imageStyles = {
   minWidth: "400px",
   minHeight: "400px",
 
-  background: `url(/images/LINEFOLLOWER.png)  no-repeat  `,
+  background: `url(/images/LINEFOLLWER_F.png)  no-repeat  `,
 
   backgroundSize: "contain",
   backgroundRepeat: "no-repeat",
