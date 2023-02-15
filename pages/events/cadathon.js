@@ -141,7 +141,7 @@ export default function CadathonPage() {
             </li>
             <li>
               <ul className="BulletNone">
-                <li>Round 2: 18th February, 2023 9:45am</li>
+                <li>Round 2: 17th February, 2023 5:45pm</li>
               </ul>
             </li>
           </ul>

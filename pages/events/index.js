@@ -20,7 +20,6 @@ export default function EventPage() {
     "quizzical.jpg",
     "linefollower1.png",
     "LINEFOLLOWERS_F.png",
-    "roadmap1.png",
     "Valorant.jpg",
     "fun_.jpg",
   ];
@@ -29,7 +28,6 @@ export default function EventPage() {
     "550px",
     "570px",
     "530px",
-    "580px",
     "580px",
     "580px",
     "580px",
@@ -42,7 +40,6 @@ export default function EventPage() {
     "29%",
     "27%",
     "29%",
-    "27%",
     "27%",
     "27%",
     "29%",
@@ -60,14 +57,14 @@ export default function EventPage() {
       images[currIdx % 10]
     }) no-repeat , url(/images/grid-white.svg) no-repeat `,
 
-    background: `url(/images/${images[currIdx % 10]}) no-repeat  `,
+    background: `url(/images/${images[currIdx % 9]}) no-repeat  `,
 
-    backgroundSize: `${size[currIdx % 10]} auto`,
+    backgroundSize: `${size[currIdx % 9]} auto`,
     [theme.breakpoints.down("md")]: {
-      backgroundSize: `calc(${size[currIdx % 10]} - 200px) auto`,
+      backgroundSize: `calc(${size[currIdx % 9]} - 200px) auto`,
     },
 
-    backgroundPosition: `${position[currIdx % 10]} center`,
+    backgroundPosition: `${position[currIdx % 9]} center`,
 
     [theme.breakpoints.down("lg")]: {
       backgroundPosition: "50% 10%",
@@ -84,7 +81,7 @@ export default function EventPage() {
   };
 
   const moveUp = () => {
-    setCurrIdx((idx) => (idx === 9 ? idx : idx + 1));
+    setCurrIdx((idx) => (idx === 8 ? idx : idx + 1));
   };
 
   const moveDown = () => {
@@ -203,11 +200,7 @@ export default function EventPage() {
             setCurrIdx={setCurrIdx}
             currIdx={currIdx}
           />
-          <EventDescription
-            index={9}
-            setCurrIdx={setCurrIdx}
-            currIdx={currIdx}
-          />
+          
         </Box>
       </Box>
     </Box>

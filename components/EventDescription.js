@@ -58,7 +58,6 @@ export default function EventDescription({ index, setCurrIdx, currIdx }) {
     "Quizzical Suspects",
     "Death Race",
     "Line Follower",
-    "Road Map",
     "Valorant",
     "Fun Bunkers",
   ];
@@ -70,7 +69,6 @@ export default function EventDescription({ index, setCurrIdx, currIdx }) {
     "quizzical",
     "deathrace",
     "lineFollower",
-    "roadMap",
     "valorant",
     "fun",
   ];
@@ -89,8 +87,6 @@ export default function EventDescription({ index, setCurrIdx, currIdx }) {
     "The Death Race is a thrilling competition that brings together talented individuals to showcase their skills in building and maneuvering a robot through a challenging track filled with obstacles. ";
   const lineFollower =
     "This competition aims to build a robot that can follow lines on a flat surface. The robot must detect and follow straight and curved lines, and navigate intersections and markings. The goal is to create a fast and reliable robot ";
-  const roadMap =
-    "A good strategy and designing build the path from an ordinary concept to an extraordinary success. To identify and promote all such visionary geniuses, the Department of Mechanical Engineering, IIEST Shibpur in collaboration with Namekart brings to you, Roadmap-Strategy Design Contest, in its annual tech-fest IMPETUS 6.0.";
   const valorant =
     "The Valorant gaming event is a competition that brings together talented players to showcase their skills and compete for recognition. It is an exciting opportunity for Valorant fans to experience high-level gameplay and celebrate the top talent in the game.";
   const fun =
@@ -104,7 +100,7 @@ export default function EventDescription({ index, setCurrIdx, currIdx }) {
     quiz,
     deathrace,
     lineFollower,
-    roadMap,
+    
     valorant,
     fun,
   ];
@@ -113,10 +109,10 @@ export default function EventDescription({ index, setCurrIdx, currIdx }) {
     <Box ref={ref} sx={styles}>
       <Box>
         <Typography ref={headingRef} variant="h2">
-          {heading[currIdx % 10]}
+          {heading[currIdx % 9]}
         </Typography>
-        <Typography variant="p">{content[currIdx % 10]}</Typography>
-        <LearnMore link={`/events/${link[currIdx % 10]}`} />
+        <Typography variant="p">{content[currIdx % 9]}</Typography>
+        <LearnMore link={`/events/${link[currIdx % 9]}`} />
 
         {/* `url(/images/${images[currIdx%8]}) */}
       </Box>

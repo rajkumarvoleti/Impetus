@@ -124,12 +124,12 @@ export default function CadathonPage() {
             Dates:
             <li>
               <ul className="BulletNone">
-                <li>Round 1: 17th February, 2023 4:00pm</li>
+                <li>Round 1: 18th February, 2023 9:30am</li>
               </ul>
             </li>
             <li>
               <ul className="BulletNone">
-                <li>Round 2: 18th February, 2023 5:45pm</li>
+                <li>Round 2: 19th February, 2023 6:30pm</li>
               </ul>
             </li>
           </ul>
@@ -176,11 +176,7 @@ export default function CadathonPage() {
                 <li>No. of Rounds: 2</li>
               </ul>
             </li>
-            <li>
-              <ul className="BulletNone">
-                <li>Venue: Round 1-Gallery 6, Round 2-1st Lobby</li>
-              </ul>
-            </li>
+            
             <li>
               <ul className="BulletNone">
                 <li>Duration of each round: Round 1-1hr, Round 2-2hr</li>
