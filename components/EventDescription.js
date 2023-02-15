@@ -88,8 +88,9 @@ export default function EventDescription({ index, setCurrIdx, currIdx }) {
   const deathrace =
     "The Death Race is a thrilling competition that brings together talented individuals to showcase their skills in building and maneuvering a robot through a challenging track filled with obstacles. ";
   const lineFollower =
-    "This competition aims to build a robot that can be automatically maneuver over lines made on  a flat surface ";
-  const roadMap ="A good strategy and designing build the path from an ordinary concept to an extraordinary success. To identify and promote all such visionary geniuses, the Department of Mechanical Engineering, IIEST Shibpur in collaboration with Namekart brings to you, Roadmap-Strategy Design Contest, in its annual tech-fest IMPETUS 6.0.";
+    "This competition aims to build a robot that can follow lines on a flat surface. The robot must detect and follow straight and curved lines, and navigate intersections and markings. The goal is to create a fast and reliable robot ";
+  const roadMap =
+    "A good strategy and designing build the path from an ordinary concept to an extraordinary success. To identify and promote all such visionary geniuses, the Department of Mechanical Engineering, IIEST Shibpur in collaboration with Namekart brings to you, Roadmap-Strategy Design Contest, in its annual tech-fest IMPETUS 6.0.";
   const valorant =
     "The Valorant gaming event is a competition that brings together talented players to showcase their skills and compete for recognition. It is an exciting opportunity for Valorant fans to experience high-level gameplay and celebrate the top talent in the game.";
   const fun =
