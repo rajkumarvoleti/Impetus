@@ -1,4 +1,4 @@
-import { Tab, Tabs, Typography, useTheme } from "@mui/material";
+import { Divider, Tab, Tabs, Typography, useTheme } from "@mui/material";
 import { tabsClasses } from "@mui/material/Tabs";
 import { Box } from "@mui/system";
 import { useState } from "react";
