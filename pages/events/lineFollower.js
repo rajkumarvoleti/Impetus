@@ -62,7 +62,7 @@ export default function CadathonPage() {
   const router = useRouter();
 
   const goNext = () => {
-    router.push("/events/roadMap");
+    router.push("/events/valorant");
   };
   const goBack = () => {
     router.push("/events/deathrace");
@@ -119,7 +119,7 @@ export default function CadathonPage() {
           </Typography>
 
           <ul className="nestedList" style={{ fontSize: "21px" }}>
-            Dates: Round 1 + Round 2 : 17th February, 2023 6:00pm
+            Dates: Round 1 + Round 2 : 18th February, 2023 12:30pm
           </ul>
           <Box sx={{ width: "100%", marginTop: "30px" }} className="center1">
             <Button

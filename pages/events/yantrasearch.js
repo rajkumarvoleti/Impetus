@@ -118,7 +118,7 @@ export default function CadathonPage() {
           </Typography>
 
           <ul style={{ fontSize: "22px" }}>
-            Dates: 18th February, 2023 2:15pm
+            Dates: 18th February, 2023 2:30pm
           </ul>
           <Box sx={{ width: "100%", marginTop: "30px" }} className="center1">
             <Button
@@ -148,10 +148,10 @@ export default function CadathonPage() {
               registrations will be available only if slots are available)
             </li>
             <li>Pre-requirements – WhatsApp, moderate internet connection</li>
-            <li>Participation – team of 3 members</li>
-            <li>Platform – Gallery 5, Department of Mechanical Engineering</li>
+            <li>Participation – team of 2-3 members</li>
+            {/* <li>Platform – Gallery 5, Department of Mechanical Engineering</li> */}
             <li>No. of Rounds – 1</li>
-            <li>Duration of event – 2 hours approximately</li>
+            {/* <li>Duration of event – 2 hours approximately</li> */}
             <li>
               Prizes worth <b>Rs.10000/-</b>
             </li>

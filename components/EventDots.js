@@ -29,7 +29,7 @@ export default function EventDots({ currIdx, setCurrIdx }) {
 
   return (
     <Box sx={styles} className="center1">
-      {[...Array(10)].map((x, i) => (
+      {[...Array(9)].map((x, i) => (
         <Box
           key={i}
           onClick={() => {

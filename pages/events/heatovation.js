@@ -118,7 +118,7 @@ export default function CadathonPage() {
           </Typography>
 
           <ul className="nestedList" style={{ fontSize: "22px" }}>
-            Dates: 17th February, 2023 3:00pm
+            Dates: 17th February, 2023 2:30pm
           </ul>
         </Box>
         <Box className="data">
