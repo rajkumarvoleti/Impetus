@@ -14,7 +14,7 @@ const imageStyles = {
   minWidth: "400px",
   minHeight: "400px",
 
-  background: `url(/images/deathrace_pg.jpg)  no-repeat  `,
+  background: `url(/images/DeathRace_F.png)  no-repeat  `,
 
   backgroundSize: "contain",
   backgroundRepeat: "no-repeat",

@@ -39,6 +39,21 @@ export default function SponsorsPage() {
     sponsor8: {
       imgname: "ThinkAgainLab.jpg",
     },
+    sponsor9: {
+      imgname: "Alo bus.png",
+    },
+    sponsor10: {
+      imgname: "Asawa insulation.png",
+    },
+    sponsor11: {
+      imgname: "Dyna Temp.png",
+    },
+    sponsor12: {
+      imgname: "Roasted.png",
+    },
+    sponsor13: {
+      imgname: "7Spices.png",
+    },
   };
   return (
     <Box sx={styles} className="center1">
@@ -52,6 +67,11 @@ export default function SponsorsPage() {
         <SponsorCard sponsor={sponsor.sponsor6} />
         <SponsorCard sponsor={sponsor.sponsor7} />
         <SponsorCard sponsor={sponsor.sponsor8} />
+        <SponsorCard sponsor={sponsor.sponsor9} />
+        <SponsorCard sponsor={sponsor.sponsor10} />
+        <SponsorCard sponsor={sponsor.sponsor11} />
+        <SponsorCard sponsor={sponsor.sponsor12} />
+        <SponsorCard sponsor={sponsor.sponsor13} />
       </Box>
       <Contact />
     </Box>
