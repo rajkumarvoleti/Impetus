@@ -103,6 +103,14 @@ export default function TeamPage() {
       insta: "https://www.instagram.com/vasu_khemka/",
       link: "https://www.linkedin.com/in/vasukrishnakhemka2070",
     },
+    person5: {
+      name: "Pritha Ghosh",
+      phone: "+91 8777476875",
+      post: "Sponsorship Executive",
+      imgname: "PicsArt_08-30-09.19.55 - 2020MEB007 PRITHA_GHOSH.jpg",
+      insta: "https://www.instagram.com/me._.pritha/",
+      link: "https://www.linkedin.com/in/pritha-ghosh-27761b211",
+    },
   };
   const event_person = {
     person1: {
@@ -312,12 +320,12 @@ export default function TeamPage() {
       link: "",
     },
     person8: {
-      name: "Tetala Ammireddy",
-      phone: "+91 9640627859",
+      name: "Kowshik Devarapalli ",
+      phone: "+91 7013712351",
       post: "Publicity Executive",
-      imgname: "WhatsApp Image 2023-02-16 at 08.17.27.jpeg",
+      imgname: "IMG_20230216_084503 - 2020MEB111 DEVARAPALLI_KOWSHIK.jpg",
       insta: "",
-      link: "",
+      link: "https://www.linkedin.com/in/kowshik-devarapalli-a37b69240",
     },
   }
 
@@ -442,6 +450,7 @@ export default function TeamPage() {
           </Box>
           <br style={{ width: "100%" }}></br>
           <ContactCard person={sponsorship_person.person4} />
+          <ContactCard person={sponsorship_person.person5} />
 
         </TabPanel>
         <TabPanel value={value} index={2} className="contactCards">{/*Event Team*/}
