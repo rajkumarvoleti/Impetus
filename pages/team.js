@@ -207,16 +207,16 @@ export default function TeamPage() {
       phone: "+91 7667709642",
       post: "Event Management Executive",
       imgname: "Siddhi Suman Sari - 2020MEB066 SIDDHI_SUMAN.jpg",
-      insta: "",
-      link: "",
+      insta: "https://instagram.com/siddhisangitasuman?igshid=YmMyMTA2M2Y=",
+      link: "https://www.linkedin.com/in/siddhi-suman-409091228",
     },
     person13: {
       name: "Abhishek Rajput",
       phone: "+91 9355127436",
       post: "Event Management Executive",
       imgname: "2020MEB023 - 2020MEB023 ABHISHEK_RAJPUT.jpg",
-      insta: "",
-      link: "",
+      insta: "https://instagram.com/abhii.raj_?igshid=YmMyMTA2M2Y=",
+      link: "https://www.linkedin.com/in/abhir0507",
     },
 
   }
@@ -242,7 +242,7 @@ export default function TeamPage() {
       phone: "+91 8436376729",
       post: "Design and Content Executive",
       imgname: "IMG_20230123_171216 - 2020MEB016 POORVA_MONDAL.jpg",
-      insta: "",
+      insta: "https://instagram.com/poorvamondal?igshid=YmMyMTA2M2Y=",
       link: "https://www.linkedin.com/in/poorva-mondal-221a20224",
     },
     person4: {
@@ -258,8 +258,8 @@ export default function TeamPage() {
       phone: "+91 8335914226",
       post: "Design and Content Executive",
       imgname: "PicsArt_01-27-03.03.01 - 2020MEB116 PRATYUSHA_BISWAS.jpg",
-      insta: "",
-      link: "",
+      insta: "https://instagram.com/_pratyusha.biswas_?igshid=YmMyMTA2M2Y=",
+      link: "https://www.linkedin.com/in/i-am-pratyusha-biswas",
     },
   }
   const publicity_person = {
@@ -316,8 +316,8 @@ export default function TeamPage() {
       phone: "+91 8348703616",
       post: "Publicity Executive",
       imgname: "sangmu didi.JPG",
-      insta: "",
-      link: "",
+      insta: "https://instagram.com/_sa_n_g_?igshid=YmMyMTA2M2Y=",
+      link: "https://www.linkedin.com/in/sangmu-tamang-374469220",
     },
     person8: {
       name: "Kowshik Devarapalli ",
@@ -401,8 +401,8 @@ export default function TeamPage() {
       phone: "+91 7488649291",
       post: "Joint coordinator",
       imgname: "IMG_20220421_235117_405 - 2020MEB057 ASHUTOSH_KUMAR.jpg",
-      insta: "",
-      link: "",
+      insta: "https://instagram.com/woh_mota_ladka_?igshid=YmMyMTA2M2Y=",
+      link: "https://www.linkedin.com/in/ashutosh-kumar-manjhi-064881223",
     },
     person10: {
       name: "Jay R Abhimanyu",
