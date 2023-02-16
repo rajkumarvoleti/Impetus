@@ -63,7 +63,7 @@ export default function TeamPage() {
         },
       },
       ".Mui-selected": {
-        backgroundColor: "blue",
+        backgroundColor: "#01658d",
         border: "0px",
         borderRadius: "10px",
         color: "white",
@@ -275,7 +275,7 @@ export default function TeamPage() {
       name: "Deendayal Upadhyay",
       phone: "+91 6350619979",
       post: "Publicity Executive",
-      imgname: "IMG_9379 - 2020MEB032 DEENDYAL_UPADHAYAY.jpg",
+      imgname: "deendyal bhaiya.JPG",
       insta: "https://instagram.com/_dee_xv?igshid=1x3yqehvai6mr",
       link: "https://www.linkedin.com/in/deendayal-upadhyay",
     },
@@ -307,7 +307,7 @@ export default function TeamPage() {
       name: "Sangmu Tamang",
       phone: "+91 8348703616",
       post: "Publicity Executive",
-      imgname: "DSC_0280 - 2020MEB009 SANGMU_TAMANG.jpg",
+      imgname: "sangmu didi.JPG",
       insta: "",
       link: "",
     },
@@ -315,7 +315,7 @@ export default function TeamPage() {
       name: "Tetala Ammireddy",
       phone: "+91 9640627859",
       post: "Publicity Executive",
-      imgname: "",
+      imgname: "WhatsApp Image 2023-02-16 at 08.17.27.jpeg",
       insta: "",
       link: "",
     },
@@ -451,8 +451,8 @@ export default function TeamPage() {
             <ContactCard person={event_person.person2} />
             <ContactCard person={event_person.person3} />
           </Box>
-          <ContactCard person={event_person.person4} />
           <ContactCard person={event_person.person5} />
+          <ContactCard person={event_person.person4} />
           <ContactCard person={event_person.person6} />
           <ContactCard person={event_person.person7} />
           <ContactCard person={event_person.person8} />
