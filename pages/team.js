@@ -500,10 +500,10 @@ export default function TeamPage() {
 
             <ContactCard person={publicity_person.person1} />
           </Box>
+          <ContactCard person={publicity_person.person5} />
           <ContactCard person={publicity_person.person2} />
           <ContactCard person={publicity_person.person3} />
           <ContactCard person={publicity_person.person4} />
-          <ContactCard person={publicity_person.person5} />
           <ContactCard person={publicity_person.person6} />
           <ContactCard person={publicity_person.person7} />
           <ContactCard person={publicity_person.person8} />
